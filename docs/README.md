@@ -8,17 +8,10 @@ Keine Cookies, kein Tracking, keine externen Ressourcen.
 Repository → **Settings → Pages** → Source „Deploy from a branch“, Branch `main`, Ordner `/docs`.
 Die Seite erscheint danach unter `https://systemerror5251.github.io/AIO/`.
 
-## Vor dem Veröffentlichen ausfüllen
+## Kontakt und Lizenz
 
-Alle gelb markierten Platzhalter `[...]` ersetzen:
-
-- [ ] Name in `datenschutz.html` und `nutzungsbedingungen.html`
-- [ ] E-Mail-Adresse in `datenschutz.html` und `rechtliche-hinweise.html`
-- [ ] Zuständige Landesdatenschutzbehörde in `datenschutz.html`
-- [ ] Lizenz (und eine passende `LICENSE`-Datei im Repo-Root anlegen)
-- [ ] „Stand“-Datum in Datenschutz und Nutzungsbedingungen
-
-Suchen: `grep -n 'class="ph"' docs/*.html`
+Als Verantwortlicher steht der GitHub-Name `SystemError5251`, Kontakt läuft über GitHub Issues.
+Es gibt bewusst keinen Klarnamen und keine Anschrift. Der Code steht unter MIT (`LICENSE`).
 
 ## Sprachen
 
