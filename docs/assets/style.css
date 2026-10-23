@@ -109,3 +109,4 @@ dialog#lang-dialog p { margin: 0 0 1rem; color: var(--muted); font-size: .9rem; 
 .lang-list { display: grid; gap: .5rem; margin: 0; padding: 0; list-style: none; }
 .lang-list button { width: 100%; text-align: start; padding: .6rem .9rem; }
 .lang-list button[aria-pressed="true"] { border-color: var(--accent); font-weight: 600; }
+.box { padding: .75rem 1rem; border-inline-start: 4px solid var(--accent); background: var(--card); border-radius: 6px; }
