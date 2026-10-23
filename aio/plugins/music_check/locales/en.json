@@ -1,0 +1,23 @@
+{
+  "music_check.name": "Music check",
+  "music_check.desc": "Checks the audio of a clip: loudness for Reels/Shorts/TikTok and, optionally, which song is playing.",
+  "music_check.help": "Measures loudness (LUFS) and peak level and compares them with the -14 LUFS that the platforms normalise to. If the clip is too quiet or too loud, a corrected copy can be saved as <name>.loudnorm.mp4 (video is copied unchanged). Optional: identify the music via AcoustID to spot copyrighted songs before upload. That step sends an audio fingerprint (not the audio) to acoustid.org and needs fpcalc (pkg install chromaprint) plus a free API key from acoustid.org, set as AIO_ACOUSTID_KEY or as \"acoustid_key\" in ~/.aio/config.json. Needs ffmpeg.",
+  "music_check.no_audio": "This file has no audio track.",
+  "music_check.track": "Audio: {codec}, {rate} Hz, {channels} channel(s), {seconds} s",
+  "music_check.multiple_tracks": "Note: {count} audio tracks found, only the first one is checked.",
+  "music_check.measuring": "Measuring loudness …",
+  "music_check.loudness": "Loudness: {lufs} LUFS (target {target}), peak {peak} dBTP",
+  "music_check.silent": "The audio track is silent.",
+  "music_check.too_quiet": "Too quiet: the platform will turn it up, which can add noise.",
+  "music_check.too_loud": "Too loud: the platform will turn it down; it may sound squashed.",
+  "music_check.loudness_ok": "Loudness fits the platforms.",
+  "music_check.peak_high": "Peak above -1 dBTP: risk of distortion after conversion.",
+  "music_check.ask_normalize": "Save a loudness-corrected copy?",
+  "music_check.normalized": "Saved: {path}",
+  "music_check.identify_hint": "Tip: music identification is available with an AcoustID key (see help).",
+  "music_check.ask_identify": "Identify the music online via AcoustID?",
+  "music_check.identify_failed": "Identification failed: {error}",
+  "music_check.no_match": "No known song recognised.",
+  "music_check.matches": "Possible matches:",
+  "music_check.copyright_note": "Copyrighted music can get your clip muted or blocked. Use music from the platform's own library or royalty-free music."
+}

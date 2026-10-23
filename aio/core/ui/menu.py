@@ -5,6 +5,7 @@ from __future__ import annotations
 from aio.core import config
 from aio.core.context import AppContext
 from aio.core.i18n import load_meta
+from aio.core.media import MissingTool
 from aio.core.registry import Plugin
 from aio.core.ui.language_picker import choose_language
 
@@ -40,6 +41,8 @@ def show_tool(ctx: AppContext, plugin: Plugin) -> None:
         return
     try:
         plugin.run(ctx)
+    except MissingTool as exc:
+        ctx.print(ctx.t("tool.missing_program", name=exc.name, package=exc.package))
     except Exception as exc:  # a broken tool must not crash the whole app
         ctx.print(ctx.t("tool.error", error=f"{type(exc).__name__}: {exc}"))
 

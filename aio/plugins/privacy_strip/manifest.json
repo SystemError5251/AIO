@@ -1,0 +1,9 @@
+{
+  "id": "privacy_strip",
+  "version": "0.1.0",
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "privacy_strip.name",
+  "desc_key": "privacy_strip.desc",
+  "help_key": "privacy_strip.help"
+}

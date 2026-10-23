@@ -14,6 +14,23 @@ pip install -e .            # ohne Zusatzpakete lauffähig
 pip install -e ".[locale]"  # optional: babel für Plural- und Datumsformate
 ```
 
+## Tools
+
+| Tool | Was es macht | Braucht |
+|---|---|---|
+| Privacy-Stripper | Entfernt GPS-, Geräte- und Zeitdaten aus Fotos (JPEG/PNG, verlustfrei) und Videos (ohne Neukodierung). Einzelne Datei oder ganzer Ordner. | ffmpeg (für Videos) |
+| Musik-Check | Misst Lautheit (LUFS) und Spitzenpegel gegen die -14 LUFS der Plattformen, speichert auf Wunsch eine korrigierte Kopie. Optional Songerkennung über AcoustID. | ffmpeg; optional chromaprint + AcoustID-Schlüssel |
+| Upload (Reels/Shorts/TikTok) | Prüft Format, Länge, Codecs und Bildrate, wandelt bei Bedarf in 1080x1920 um und öffnet das Android-Teilen-Menü. | ffmpeg; zum Teilen termux-api + App Termux:API |
+
+```sh
+pkg install ffmpeg            # für alle Video-Tools
+pkg install termux-api        # Teilen-Menü (plus App „Termux:API“ aus F-Droid)
+pkg install chromaprint       # optional: Songerkennung
+termux-setup-storage          # Zugriff auf ~/storage/dcim/Camera usw.
+```
+
+Ergebnisse landen immer neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`); nichts wird überschrieben. Die Grenzen der Plattformen stehen in `aio/plugins/video_upload/platforms.json` und lassen sich ohne Code anpassen.
+
 ## Benutzung
 
 | Befehl | Wirkung |
@@ -29,9 +46,9 @@ Im Sprachwahl-Bildschirm: Zahl = wählen, Text = suchen (z. B. `deu`, `german`, 
 
 ```
 aio/
-  core/       main.py, config.py, i18n.py, registry.py, context.py, ui/
+  core/       main.py, config.py, i18n.py, registry.py, context.py, media.py, ui/
   locales/    de.json, en.json, _meta.json (Name in eigener Schrift, ltr/rtl)
-  plugins/    demo_hello/, demo_sysinfo/  (Vorlagen für echte Tools)
+  plugins/    privacy_strip/, music_check/, video_upload/, demo_hello/ (Vorlage), demo_sysinfo/
   tools/      check_locales.py
 tests/
 ```
@@ -48,7 +65,7 @@ Fehlende Texte fallen auf Englisch und danach auf den Schlüsselnamen zurück.
 Ein Ordner in `aio/plugins/` oder `~/.aio/plugins/` mit:
 
 - `manifest.json` – `id`, `version`, `name_key`, `desc_key`, `help_key` (optional `category`, `requires`, `entry`)
-- `plugin.py` – Funktion `run(ctx)`; `ctx.t()`, `ctx.print()`, `ctx.ask()` stehen bereit
+- `plugin.py` – Funktion `run(ctx)`; `ctx.t()`, `ctx.print()`, `ctx.ask()`, `ctx.ask_file()`, `ctx.confirm()` stehen bereit, für Videos `aio.core.media`
 - `locales/de.json`, `locales/en.json` – Pflicht, bevor ein Tool in `main` kommt
 
 `demo_hello` ist die Vorlage.

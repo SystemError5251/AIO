@@ -1,7 +1,10 @@
 {
   "app.title": "AIO – All-in-One",
   "app.goodbye": "Bye!",
-  "menu.tools": {"one": "{count} tool available:", "other": "{count} tools available:"},
+  "menu.tools": {
+    "one": "{count} tool available:",
+    "other": "{count} tools available:"
+  },
   "menu.no_tools": "No tools installed yet.",
   "menu.settings": "Settings",
   "menu.quit": "Quit",
@@ -22,5 +25,10 @@
   "picker.prompt": "Language:",
   "picker.invalid": "That number is not in the list.",
   "registry.plugin_skipped": "Skipped plugin: {detail}",
-  "cli.unknown_language": "Unknown language \"{code}\". Available: {available}"
+  "cli.unknown_language": "Unknown language \"{code}\". Available: {available}",
+  "file.prompt": "Path to the file (Enter = cancel):",
+  "file.not_found": "File not found: {path}",
+  "tool.missing_program": "The program \"{name}\" is missing. In Termux: pkg install {package}",
+  "common.yes_no": "y/n",
+  "common.yes_letters": "y"
 }

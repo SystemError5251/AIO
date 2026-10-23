@@ -1,0 +1,23 @@
+{
+  "music_check.name": "Musik-Check",
+  "music_check.desc": "Prüft den Ton eines Clips: Lautheit für Reels/Shorts/TikTok und auf Wunsch, welcher Song läuft.",
+  "music_check.help": "Misst Lautheit (LUFS) und Spitzenpegel und vergleicht sie mit den -14 LUFS, auf die die Plattformen angleichen. Ist der Clip zu leise oder zu laut, kann eine korrigierte Kopie als <name>.loudnorm.mp4 gespeichert werden (das Bild bleibt unverändert). Optional: Musik über AcoustID erkennen, um urheberrechtlich geschützte Songs vor dem Upload zu finden. Dabei wird ein Audio-Fingerabdruck (nicht der Ton selbst) an acoustid.org geschickt. Dafür braucht es fpcalc (pkg install chromaprint) und einen kostenlosen API-Schlüssel von acoustid.org, gesetzt als AIO_ACOUSTID_KEY oder als \"acoustid_key\" in ~/.aio/config.json. Benötigt ffmpeg.",
+  "music_check.no_audio": "Diese Datei hat keine Tonspur.",
+  "music_check.track": "Ton: {codec}, {rate} Hz, {channels} Kanal/Kanäle, {seconds} s",
+  "music_check.multiple_tracks": "Hinweis: {count} Tonspuren gefunden, geprüft wird nur die erste.",
+  "music_check.measuring": "Lautheit wird gemessen …",
+  "music_check.loudness": "Lautheit: {lufs} LUFS (Ziel {target}), Spitze {peak} dBTP",
+  "music_check.silent": "Die Tonspur ist stumm.",
+  "music_check.too_quiet": "Zu leise: Die Plattform hebt den Pegel an, dabei kann Rauschen entstehen.",
+  "music_check.too_loud": "Zu laut: Die Plattform senkt den Pegel; es kann gequetscht klingen.",
+  "music_check.loudness_ok": "Die Lautheit passt für die Plattformen.",
+  "music_check.peak_high": "Spitze über -1 dBTP: Gefahr von Verzerrungen nach der Umwandlung.",
+  "music_check.ask_normalize": "Lautheitskorrigierte Kopie speichern?",
+  "music_check.normalized": "Gespeichert: {path}",
+  "music_check.identify_hint": "Tipp: Mit einem AcoustID-Schlüssel kann die Musik erkannt werden (siehe Hilfe).",
+  "music_check.ask_identify": "Musik online über AcoustID erkennen?",
+  "music_check.identify_failed": "Erkennung fehlgeschlagen: {error}",
+  "music_check.no_match": "Kein bekannter Song erkannt.",
+  "music_check.matches": "Mögliche Treffer:",
+  "music_check.copyright_note": "Geschützte Musik kann dazu führen, dass dein Clip stummgeschaltet oder gesperrt wird. Nutze Musik aus der Bibliothek der Plattform oder lizenzfreie Musik."
+}

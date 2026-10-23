@@ -1,0 +1,14 @@
+{
+  "privacy_strip.name": "Privacy stripper",
+  "privacy_strip.desc": "Removes location, device and time data from videos and photos before you share them.",
+  "privacy_strip.help": "Give a file or a whole folder. Photos (JPEG, PNG) are cleaned losslessly; the rotation is kept so they are not shown sideways. Videos (MP4, MOV, MKV, WebM, …) are copied without re-encoding, without GPS tracks, device names and timestamps. The original stays untouched; the result is saved next to it as <name>.clean.<ext>. Videos need ffmpeg (pkg install ffmpeg). Tip: in Termux, run termux-setup-storage once; your camera folder is then at ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "File or folder (Enter = cancel):",
+  "privacy_strip.nothing_found": "No supported photos or videos found.",
+  "privacy_strip.unsupported": "Skipped: {ext} is not supported.",
+  "privacy_strip.failed": "Failed: {error}",
+  "privacy_strip.removed": {"one": "Removed {count} entry: {items}", "other": "Removed {count} entries: {items}"},
+  "privacy_strip.already_clean": "No metadata found, a clean copy was saved anyway.",
+  "privacy_strip.remaining": "Still present (please check): {items}",
+  "privacy_strip.saved": "Saved: {path}",
+  "privacy_strip.summary": {"one": "Done: {count} of {total} file cleaned.", "other": "Done: {count} of {total} files cleaned."}
+}

@@ -1,0 +1,23 @@
+{
+  "video_upload.name": "Upload (Reels/Shorts/TikTok)",
+  "video_upload.desc": "Checks a clip against the platform rules, converts it if needed and opens the share menu.",
+  "video_upload.help": "Pick a video and a platform. The tool checks format (9:16), length, codecs and frame rate. If something does not fit, it creates a 1080x1920 H.264/AAC copy (<name>.<platform>.mp4), trims it to the maximum length if necessary and removes metadata on the way. Then it opens the Android share menu so you can choose the app. Needs ffmpeg; for sharing also the Termux:API app and pkg install termux-api. Clips that need no conversion are shared as they are, so run the privacy stripper first if they contain location data. Platform limits live in plugins/video_upload/platforms.json.",
+  "video_upload.choose_platform": "Which platform?",
+  "video_upload.max_length": "(max. {seconds} s)",
+  "video_upload.report": "Check for {platform}:",
+  "video_upload.no_video": "The file contains no video.",
+  "video_upload.not_vertical": "Format {w}x{h} is not vertical 9:16.",
+  "video_upload.low_resolution": "Low resolution ({w}x{h}); 1080x1920 looks sharper.",
+  "video_upload.bad_video_codec": "Video codec {codec} is not ideal (H.264 recommended).",
+  "video_upload.high_fps": "{fps} fps is more than the platforms accept (max. 60).",
+  "video_upload.no_audio": "No audio track.",
+  "video_upload.bad_audio_codec": "Audio codec {codec} is not ideal (AAC recommended).",
+  "video_upload.too_long": "Too long: {seconds} s, the limit is {limit} s.",
+  "video_upload.all_good": "Everything fits, no conversion needed.",
+  "video_upload.will_trim": "The copy will be cut to {limit} s.",
+  "video_upload.ask_convert": "Create a fitting copy now?",
+  "video_upload.converting": "Converting, this can take a while on a phone …",
+  "video_upload.converted": "Saved: {path}",
+  "video_upload.share_missing": "To open the share menu, install the Termux:API app and run pkg install termux-api. The file is here: {path}",
+  "video_upload.ask_share": "Open the share menu to post on {platform}?"
+}
