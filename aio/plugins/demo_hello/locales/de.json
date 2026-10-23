@@ -1,0 +1,10 @@
+{
+  "demo_hello.name": "Hallo (Demo)",
+  "demo_hello.desc": "Beispiel-Plugin, das dich begrüßt. Dient als Vorlage für neue Tools.",
+  "demo_hello.help": "Fragt nach deinem Namen und begrüßt dich. Zeigt außerdem, wie ein Plugin eigene Übersetzungen, Pluralformen und das Datumsformat der gewählten Sprache nutzt.",
+  "demo_hello.ask_name": "Wie heißt du?",
+  "demo_hello.stranger": "Fremde Person",
+  "demo_hello.greeting": "Hallo, {name}!",
+  "demo_hello.today": "Heute ist der {date}.",
+  "demo_hello.files": {"one": "Plural-Beispiel: {count} Datei", "other": "Plural-Beispiel: {count} Dateien"}
+}

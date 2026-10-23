@@ -1,0 +1,11 @@
+{
+  "demo_sysinfo.name": "System info (demo)",
+  "demo_sysinfo.desc": "Shows Python version, system and free storage.",
+  "demo_sysinfo.help": "A small read-only demo plugin. It changes nothing and only displays information about your device.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "System: {system}",
+  "demo_sysinfo.termux": "Running in Termux: {value}",
+  "demo_sysinfo.yes": "yes",
+  "demo_sysinfo.no": "no",
+  "demo_sysinfo.disk": "Free storage: {free} GB"
+}

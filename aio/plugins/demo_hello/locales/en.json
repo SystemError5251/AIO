@@ -1,0 +1,10 @@
+{
+  "demo_hello.name": "Hello (demo)",
+  "demo_hello.desc": "Sample plugin that greets you. Serves as the template for new tools.",
+  "demo_hello.help": "Asks for your name and greets you. It also shows how a plugin uses its own translations, plural forms and the date format of the chosen language.",
+  "demo_hello.ask_name": "What's your name?",
+  "demo_hello.stranger": "stranger",
+  "demo_hello.greeting": "Hello, {name}!",
+  "demo_hello.today": "Today is {date}.",
+  "demo_hello.files": {"one": "Plural example: {count} file", "other": "Plural example: {count} files"}
+}

@@ -1,0 +1,10 @@
+{
+  "id": "demo_hello",
+  "version": "0.1.0",
+  "category": "demo",
+  "entry": "plugin.py",
+  "requires": [],
+  "name_key": "demo_hello.name",
+  "desc_key": "demo_hello.desc",
+  "help_key": "demo_hello.help"
+}

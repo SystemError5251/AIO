@@ -1,0 +1,11 @@
+{
+  "demo_sysinfo.name": "Systeminfo (Demo)",
+  "demo_sysinfo.desc": "Zeigt Python-Version, System und freien Speicher.",
+  "demo_sysinfo.help": "Ein kleines Demo-Plugin, das nur liest. Es ändert nichts und zeigt nur Informationen über dein Gerät.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "System: {system}",
+  "demo_sysinfo.termux": "Läuft in Termux: {value}",
+  "demo_sysinfo.yes": "ja",
+  "demo_sysinfo.no": "nein",
+  "demo_sysinfo.disk": "Freier Speicher: {free} GB"
+}
