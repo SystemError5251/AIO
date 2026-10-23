@@ -12,8 +12,8 @@ Die Seite erscheint danach unter `https://systemerror5251.github.io/AIO/`.
 
 Alle gelb markierten Platzhalter `[...]` ersetzen:
 
-- [ ] Name und ladungsfähige Anschrift (kein Postfach) in `impressum.html`, `datenschutz.html`, `nutzungsbedingungen.html`
-- [ ] E-Mail-Adresse und einen zweiten schnellen Kontaktweg (z. B. Telefon)
+- [ ] Name in `datenschutz.html` und `nutzungsbedingungen.html`
+- [ ] E-Mail-Adresse in `datenschutz.html` und `rechtliche-hinweise.html`
 - [ ] Zuständige Landesdatenschutzbehörde in `datenschutz.html`
 - [ ] Lizenz (und eine passende `LICENSE`-Datei im Repo-Root anlegen)
 - [ ] „Stand“-Datum in Datenschutz und Nutzungsbedingungen
@@ -34,3 +34,8 @@ kostenloses Open-Source-Projekt ohne Tracking. Wenn du Geld verlangst (Verkauf, 
 Gegenleistung), Werbung oder Analyse-Tools einbaust, ein Kontaktformular oder Newsletter anbietest,
 brauchst du zusätzliche Texte (z. B. Widerrufsbelehrung, Einwilligungsbanner). Lass die Texte im
 Zweifel von einer Anwältin, einem Anwalt oder einem Generator-Dienst prüfen.
+
+Ein Impressum ist bewusst nicht enthalten. Das ist für ein rein privates, unentgeltliches
+Projekt ohne geschäftsmäßigen Charakter vertretbar (§ 5 DDG gilt für geschäftsmäßige, in der Regel
+entgeltliche Dienste). Sobald das Projekt Einnahmen erzielt (Verkauf, Werbung, bezahlte Sponsorings)
+oder gewerblich wird, muss ein Impressum mit ladungsfähiger Anschrift ergänzt werden.
