@@ -1,0 +1,34 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "Nettoyeur de confidentialité",
+  "privacy_strip.desc": "Supprime les données de lieu, d’appareil et d’heure des vidéos et photos avant de les partager.",
+  "privacy_strip.help": "Indique un fichier ou un dossier entier. Les photos (JPEG, PNG) sont nettoyées sans perte ; la rotation est conservée pour qu’elles ne s’affichent pas de travers. Les vidéos (MP4, MOV, MKV, WebM, …) sont copiées sans réencodage, sans traces GPS, noms d’appareil ni horodatages. L’original reste intact ; le résultat est enregistré à côté sous <nom>.clean.<ext>. Les vidéos nécessitent ffmpeg (pkg install ffmpeg). Astuce : lance une fois termux-setup-storage dans Termux ; ton dossier photo se trouve alors dans ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "Fichier ou dossier (Entrée = annuler) :",
+  "privacy_strip.nothing_found": "Aucune photo ou vidéo prise en charge trouvée.",
+  "privacy_strip.unsupported": "Ignoré : {ext} n’est pas pris en charge.",
+  "privacy_strip.failed": "Échec : {error}",
+  "privacy_strip.removed": {
+    "one": "{count} entrée supprimée : {items}",
+    "other": "{count} entrées supprimées : {items}"
+  },
+  "privacy_strip.already_clean": "Aucune métadonnée trouvée, une copie propre a quand même été enregistrée.",
+  "privacy_strip.remaining": "Encore présent (à vérifier) : {items}",
+  "privacy_strip.saved": "Enregistré : {path}",
+  "privacy_strip.summary": {
+    "one": "Terminé : {count} fichier sur {total} nettoyé.",
+    "other": "Terminé : {count} fichiers sur {total} nettoyés."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "Очистка приватных данных",
+  "privacy_strip.desc": "Удаляет данные о месте, устройстве и времени из видео и фото перед публикацией.",
+  "privacy_strip.help": "Укажите файл или целую папку. Фото (JPEG, PNG) очищаются без потерь; поворот сохраняется, чтобы они не отображались боком. Видео (MP4, MOV, MKV, WebM, …) копируются без перекодирования, без GPS-треков, названий устройства и меток времени. Оригинал не меняется; результат сохраняется рядом как <имя>.clean.<расширение>. Для видео нужен ffmpeg (pkg install ffmpeg). Совет: один раз выполните в Termux termux-setup-storage; папка камеры будет в ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "Файл или папка (Enter — отмена):",
+  "privacy_strip.nothing_found": "Поддерживаемые фото или видео не найдены.",
+  "privacy_strip.unsupported": "Пропущено: {ext} не поддерживается.",
+  "privacy_strip.failed": "Ошибка: {error}",
+  "privacy_strip.removed": {
+    "one": "Удалена {count} запись: {items}",
+    "few": "Удалено {count} записи: {items}",
+    "many": "Удалено {count} записей: {items}",
+    "other": "Удалено {count} записи: {items}"
+  },
+  "privacy_strip.already_clean": "Метаданные не найдены, чистая копия всё равно сохранена.",
+  "privacy_strip.remaining": "Всё ещё есть (проверьте): {items}",
+  "privacy_strip.saved": "Сохранено: {path}",
+  "privacy_strip.summary": {
+    "one": "Готово: очищен {count} файл из {total}.",
+    "few": "Готово: очищено {count} файла из {total}.",
+    "many": "Готово: очищено {count} файлов из {total}.",
+    "other": "Готово: очищено {count} файла из {total}."
+  }
+}

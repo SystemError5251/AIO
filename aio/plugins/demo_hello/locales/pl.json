@@ -1,0 +1,25 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "Cześć (demo)",
+  "demo_hello.desc": "Przykładowa wtyczka, która cię wita. Służy jako szablon dla nowych narzędzi.",
+  "demo_hello.help": "Pyta o twoje imię i cię wita. Pokazuje też, jak wtyczka korzysta z własnych tłumaczeń, form liczby mnogiej i formatu daty wybranego języka.",
+  "demo_hello.ask_name": "Jak masz na imię?",
+  "demo_hello.stranger": "nieznajomy",
+  "demo_hello.greeting": "Cześć, {name}!",
+  "demo_hello.today": "Dziś jest {date}.",
+  "demo_hello.files": {
+    "one": "Przykład liczby mnogiej: {count} plik",
+    "few": "Przykład liczby mnogiej: {count} pliki",
+    "many": "Przykład liczby mnogiej: {count} plików",
+    "other": "Przykład liczby mnogiej: {count} pliku"
+  }
+}

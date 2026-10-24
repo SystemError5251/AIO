@@ -1,0 +1,25 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "Привіт (демо)",
+  "demo_hello.desc": "Приклад плагіна, який вітається. Слугує шаблоном для нових інструментів.",
+  "demo_hello.help": "Запитує ваше ім’я та вітається. Також показує, як плагін використовує власні переклади, форми множини та формат дати вибраної мови.",
+  "demo_hello.ask_name": "Як вас звати?",
+  "demo_hello.stranger": "незнайомець",
+  "demo_hello.greeting": "Привіт, {name}!",
+  "demo_hello.today": "Сьогодні {date}.",
+  "demo_hello.files": {
+    "one": "Приклад множини: {count} файл",
+    "few": "Приклад множини: {count} файли",
+    "many": "Приклад множини: {count} файлів",
+    "other": "Приклад множини: {count} файла"
+  }
+}

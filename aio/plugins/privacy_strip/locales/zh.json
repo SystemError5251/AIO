@@ -1,0 +1,32 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "隐私清理",
+  "privacy_strip.desc": "在分享前移除视频和照片中的位置、设备和时间信息。",
+  "privacy_strip.help": "指定一个文件或整个文件夹。照片（JPEG、PNG）会无损清理，并保留旋转信息，避免显示成横向。视频（MP4、MOV、MKV、WebM 等）不重新编码，复制时去掉 GPS 轨迹、设备名称和时间戳。原文件保持不变，结果保存在旁边，名为 <名称>.clean.<扩展名>。处理视频需要 ffmpeg（pkg install ffmpeg）。提示：在 Termux 中运行一次 termux-setup-storage，相机文件夹就在 ~/storage/dcim/Camera。",
+  "privacy_strip.ask_path": "文件或文件夹（Enter = 取消）：",
+  "privacy_strip.nothing_found": "未找到支持的照片或视频。",
+  "privacy_strip.unsupported": "已跳过：不支持 {ext}。",
+  "privacy_strip.failed": "失败：{error}",
+  "privacy_strip.removed": {
+    "other": "已移除 {count} 项：{items}"
+  },
+  "privacy_strip.already_clean": "未发现元数据，仍已保存一份干净副本。",
+  "privacy_strip.remaining": "仍然存在（请检查）：{items}",
+  "privacy_strip.saved": "已保存：{path}",
+  "privacy_strip.summary": {
+    "other": "完成：已清理 {count}/{total} 个文件。"
+  }
+}

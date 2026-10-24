@@ -1,0 +1,23 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "שלום (הדגמה)",
+  "demo_hello.desc": "תוסף לדוגמה שמברך אותך. משמש תבנית לכלים חדשים.",
+  "demo_hello.help": "שואל לשמך ומברך אותך. מראה גם איך תוסף משתמש בתרגומים משלו, בצורות רבים ובתבנית התאריך של השפה שנבחרה.",
+  "demo_hello.ask_name": "מה שמך?",
+  "demo_hello.stranger": "אורח",
+  "demo_hello.greeting": "שלום, {name}!",
+  "demo_hello.today": "היום {date}.",
+  "demo_hello.files": {
+    "one": "דוגמה לרבים: קובץ אחד",
+    "other": "דוגמה לרבים: {count} קבצים"
+  }
+}

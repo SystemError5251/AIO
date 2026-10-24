@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "מידע מערכת (הדגמה)",
+  "demo_sysinfo.desc": "מציג גרסת Python, מערכת ושטח פנוי.",
+  "demo_sysinfo.help": "תוסף הדגמה קטן לקריאה בלבד. הוא לא משנה דבר ורק מציג מידע על המכשיר.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "מערכת: {system}",
+  "demo_sysinfo.termux": "פועל ב-Termux: {value}",
+  "demo_sysinfo.yes": "כן",
+  "demo_sysinfo.no": "לא",
+  "demo_sysinfo.disk": "שטח פנוי: {free} GB"
+}

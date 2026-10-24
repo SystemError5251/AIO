@@ -1,0 +1,25 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "Привет (демо)",
+  "demo_hello.desc": "Пример плагина, который здоровается. Служит шаблоном для новых инструментов.",
+  "demo_hello.help": "Спрашивает ваше имя и здоровается. Также показывает, как плагин использует свои переводы, формы множественного числа и формат даты выбранного языка.",
+  "demo_hello.ask_name": "Как вас зовут?",
+  "demo_hello.stranger": "незнакомец",
+  "demo_hello.greeting": "Привет, {name}!",
+  "demo_hello.today": "Сегодня {date}.",
+  "demo_hello.files": {
+    "one": "Пример множественного числа: {count} файл",
+    "few": "Пример множественного числа: {count} файла",
+    "many": "Пример множественного числа: {count} файлов",
+    "other": "Пример множественного числа: {count} файла"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "सिस्टम जानकारी (डेमो)",
+  "demo_sysinfo.desc": "Python संस्करण, सिस्टम और खाली जगह दिखाता है।",
+  "demo_sysinfo.help": "केवल पढ़ने वाला एक छोटा डेमो प्लगइन। यह कुछ नहीं बदलता, सिर्फ़ आपके डिवाइस की जानकारी दिखाता है।",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "सिस्टम: {system}",
+  "demo_sysinfo.termux": "Termux में चल रहा है: {value}",
+  "demo_sysinfo.yes": "हाँ",
+  "demo_sysinfo.no": "नहीं",
+  "demo_sysinfo.disk": "खाली जगह: {free} GB"
+}

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "系统信息（演示）",
+  "demo_sysinfo.desc": "显示 Python 版本、系统和可用空间。",
+  "demo_sysinfo.help": "一个只读的小型演示插件。它不会更改任何内容，只显示设备信息。",
+  "demo_sysinfo.python": "Python：{version}",
+  "demo_sysinfo.system": "系统：{system}",
+  "demo_sysinfo.termux": "在 Termux 中运行：{value}",
+  "demo_sysinfo.yes": "是",
+  "demo_sysinfo.no": "否",
+  "demo_sysinfo.disk": "可用空间：{free} GB"
+}

@@ -1,0 +1,42 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "منظّف الخصوصية",
+  "privacy_strip.desc": "يزيل بيانات الموقع والجهاز والوقت من الفيديوهات والصور قبل مشاركتها.",
+  "privacy_strip.help": "حدّد ملفًا أو مجلدًا كاملًا. تُنظَّف الصور (JPEG، PNG) دون فقدان للجودة، ويُحتفظ بالتدوير حتى لا تظهر مائلة. تُنسخ الفيديوهات (MP4، MOV، MKV، WebM، …) دون إعادة ترميز، ودون مسارات GPS وأسماء الأجهزة والطوابع الزمنية. يبقى الأصل دون تغيير، ويُحفظ الناتج بجانبه باسم <name>.clean.<ext>. تحتاج الفيديوهات إلى ffmpeg (pkg install ffmpeg). نصيحة: شغّل termux-setup-storage مرة واحدة في Termux، وسيكون مجلد الكاميرا في ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "ملف أو مجلد (Enter = إلغاء):",
+  "privacy_strip.nothing_found": "لم يُعثر على صور أو فيديوهات مدعومة.",
+  "privacy_strip.unsupported": "تم التخطي: الامتداد {ext} غير مدعوم.",
+  "privacy_strip.failed": "فشل: {error}",
+  "privacy_strip.removed": {
+    "zero": "لم يُزل أي إدخال",
+    "one": "أُزيل إدخال واحد: {items}",
+    "two": "أُزيل إدخالان: {items}",
+    "few": "أُزيلت {count} إدخالات: {items}",
+    "many": "أُزيل {count} إدخالًا: {items}",
+    "other": "أُزيل {count} إدخال: {items}"
+  },
+  "privacy_strip.already_clean": "لم يُعثر على بيانات وصفية، ومع ذلك حُفظت نسخة نظيفة.",
+  "privacy_strip.remaining": "ما زال موجودًا (يرجى التحقق): {items}",
+  "privacy_strip.saved": "تم الحفظ: {path}",
+  "privacy_strip.summary": {
+    "zero": "انتهى: لم يُنظَّف أي ملف من {total}.",
+    "one": "انتهى: نُظِّف ملف واحد من {total}.",
+    "two": "انتهى: نُظِّف ملفان من {total}.",
+    "few": "انتهى: نُظِّفت {count} ملفات من {total}.",
+    "many": "انتهى: نُظِّف {count} ملفًا من {total}.",
+    "other": "انتهى: نُظِّف {count} ملف من {total}."
+  }
+}

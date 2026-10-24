@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "معلومات النظام (تجريبي)",
+  "demo_sysinfo.desc": "يعرض إصدار Python والنظام والمساحة الفارغة.",
+  "demo_sysinfo.help": "إضافة تجريبية صغيرة للقراءة فقط. لا تغيّر أي شيء وتعرض فقط معلومات عن جهازك.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "النظام: {system}",
+  "demo_sysinfo.termux": "يعمل داخل Termux: {value}",
+  "demo_sysinfo.yes": "نعم",
+  "demo_sysinfo.no": "لا",
+  "demo_sysinfo.disk": "المساحة الفارغة: {free} غيغابايت"
+}

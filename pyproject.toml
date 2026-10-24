@@ -13,6 +13,8 @@ dependencies = []
 [project.optional-dependencies]
 # Bessere Plural- und Zahlen-/Datumsformate. Ohne babel greift ein eingebauter Fallback.
 locale = ["babel>=2.12"]
+# Only for aio/tools/translate.py (fills missing texts via the Claude API).
+translate = ["anthropic>=2"]
 dev = ["pytest>=7"]
 
 [project.scripts]

@@ -49,16 +49,29 @@ aio/
   core/       main.py, config.py, i18n.py, registry.py, context.py, media.py, ui/
   locales/    de.json, en.json, _meta.json (Name in eigener Schrift, ltr/rtl)
   plugins/    privacy_strip/, music_check/, video_upload/, demo_hello/ (Vorlage), demo_sysinfo/
-  tools/      check_locales.py
+  tools/      check_locales.py, translate.py
 tests/
 ```
 
+### Sprachen
+
+15 Sprachen sind enthalten: Deutsch und Englisch von Hand, dazu Arabisch, Chinesisch, Französisch, Hebräisch, Hindi, Italienisch, Japanisch, Polnisch, Portugiesisch, Russisch, Spanisch, Türkisch und Ukrainisch als maschinelle Übersetzung. Maschinell übersetzte Texte stehen in jeder Datei unter `"_auto"`. Wer einen Text geprüft hat, nimmt ihn dort heraus. `python -m aio.tools.check_locales` zählt, wie viele noch offen sind.
+
+Arabisch und Hebräisch werden rechtsbündig ausgegeben (Flag `dir` in `_meta.json`).
+
 ### Neue Sprache hinzufügen
 
-1. Eintrag in `aio/locales/_meta.json` (falls noch nicht vorhanden)
-2. `aio/locales/<code>.json` anlegen – fertig, kein Code nötig.
+1. Eintrag in `aio/locales/_meta.json` (Name in eigener Schrift, `ltr`/`rtl`)
+2. Texte erzeugen lassen – oder `aio/locales/<code>.json` von Hand anlegen:
 
-Fehlende Texte fallen auf Englisch und danach auf den Schlüsselnamen zurück.
+```sh
+pip install -e ".[translate]"
+export ANTHROPIC_API_KEY=...
+python -m aio.tools.translate nl          # nur fehlende Texte, mit Cache
+python -m aio.tools.translate --dry-run   # zeigt nur, was fehlt
+```
+
+`translate.py` schickt nur fehlende Schlüssel an die Claude-API, merkt sich Ergebnisse in `~/.aio/translate_cache.json` und markiert alles Neue als `"_auto"`. Fehlende Texte fallen zur Laufzeit auf Englisch und danach auf den Schlüsselnamen zurück.
 
 ### Neues Tool (Plugin)
 

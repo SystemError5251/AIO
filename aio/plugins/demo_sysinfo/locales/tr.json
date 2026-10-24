@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "Sistem bilgisi (demo)",
+  "demo_sysinfo.desc": "Python sürümünü, sistemi ve boş alanı gösterir.",
+  "demo_sysinfo.help": "Yalnızca okuyan küçük bir demo eklentisi. Hiçbir şeyi değiştirmez, sadece cihazın hakkında bilgi gösterir.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "Sistem: {system}",
+  "demo_sysinfo.termux": "Termux'ta çalışıyor: {value}",
+  "demo_sysinfo.yes": "evet",
+  "demo_sysinfo.no": "hayır",
+  "demo_sysinfo.disk": "Boş alan: {free} GB"
+}

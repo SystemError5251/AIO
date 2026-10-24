@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import shutil
+import textwrap
+import unicodedata
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -10,6 +12,25 @@ from typing import Any
 
 from aio.core.i18n import Translator
 from aio.core.registry import Plugin
+
+
+def display_width(text: str) -> int:
+    """Terminal columns: combining marks take none, CJK wide characters take two."""
+    width = 0
+    for ch in text:
+        if unicodedata.combining(ch) or unicodedata.category(ch) == "Cf":
+            continue
+        width += 2 if unicodedata.east_asian_width(ch) in ("W", "F") else 1
+    return width
+
+
+def align_rtl(text: str, columns: int) -> str:
+    """Right-align (and wrap) text for right-to-left languages."""
+    out = []
+    for line in text.splitlines() or [""]:
+        for part in textwrap.wrap(line, max(10, columns - 1)) or [""]:
+            out.append(" " * max(0, columns - display_width(part)) + part)
+    return "\n".join(out)
 
 
 @dataclass
@@ -26,8 +47,7 @@ class AppContext:
     def print(self, text: str = "") -> None:
         """Print one line; right-aligned for RTL languages (flag from _meta.json)."""
         if self.translator.is_rtl and text:
-            width = shutil.get_terminal_size((80, 24)).columns
-            text = "\n".join(line.rjust(width) for line in text.splitlines())
+            text = align_rtl(text, shutil.get_terminal_size((80, 24)).columns)
         self.print_fn(text)
 
     def ask_file(self, prompt: str | None = None, allow_dir: bool = False) -> Path | None:

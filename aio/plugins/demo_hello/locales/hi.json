@@ -1,0 +1,23 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "नमस्ते (डेमो)",
+  "demo_hello.desc": "एक उदाहरण प्लगइन जो आपका अभिवादन करता है। नए टूल के लिए टेम्पलेट का काम करता है।",
+  "demo_hello.help": "आपका नाम पूछता है और अभिवादन करता है। यह भी दिखाता है कि प्लगइन अपने अनुवाद, बहुवचन रूप और चुनी गई भाषा का तारीख़ प्रारूप कैसे इस्तेमाल करता है।",
+  "demo_hello.ask_name": "आपका नाम क्या है?",
+  "demo_hello.stranger": "मेहमान",
+  "demo_hello.greeting": "नमस्ते, {name}!",
+  "demo_hello.today": "आज {date} है।",
+  "demo_hello.files": {
+    "one": "बहुवचन उदाहरण: {count} फ़ाइल",
+    "other": "बहुवचन उदाहरण: {count} फ़ाइलें"
+  }
+}

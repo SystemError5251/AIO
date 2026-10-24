@@ -1,0 +1,23 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "Merhaba (demo)",
+  "demo_hello.desc": "Seni selamlayan örnek eklenti. Yeni araçlar için şablon görevi görür.",
+  "demo_hello.help": "Adını sorar ve seni selamlar. Ayrıca bir eklentinin kendi çevirilerini, çoğul biçimlerini ve seçilen dilin tarih biçimini nasıl kullandığını gösterir.",
+  "demo_hello.ask_name": "Adın ne?",
+  "demo_hello.stranger": "yabancı",
+  "demo_hello.greeting": "Merhaba, {name}!",
+  "demo_hello.today": "Bugün {date}.",
+  "demo_hello.files": {
+    "one": "Çoğul örneği: {count} dosya",
+    "other": "Çoğul örneği: {count} dosya"
+  }
+}

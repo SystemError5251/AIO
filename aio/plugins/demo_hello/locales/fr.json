@@ -1,0 +1,23 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "Bonjour (démo)",
+  "demo_hello.desc": "Plugin d’exemple qui te salue. Sert de modèle pour de nouveaux outils.",
+  "demo_hello.help": "Demande ton prénom et te salue. Montre aussi comment un plugin utilise ses propres traductions, les formes du pluriel et le format de date de la langue choisie.",
+  "demo_hello.ask_name": "Comment t’appelles-tu ?",
+  "demo_hello.stranger": "inconnu·e",
+  "demo_hello.greeting": "Bonjour, {name} !",
+  "demo_hello.today": "Nous sommes le {date}.",
+  "demo_hello.files": {
+    "one": "Exemple de pluriel : {count} fichier",
+    "other": "Exemple de pluriel : {count} fichiers"
+  }
+}
