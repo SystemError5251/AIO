@@ -7,6 +7,7 @@ from aio.core.context import AppContext
 from aio.core.i18n import load_meta
 from aio.core.media import MissingTool
 from aio.core.registry import Plugin
+from aio.core.ui.doctor import system_check
 from aio.core.ui.language_picker import choose_language
 from aio.core.ui.plugins import manage_plugins
 from aio.core.ui.review import open_count, review_translations
@@ -63,6 +64,7 @@ def settings_menu(ctx: AppContext) -> None:
         ctx.print(f"   5) {ctx.t('settings.review')}"
                   + (f" ({pending})" if pending else ""))
         ctx.print(f"   6) {ctx.t('settings.plugins')} ({len(ctx.plugins)})")
+        ctx.print(f"   7) {ctx.t('settings.doctor')}")
         ctx.print(f"   b) {ctx.t('menu.back')}")
         answer = ctx.ask(ctx.t("menu.prompt") + " ")
         if answer is None or answer.lower() in ("b", "q", ""):
@@ -79,6 +81,8 @@ def settings_menu(ctx: AppContext) -> None:
             review_translations(ctx)
         elif answer == "6":
             manage_plugins(ctx)
+        elif answer == "7":
+            system_check(ctx)
         else:
             ctx.print(ctx.t("menu.invalid"))
 

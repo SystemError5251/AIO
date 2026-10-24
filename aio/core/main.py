@@ -10,6 +10,7 @@ from aio import __version__
 from aio.core import config, plugin_manager, registry, review
 from aio.core.context import AppContext
 from aio.core.i18n import available_languages, detect_system_language, get_translator
+from aio.core.ui.doctor import report, system_check
 from aio.core.ui.language_picker import choose_language
 from aio.core.ui.menu import main_menu, print_tool_list
 from aio.core.ui.review import review_translations
@@ -33,6 +34,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--install-plugin", metavar="SOURCE",
                         help="install a plugin from a folder, .zip or git URL and exit")
     parser.add_argument("--remove-plugin", metavar="ID", help="remove an installed plugin and exit")
+    parser.add_argument("--doctor", action="store_true",
+                        help="check which programs and keys the tools need and exit")
     parser.add_argument("--update", action="store_true", help="update AIO from GitHub and exit")
     parser.add_argument("--list", action="store_true", help="list tools and exit")
     parser.add_argument("--version", action="version", version=f"aio {__version__}")
@@ -95,6 +98,10 @@ def main(argv: Sequence[str] | None = None,
                 translator.language = code
                 ctx.config = config.set_value("language", code)
         # Non-interactive (pipes, scripts): use the suggestion without saving it.
+
+    if args.doctor:
+        checks = system_check(ctx) if interactive else report(ctx)
+        return 0 if all(c.ok or c.optional for c in checks) else 1
 
     if args.update:
         update_now(ctx)

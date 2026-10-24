@@ -98,5 +98,22 @@
   "plugins.error_id": "Ungültige Plugin-ID „{id}“: erlaubt sind Kleinbuchstaben, Ziffern und _.",
   "plugins.error_builtin": "„{id}“ ist bereits ein eingebautes Tool.",
   "plugins.error_locales": "Es fehlen Sprachdateien für: {langs}. Jedes Plugin braucht mindestens Deutsch und Englisch.",
-  "plugins.error_not_installed": "Kein installiertes Plugin „{id}“."
+  "plugins.error_not_installed": "Kein installiertes Plugin „{id}“.",
+  "settings.doctor": "Systemcheck",
+  "doctor.title": "Systemcheck",
+  "doctor.install": "Installieren: {cmd}",
+  "doctor.python_old": "Python {version} ist zu alt, nötig ist 3.11 oder neuer.",
+  "doctor.acoustid_missing": "Kein AcoustID-Schlüssel. Kostenlos unter https://acoustid.org/new-application erstellen.",
+  "doctor.termux_api": "Installieren: {cmd}, dazu die App Termux:API (F-Droid).",
+  "doctor.storage_missing": "Kein Zugriff auf den Handyspeicher. Einmal termux-setup-storage ausführen.",
+  "doctor.summary": {
+    "one": "{count} nötiger Punkt fehlt.",
+    "other": "{count} nötige Punkte fehlen."
+  },
+  "doctor.all_ok": "Alles Nötige ist da.",
+  "doctor.ask_acoustid": "AcoustID-Schlüssel eingeben (Enter = überspringen):",
+  "doctor.testing_key": "Schlüssel wird geprüft …",
+  "doctor.key_rejected": "AcoustID hat den Schlüssel abgelehnt, er wurde nicht gespeichert.",
+  "doctor.key_saved": "Schlüssel funktioniert und ist gespeichert.",
+  "doctor.key_saved_untested": "AcoustID ist gerade nicht erreichbar. Schlüssel trotzdem gespeichert, aber ungeprüft."
 }

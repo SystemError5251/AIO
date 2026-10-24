@@ -98,5 +98,22 @@
   "plugins.error_id": "Invalid plugin id \"{id}\": use lower case letters, digits and _.",
   "plugins.error_builtin": "\"{id}\" is already a built-in tool.",
   "plugins.error_locales": "Language files missing for: {langs}. Every plugin needs at least German and English.",
-  "plugins.error_not_installed": "No installed plugin \"{id}\"."
+  "plugins.error_not_installed": "No installed plugin \"{id}\".",
+  "settings.doctor": "System check",
+  "doctor.title": "System check",
+  "doctor.install": "Install: {cmd}",
+  "doctor.python_old": "Python {version} is too old, 3.11 or newer is needed.",
+  "doctor.acoustid_missing": "No AcoustID key. Create one for free at https://acoustid.org/new-application.",
+  "doctor.termux_api": "Install: {cmd}, plus the Termux:API app (F-Droid).",
+  "doctor.storage_missing": "No access to phone storage. Run termux-setup-storage once.",
+  "doctor.summary": {
+    "one": "{count} required item is missing.",
+    "other": "{count} required items are missing."
+  },
+  "doctor.all_ok": "Everything required is there.",
+  "doctor.ask_acoustid": "Enter AcoustID key (Enter = skip):",
+  "doctor.testing_key": "Checking key …",
+  "doctor.key_rejected": "AcoustID rejected the key, it was not saved.",
+  "doctor.key_saved": "Key works and is saved.",
+  "doctor.key_saved_untested": "AcoustID is not reachable right now. Key saved anyway, but untested."
 }
