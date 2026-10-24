@@ -9,7 +9,7 @@ def test_first_start_shows_picker_and_saves_choice(term, monkeypatch):
     t = term(["", "q"])  # Enter = take suggested German, then quit
     assert main([], input_fn=t.input, print_fn=t.print, interactive=True) == 0
     assert "Wähle deine Sprache" in t.text
-    assert "* 1) Deutsch" in t.text
+    assert "* 2) Deutsch (German) [de]" in t.text
     assert "Tschüss!" in t.text
     assert config.load()["language"] == "de"
 

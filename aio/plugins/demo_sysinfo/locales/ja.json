@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "システム情報（デモ）",
+  "demo_sysinfo.desc": "Python のバージョン、システム、空き容量を表示します。",
+  "demo_sysinfo.help": "読み取り専用の小さなデモプラグインです。何も変更せず、端末の情報を表示するだけです。",
+  "demo_sysinfo.python": "Python：{version}",
+  "demo_sysinfo.system": "システム：{system}",
+  "demo_sysinfo.termux": "Termux で実行中：{value}",
+  "demo_sysinfo.yes": "はい",
+  "demo_sysinfo.no": "いいえ",
+  "demo_sysinfo.disk": "空き容量：{free} GB"
+}

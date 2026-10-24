@@ -55,9 +55,24 @@ Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln.
 
 Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`). Es wird nie etwas überschrieben.
 
+## Sprachen
+
+15 Sprachen sind enthalten: Deutsch und Englisch von Hand, dazu Arabisch, Chinesisch, Französisch, Hebräisch, Hindi, Italienisch, Japanisch, Polnisch, Portugiesisch, Russisch, Spanisch, Türkisch und Ukrainisch als maschinelle Übersetzung. Maschinell übersetzte Texte stehen in jeder Datei unter `"_auto"`. Wer einen Text geprüft hat, nimmt ihn dort heraus. `python -m aio.tools.check_locales` zählt, wie viele noch offen sind.
+
+Arabisch und Hebräisch werden rechtsbündig ausgegeben (Flag `dir` in `_meta.json`).
+
 ## Erweitern
 
-**Neue Sprache:** Eintrag in `aio/locales/_meta.json` und Datei `aio/locales/<code>.json` anlegen, kein Code nötig. Fehlende Texte fallen auf Englisch und dann auf den Schlüssel zurück.
+**Neue Sprache:** Eintrag in `aio/locales/_meta.json` (Name in eigener Schrift, `ltr`/`rtl`), dann die Texte erzeugen lassen oder `aio/locales/<code>.json` von Hand anlegen:
+
+```sh
+pip install -e ".[translate]"
+export ANTHROPIC_API_KEY=...
+python -m aio.tools.translate nl          # nur fehlende Texte, mit Cache
+python -m aio.tools.translate --dry-run   # zeigt nur, was fehlt
+```
+
+`translate.py` schickt nur fehlende Schlüssel an die Claude-API, merkt sich Ergebnisse in `~/.aio/translate_cache.json` und markiert alles Neue als `"_auto"`. Fehlende Texte fallen zur Laufzeit auf Englisch und danach auf den Schlüsselnamen zurück.
 
 **Neues Tool:** Ordner in `aio/plugins/` oder `~/.aio/plugins/` mit `manifest.json`, `plugin.py` (Funktion `run(ctx)`) und `locales/de.json` + `en.json`. Vorlage: `aio/plugins/demo_hello`.
 

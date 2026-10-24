@@ -1,0 +1,34 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "Gizlilik temizleyici",
+  "privacy_strip.desc": "Paylaşmadan önce video ve fotoğraflardan konum, cihaz ve zaman bilgilerini kaldırır.",
+  "privacy_strip.help": "Bir dosya ya da bütün bir klasör ver. Fotoğraflar (JPEG, PNG) kayıpsız temizlenir; yan görünmemeleri için döndürme bilgisi korunur. Videolar (MP4, MOV, MKV, WebM, …) yeniden kodlanmadan; GPS izleri, cihaz adları ve zaman damgaları olmadan kopyalanır. Orijinal dosyaya dokunulmaz; sonuç yanına <ad>.clean.<uzantı> olarak kaydedilir. Videolar için ffmpeg gerekir (pkg install ffmpeg). İpucu: Termux'ta bir kez termux-setup-storage çalıştır; kamera klasörün ~/storage/dcim/Camera altında olur.",
+  "privacy_strip.ask_path": "Dosya veya klasör (Enter = iptal):",
+  "privacy_strip.nothing_found": "Desteklenen fotoğraf veya video bulunamadı.",
+  "privacy_strip.unsupported": "Atlandı: {ext} desteklenmiyor.",
+  "privacy_strip.failed": "Başarısız: {error}",
+  "privacy_strip.removed": {
+    "one": "{count} kayıt kaldırıldı: {items}",
+    "other": "{count} kayıt kaldırıldı: {items}"
+  },
+  "privacy_strip.already_clean": "Meta veri bulunamadı, yine de temiz bir kopya kaydedildi.",
+  "privacy_strip.remaining": "Hâlâ mevcut (lütfen kontrol et): {items}",
+  "privacy_strip.saved": "Kaydedildi: {path}",
+  "privacy_strip.summary": {
+    "one": "Bitti: {total} dosyadan {count} tanesi temizlendi.",
+    "other": "Bitti: {total} dosyadan {count} tanesi temizlendi."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "Info do sistema (demo)",
+  "demo_sysinfo.desc": "Mostra a versão do Python, o sistema e o espaço livre.",
+  "demo_sysinfo.help": "Um pequeno plugin de demonstração somente leitura. Não altera nada e só mostra informações sobre o seu aparelho.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "Sistema: {system}",
+  "demo_sysinfo.termux": "Rodando no Termux: {value}",
+  "demo_sysinfo.yes": "sim",
+  "demo_sysinfo.no": "não",
+  "demo_sysinfo.disk": "Espaço livre: {free} GB"
+}

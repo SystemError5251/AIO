@@ -1,0 +1,38 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "Czyszczenie prywatności",
+  "privacy_strip.desc": "Usuwa dane o miejscu, urządzeniu i czasie z filmów i zdjęć, zanim je udostępnisz.",
+  "privacy_strip.help": "Podaj plik lub cały folder. Zdjęcia (JPEG, PNG) są czyszczone bezstratnie; obrót zostaje zachowany, żeby nie wyświetlały się bokiem. Filmy (MP4, MOV, MKV, WebM, …) są kopiowane bez ponownego kodowania, bez śladów GPS, nazw urządzeń i znaczników czasu. Oryginał pozostaje nietknięty; wynik jest zapisywany obok jako <nazwa>.clean.<rozszerzenie>. Filmy wymagają ffmpeg (pkg install ffmpeg). Wskazówka: uruchom raz w Termux termux-setup-storage; folder aparatu znajdziesz wtedy w ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "Plik lub folder (Enter = anuluj):",
+  "privacy_strip.nothing_found": "Nie znaleziono obsługiwanych zdjęć ani filmów.",
+  "privacy_strip.unsupported": "Pominięto: {ext} nie jest obsługiwane.",
+  "privacy_strip.failed": "Niepowodzenie: {error}",
+  "privacy_strip.removed": {
+    "one": "Usunięto {count} wpis: {items}",
+    "few": "Usunięto {count} wpisy: {items}",
+    "many": "Usunięto {count} wpisów: {items}",
+    "other": "Usunięto {count} wpisu: {items}"
+  },
+  "privacy_strip.already_clean": "Nie znaleziono metadanych, mimo to zapisano czystą kopię.",
+  "privacy_strip.remaining": "Wciąż obecne (sprawdź): {items}",
+  "privacy_strip.saved": "Zapisano: {path}",
+  "privacy_strip.summary": {
+    "one": "Gotowe: wyczyszczono {count} z {total} pliku.",
+    "few": "Gotowe: wyczyszczono {count} z {total} plików.",
+    "many": "Gotowe: wyczyszczono {count} z {total} plików.",
+    "other": "Gotowe: wyczyszczono {count} z {total} plików."
+  }
+}

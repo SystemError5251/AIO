@@ -1,0 +1,34 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "Pulitore privacy",
+  "privacy_strip.desc": "Rimuove dati di posizione, dispositivo e ora da video e foto prima di condividerli.",
+  "privacy_strip.help": "Indica un file o un’intera cartella. Le foto (JPEG, PNG) vengono pulite senza perdita; la rotazione viene mantenuta così non appaiono di traverso. I video (MP4, MOV, MKV, WebM, …) vengono copiati senza ricodifica, senza tracce GPS, nomi del dispositivo e date. L’originale resta intatto; il risultato viene salvato accanto come <nome>.clean.<ext>. Per i video serve ffmpeg (pkg install ffmpeg). Suggerimento: in Termux esegui una volta termux-setup-storage; la cartella della fotocamera sarà in ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "File o cartella (Invio = annulla):",
+  "privacy_strip.nothing_found": "Nessuna foto o video supportato trovato.",
+  "privacy_strip.unsupported": "Saltato: {ext} non è supportato.",
+  "privacy_strip.failed": "Non riuscito: {error}",
+  "privacy_strip.removed": {
+    "one": "{count} voce rimossa: {items}",
+    "other": "{count} voci rimosse: {items}"
+  },
+  "privacy_strip.already_clean": "Nessun metadato trovato, è stata comunque salvata una copia pulita.",
+  "privacy_strip.remaining": "Ancora presente (da controllare): {items}",
+  "privacy_strip.saved": "Salvato: {path}",
+  "privacy_strip.summary": {
+    "one": "Fatto: {count} file su {total} pulito.",
+    "other": "Fatto: {count} file su {total} puliti."
+  }
+}

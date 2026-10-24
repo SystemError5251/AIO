@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "你好（演示）",
+  "demo_hello.desc": "向你问好的示例插件，可作为新工具的模板。",
+  "demo_hello.help": "询问你的名字并向你问好。同时演示插件如何使用自己的翻译、复数形式以及所选语言的日期格式。",
+  "demo_hello.ask_name": "你叫什么名字？",
+  "demo_hello.stranger": "朋友",
+  "demo_hello.greeting": "你好，{name}！",
+  "demo_hello.today": "今天是 {date}。",
+  "demo_hello.files": {
+    "other": "复数示例：{count} 个文件"
+  }
+}

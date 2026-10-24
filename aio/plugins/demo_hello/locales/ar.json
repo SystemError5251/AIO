@@ -1,0 +1,27 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "مرحبًا (تجريبي)",
+  "demo_hello.desc": "إضافة تجريبية تحيّيك. تُستخدم قالبًا لأدوات جديدة.",
+  "demo_hello.help": "تسألك عن اسمك ثم تحيّيك. وتوضح أيضًا كيف تستخدم الإضافة ترجماتها الخاصة وصيغ الجمع وتنسيق التاريخ للغة المختارة.",
+  "demo_hello.ask_name": "ما اسمك؟",
+  "demo_hello.stranger": "غريب",
+  "demo_hello.greeting": "مرحبًا يا {name}!",
+  "demo_hello.today": "اليوم هو {date}.",
+  "demo_hello.files": {
+    "zero": "مثال على الجمع: لا ملفات",
+    "one": "مثال على الجمع: ملف واحد",
+    "two": "مثال على الجمع: ملفان",
+    "few": "مثال على الجمع: {count} ملفات",
+    "many": "مثال على الجمع: {count} ملفًا",
+    "other": "مثال على الجمع: {count} ملف"
+  }
+}

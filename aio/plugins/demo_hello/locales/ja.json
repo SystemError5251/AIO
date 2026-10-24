@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_hello.ask_name",
+    "demo_hello.desc",
+    "demo_hello.files",
+    "demo_hello.greeting",
+    "demo_hello.help",
+    "demo_hello.name",
+    "demo_hello.stranger",
+    "demo_hello.today"
+  ],
+  "demo_hello.name": "こんにちは（デモ）",
+  "demo_hello.desc": "あいさつするサンプルプラグイン。新しいツールのひな形になります。",
+  "demo_hello.help": "名前を聞いてあいさつします。プラグインが自分の翻訳、複数形、選んだ言語の日付形式をどう使うかも示します。",
+  "demo_hello.ask_name": "お名前は？",
+  "demo_hello.stranger": "ゲスト",
+  "demo_hello.greeting": "こんにちは、{name}さん！",
+  "demo_hello.today": "今日は {date} です。",
+  "demo_hello.files": {
+    "other": "複数形の例：ファイル {count} 個"
+  }
+}

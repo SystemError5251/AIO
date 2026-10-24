@@ -1,0 +1,34 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "מנקה פרטיות",
+  "privacy_strip.desc": "מסיר נתוני מיקום, מכשיר ושעה מסרטונים ומתמונות לפני שמשתפים אותם.",
+  "privacy_strip.help": "ציינו קובץ או תיקייה שלמה. תמונות (JPEG, PNG) מנוקות ללא אובדן; הסיבוב נשמר כדי שלא יוצגו הפוכות. סרטונים (MP4, MOV, MKV, WebM, …) מועתקים בלי קידוד מחדש, בלי מסלולי GPS, שמות מכשירים וחותמות זמן. המקור נשאר ללא שינוי; התוצאה נשמרת לצדו בשם <name>.clean.<ext>. לסרטונים נדרש ffmpeg (pkg install ffmpeg). טיפ: הריצו פעם אחת termux-setup-storage ב-Termux; תיקיית המצלמה תהיה ב-~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "קובץ או תיקייה (Enter = ביטול):",
+  "privacy_strip.nothing_found": "לא נמצאו תמונות או סרטונים נתמכים.",
+  "privacy_strip.unsupported": "דולג: {ext} אינו נתמך.",
+  "privacy_strip.failed": "נכשל: {error}",
+  "privacy_strip.removed": {
+    "one": "הוסרה רשומה אחת: {items}",
+    "other": "הוסרו {count} רשומות: {items}"
+  },
+  "privacy_strip.already_clean": "לא נמצאו מטא-נתונים, ובכל זאת נשמר עותק נקי.",
+  "privacy_strip.remaining": "עדיין קיים (כדאי לבדוק): {items}",
+  "privacy_strip.saved": "נשמר: {path}",
+  "privacy_strip.summary": {
+    "one": "הסתיים: נוקה קובץ אחד מתוך {total}.",
+    "other": "הסתיים: נוקו {count} קבצים מתוך {total}."
+  }
+}

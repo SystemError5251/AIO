@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "Informacje o systemie (demo)",
+  "demo_sysinfo.desc": "Pokazuje wersję Pythona, system i wolne miejsce.",
+  "demo_sysinfo.help": "Mała wtyczka demonstracyjna tylko do odczytu. Niczego nie zmienia, tylko pokazuje informacje o urządzeniu.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "System: {system}",
+  "demo_sysinfo.termux": "Uruchomione w Termux: {value}",
+  "demo_sysinfo.yes": "tak",
+  "demo_sysinfo.no": "nie",
+  "demo_sysinfo.disk": "Wolne miejsce: {free} GB"
+}

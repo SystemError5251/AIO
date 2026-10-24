@@ -1,0 +1,34 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "प्राइवेसी क्लीनर",
+  "privacy_strip.desc": "शेयर करने से पहले वीडियो और फ़ोटो से स्थान, डिवाइस और समय की जानकारी हटाता है।",
+  "privacy_strip.help": "एक फ़ाइल या पूरा फ़ोल्डर दें। फ़ोटो (JPEG, PNG) बिना गुणवत्ता खोए साफ़ होती हैं; रोटेशन बना रहता है ताकि वे तिरछी न दिखें। वीडियो (MP4, MOV, MKV, WebM, …) दोबारा एन्कोड किए बिना, GPS ट्रैक, डिवाइस के नाम और टाइमस्टैम्प हटाकर कॉपी होते हैं। मूल फ़ाइल नहीं बदलती; नतीजा उसके पास <नाम>.clean.<एक्सटेंशन> के रूप में सहेजा जाता है। वीडियो के लिए ffmpeg चाहिए (pkg install ffmpeg)। सुझाव: Termux में एक बार termux-setup-storage चलाएँ; आपका कैमरा फ़ोल्डर ~/storage/dcim/Camera में होगा।",
+  "privacy_strip.ask_path": "फ़ाइल या फ़ोल्डर (Enter = रद्द करें):",
+  "privacy_strip.nothing_found": "कोई समर्थित फ़ोटो या वीडियो नहीं मिला।",
+  "privacy_strip.unsupported": "छोड़ा गया: {ext} समर्थित नहीं है।",
+  "privacy_strip.failed": "विफल: {error}",
+  "privacy_strip.removed": {
+    "one": "{count} प्रविष्टि हटाई गई: {items}",
+    "other": "{count} प्रविष्टियाँ हटाई गईं: {items}"
+  },
+  "privacy_strip.already_clean": "कोई मेटाडेटा नहीं मिला, फिर भी एक साफ़ कॉपी सहेज दी गई।",
+  "privacy_strip.remaining": "अब भी मौजूद (कृपया जाँचें): {items}",
+  "privacy_strip.saved": "सहेजा गया: {path}",
+  "privacy_strip.summary": {
+    "one": "हो गया: {total} में से {count} फ़ाइल साफ़ हुई।",
+    "other": "हो गया: {total} में से {count} फ़ाइलें साफ़ हुईं।"
+  }
+}

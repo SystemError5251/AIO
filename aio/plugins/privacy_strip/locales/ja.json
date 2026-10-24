@@ -1,0 +1,32 @@
+{
+  "_auto": [
+    "privacy_strip.already_clean",
+    "privacy_strip.ask_path",
+    "privacy_strip.desc",
+    "privacy_strip.failed",
+    "privacy_strip.help",
+    "privacy_strip.name",
+    "privacy_strip.nothing_found",
+    "privacy_strip.remaining",
+    "privacy_strip.removed",
+    "privacy_strip.saved",
+    "privacy_strip.summary",
+    "privacy_strip.unsupported"
+  ],
+  "privacy_strip.name": "プライバシー削除",
+  "privacy_strip.desc": "共有する前に、動画や写真から位置・端末・日時の情報を取り除きます。",
+  "privacy_strip.help": "ファイルまたはフォルダーごと指定します。写真（JPEG、PNG）は劣化なしで処理し、横向きに表示されないよう回転情報は残します。動画（MP4、MOV、MKV、WebM など）は再エンコードせず、GPS 記録・端末名・タイムスタンプを除いてコピーします。元のファイルはそのままで、結果は隣に <名前>.clean.<拡張子> として保存されます。動画には ffmpeg が必要です（pkg install ffmpeg）。ヒント：Termux で一度 termux-setup-storage を実行すると、カメラのフォルダーは ~/storage/dcim/Camera にあります。",
+  "privacy_strip.ask_path": "ファイルまたはフォルダー（Enter = キャンセル）：",
+  "privacy_strip.nothing_found": "対応する写真や動画が見つかりません。",
+  "privacy_strip.unsupported": "スキップ：{ext} には対応していません。",
+  "privacy_strip.failed": "失敗：{error}",
+  "privacy_strip.removed": {
+    "other": "{count} 件を削除：{items}"
+  },
+  "privacy_strip.already_clean": "メタデータは見つかりませんでしたが、きれいなコピーを保存しました。",
+  "privacy_strip.remaining": "まだ残っています（確認してください）：{items}",
+  "privacy_strip.saved": "保存しました：{path}",
+  "privacy_strip.summary": {
+    "other": "完了：{total} 件中 {count} 件を処理しました。"
+  }
+}

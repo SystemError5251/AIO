@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "demo_sysinfo.desc",
+    "demo_sysinfo.disk",
+    "demo_sysinfo.help",
+    "demo_sysinfo.name",
+    "demo_sysinfo.no",
+    "demo_sysinfo.python",
+    "demo_sysinfo.system",
+    "demo_sysinfo.termux",
+    "demo_sysinfo.yes"
+  ],
+  "demo_sysinfo.name": "Сведения о системе (демо)",
+  "demo_sysinfo.desc": "Показывает версию Python, систему и свободное место.",
+  "demo_sysinfo.help": "Небольшой демонстрационный плагин только для чтения. Ничего не меняет и лишь показывает сведения об устройстве.",
+  "demo_sysinfo.python": "Python: {version}",
+  "demo_sysinfo.system": "Система: {system}",
+  "demo_sysinfo.termux": "Запущено в Termux: {value}",
+  "demo_sysinfo.yes": "да",
+  "demo_sysinfo.no": "нет",
+  "demo_sysinfo.disk": "Свободно: {free} ГБ"
+}
