@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "שיתוף קבצים ב-Wi-Fi",
+  "wifi_share.desc": "משתף תיקייה עם מכשירים באותה רשת Wi-Fi, בלי אפליקציה: פותחים את הקישור בדפדפן ומורידים.",
+  "wifi_share.help": "מפעיל שרת אינטרנט קטן בטלפון. הכתובת כוללת מפתח אקראי, כך שרק מי שיש לו את הקישור נכנס. מבקרים רואים את הקבצים ומורידים אותם. אם תאפשרו, הם יוכלו גם להעלות קבצים לתיקייה; קבצים קיימים לעולם לא מוחלפים. הגישה מוגבלת לתיקייה המשותפת. השרת פועל עד שלוחצים Enter. טיפ: אחרי pkg install libqrencode מוצג גם קוד QR.",
+  "wifi_share.ask_folder": "תיקייה לשיתוף (Enter = ביטול):",
+  "wifi_share.ask_upload": "לאפשר למבקרים להעלות קבצים?",
+  "wifi_share.running": "משתף את {path} בכתובת:",
+  "wifi_share.hint": "פתחו את הכתובת במכשיר באותה רשת Wi-Fi. לא עובד ברשת אורחים או בגלישה סלולרית.",
+  "wifi_share.stop_prompt": "Enter = הפסקת השיתוף",
+  "wifi_share.stopped": "הופסק. בקשות: {requests}, הועלו: {uploads}."
+}

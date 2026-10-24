@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Обмен по Wi-Fi",
+  "wifi_share.desc": "Открывает папку для устройств в той же Wi-Fi-сети без приложений: откройте ссылку в браузере и скачайте.",
+  "wifi_share.help": "Запускает на телефоне небольшой веб-сервер. Адрес содержит случайный ключ, поэтому войти может только тот, у кого есть ссылка. Посетители видят файлы и скачивают их. Если разрешить, они смогут и загружать файлы в папку; существующие файлы никогда не заменяются. Доступ ограничен общей папкой. Сервер работает, пока вы не нажмёте Enter. Совет: после pkg install libqrencode показывается ещё и QR-код.",
+  "wifi_share.ask_folder": "Папка для обмена (Enter = отмена):",
+  "wifi_share.ask_upload": "Разрешить посетителям загружать файлы?",
+  "wifi_share.running": "Папка {path} доступна по адресу:",
+  "wifi_share.hint": "Откройте адрес на устройстве в той же Wi-Fi-сети. В гостевой сети и через мобильный интернет это не работает.",
+  "wifi_share.stop_prompt": "Enter = завершить обмен",
+  "wifi_share.stopped": "Завершено. Запросов: {requests}, загружено: {uploads}."
+}

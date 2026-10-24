@@ -29,7 +29,7 @@ Für das Teilen-Menü zusätzlich die App **Termux:API** aus F-Droid installiere
 <summary>Manuell installieren</summary>
 
 ```sh
-pkg install python python-pip git ffmpeg termux-api
+pkg install python python-pip git ffmpeg termux-api python-cryptography
 git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 ```
 </details>
@@ -60,6 +60,9 @@ Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln.
 | Zuschneiden | Schneidet auf 9:16, 1:1, 4:5 oder 16:9 zu (Mitte, links/oben, rechts/unten) und kürzt Anfang/Ende | ffmpeg |
 | Speicher-Aufräumer | Findet große Dateien, exakte Duplikate (Prüfsumme) und Cache-Müll; löscht nur nach Rückfrage | – |
 | Git-Backup | Sichert Ordner versioniert mit git, optional auf GitHub/GitLab; lässt Dateien über 95 MB aus | git |
+| Website-Wächter | Prüft Erreichbarkeit, Antwortzeit und Änderungen am sichtbaren Text; optional ein Text, der auf der Seite stehen muss | – |
+| WLAN-Dateiteiler | Teilt einen Ordner per Link mit Zufallsschlüssel im selben WLAN, optional mit Upload (überschreibt nie) | optional `libqrencode` für QR-Code |
+| Secrets-Tresor | API-Schlüssel und Passwörter mit AES-256-GCM verschlüsselt, Master-Passwort per scrypt; Kopieren in die Zwischenablage | `python-cryptography`; optional termux-api |
 
 Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`, `clip.crop.mp4` …). Es wird nie etwas überschrieben.
 

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Condivisione Wi-Fi",
+  "wifi_share.desc": "Condivide una cartella con i dispositivi nella stessa Wi-Fi, senza app: apri il link nel browser e scarica.",
+  "wifi_share.help": "Avvia un piccolo server web sul telefono. L’indirizzo contiene una chiave casuale, quindi entra solo chi ha il link. I visitatori vedono i file e li scaricano. Se lo permetti, possono anche caricare file nella cartella; i file esistenti non vengono mai sostituiti. L’accesso è limitato alla cartella condivisa. Il server resta attivo finché non premi Invio. Suggerimento: con pkg install libqrencode compare anche un codice QR.",
+  "wifi_share.ask_folder": "Cartella da condividere (Invio = annulla):",
+  "wifi_share.ask_upload": "I visitatori possono caricare file?",
+  "wifi_share.running": "Condivido {path} all’indirizzo:",
+  "wifi_share.hint": "Apri l’indirizzo su un dispositivo nella stessa Wi-Fi. Non funziona nella Wi-Fi ospiti né con i dati mobili.",
+  "wifi_share.stop_prompt": "Invio = termina la condivisione",
+  "wifi_share.stopped": "Terminato. Richieste: {requests}, caricati: {uploads}."
+}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import getpass
 import shutil
 import textwrap
 import unicodedata
@@ -65,6 +66,15 @@ class AppContext:
         """Yes/no question; accepted first letters come from "common.yes_letters"."""
         answer = self.ask(f"{prompt} ({self.t('common.yes_no')}) ")
         return bool(answer) and answer[0].casefold() in self.t("common.yes_letters").casefold()
+
+    def ask_secret(self, prompt: str) -> str | None:
+        """Like ask(), but the typed text is not shown (passwords)."""
+        reader = getpass.getpass if self.input_fn is input else self.input_fn
+        try:
+            return reader(prompt)
+        except (EOFError, KeyboardInterrupt):
+            self.print_fn("")
+            return None
 
     def ask(self, prompt: str) -> str | None:
         """Read one line. Returns None on Ctrl+D / Ctrl+C so callers can exit cleanly."""

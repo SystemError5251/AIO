@@ -1,0 +1,23 @@
+{
+  "site_watch.name": "Website-Wächter",
+  "site_watch.desc": "Prüft, ob Websites erreichbar sind und ob sich ihr Inhalt geändert hat.",
+  "site_watch.help": "Speichere Adressen, die du im Blick behalten willst: die eigene Seite, ein Produkt, eine Ankündigung. Bei jeder Prüfung siehst du HTTP-Status und Antwortzeit sowie ob sich der sichtbare Text seit dem letzten Mal geändert hat (Skripte, Werbung im HTML-Code und Leerzeichen zählen nicht). Optional gibst du einen Text an, der auf der Seite stehen muss, zum Beispiel „Auf Lager“. Gespeichert wird nur ein Fingerabdruck, nicht die Seite selbst.",
+  "site_watch.down": "Nicht erreichbar: {error}",
+  "site_watch.http_error": "Fehler vom Server: {error}",
+  "site_watch.changed": "Inhalt hat sich geändert!",
+  "site_watch.unchanged": "Inhalt unverändert.",
+  "site_watch.first_check": "Erste Prüfung, ab jetzt werden Änderungen erkannt.",
+  "site_watch.text_found": "Text gefunden: „{text}“",
+  "site_watch.text_missing": "Text fehlt: „{text}“",
+  "site_watch.status": "Status {status}, {ms} ms",
+  "site_watch.list_title": "Beobachtete Websites:",
+  "site_watch.check": "Alle jetzt prüfen",
+  "site_watch.none_yet": "Noch keine Websites gespeichert.",
+  "site_watch.add": "Website hinzufügen",
+  "site_watch.remove": "Website entfernen",
+  "site_watch.ask_url": "Adresse (z. B. example.org, Enter = abbrechen):",
+  "site_watch.ask_text": "Text, der auf der Seite stehen muss (Enter = keiner):",
+  "site_watch.checking": "Prüfe …",
+  "site_watch.remove_prompt": "Welche? (Enter = abbrechen):",
+  "site_watch.removed": "Entfernt: {url}"
+}

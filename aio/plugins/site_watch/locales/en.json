@@ -1,0 +1,23 @@
+{
+  "site_watch.name": "Website watcher",
+  "site_watch.desc": "Checks whether websites are reachable and whether their content changed.",
+  "site_watch.help": "Save addresses you want to keep an eye on: your own site, a product, an announcement. Each check shows the HTTP status and response time and whether the visible text changed since last time (scripts, ads in the HTML code and whitespace do not count). Optionally give a text that must be on the page, for example \"In stock\". Only a fingerprint is stored, not the page itself.",
+  "site_watch.down": "Not reachable: {error}",
+  "site_watch.http_error": "Error from the server: {error}",
+  "site_watch.changed": "Content has changed!",
+  "site_watch.unchanged": "Content unchanged.",
+  "site_watch.first_check": "First check, changes are detected from now on.",
+  "site_watch.text_found": "Text found: \"{text}\"",
+  "site_watch.text_missing": "Text missing: \"{text}\"",
+  "site_watch.status": "Status {status}, {ms} ms",
+  "site_watch.list_title": "Watched websites:",
+  "site_watch.check": "Check all now",
+  "site_watch.none_yet": "No websites saved yet.",
+  "site_watch.add": "Add website",
+  "site_watch.remove": "Remove website",
+  "site_watch.ask_url": "Address (e.g. example.org, Enter = cancel):",
+  "site_watch.ask_text": "Text that must be on the page (Enter = none):",
+  "site_watch.checking": "Checking …",
+  "site_watch.remove_prompt": "Which one? (Enter = cancel):",
+  "site_watch.removed": "Removed: {url}"
+}

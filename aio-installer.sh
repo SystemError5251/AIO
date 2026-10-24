@@ -12,7 +12,7 @@ say() { printf '\033[1;36m==>\033[0m %s\n' "$*"; }
 
 if [ -n "${TERMUX_VERSION:-}" ] || command -v termux-info >/dev/null 2>&1; then
     say "Termux erkannt: installiere python, git, ffmpeg, termux-api"
-    pkg install -y python python-pip git ffmpeg termux-api
+    pkg install -y python python-pip git ffmpeg termux-api python-cryptography
 else
     for cmd in python3 git; do
         command -v "$cmd" >/dev/null 2>&1 || { echo "Fehlt: $cmd – bitte zuerst installieren." >&2; exit 1; }

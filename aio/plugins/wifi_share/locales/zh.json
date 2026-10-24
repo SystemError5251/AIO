@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Wi-Fi 文件共享",
+  "wifi_share.desc": "无需 App，与同一 Wi-Fi 下的设备共享文件夹：在浏览器中打开链接即可下载。",
+  "wifi_share.help": "在手机上启动一个小型网页服务器。地址里含有随机密钥，只有拿到链接的人才能进入。访问者可以看到并下载文件。如果你允许，他们也能把文件上传到这个文件夹；已有文件绝不会被替换。访问仅限于共享的文件夹。服务器会一直运行，直到你按 Enter。提示：运行 pkg install libqrencode 后还会显示二维码。",
+  "wifi_share.ask_folder": "要共享的文件夹（Enter = 取消）：",
+  "wifi_share.ask_upload": "允许访问者上传文件吗？",
+  "wifi_share.running": "正在共享 {path}，地址：",
+  "wifi_share.hint": "在同一 Wi-Fi 下的设备上打开这个地址。在访客 Wi-Fi 或移动数据下无法使用。",
+  "wifi_share.stop_prompt": "Enter = 停止共享",
+  "wifi_share.stopped": "已停止。请求：{requests}，上传：{uploads}。"
+}

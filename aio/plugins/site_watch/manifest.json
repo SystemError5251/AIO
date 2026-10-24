@@ -1,0 +1,10 @@
+{
+  "id": "site_watch",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "network",
+  "requires": [],
+  "name_key": "site_watch.name",
+  "desc_key": "site_watch.desc",
+  "help_key": "site_watch.help"
+}

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Compartilhar por Wi-Fi",
+  "wifi_share.desc": "Compartilha uma pasta com aparelhos na mesma Wi-Fi, sem app: abra o link no navegador e baixe.",
+  "wifi_share.help": "Inicia um pequeno servidor web no celular. O endereço contém uma chave aleatória, então só entra quem tem o link. Os visitantes veem os arquivos e os baixam. Se você permitir, também podem enviar arquivos para a pasta; arquivos existentes nunca são substituídos. O acesso fica restrito à pasta compartilhada. O servidor roda até você apertar Enter. Dica: com pkg install libqrencode aparece também um QR code.",
+  "wifi_share.ask_folder": "Pasta para compartilhar (Enter = cancelar):",
+  "wifi_share.ask_upload": "Os visitantes podem enviar arquivos?",
+  "wifi_share.running": "Compartilhando {path} em:",
+  "wifi_share.hint": "Abra o endereço num aparelho na mesma Wi-Fi. Não funciona em Wi-Fi de convidados nem com dados móveis.",
+  "wifi_share.stop_prompt": "Enter = parar de compartilhar",
+  "wifi_share.stopped": "Parado. Acessos: {requests}, enviados: {uploads}."
+}

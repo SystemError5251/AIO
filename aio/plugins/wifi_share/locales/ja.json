@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Wi-Fi ファイル共有",
+  "wifi_share.desc": "同じ Wi-Fi の端末とアプリなしでフォルダーを共有します：ブラウザーでリンクを開いてダウンロード。",
+  "wifi_share.help": "スマホで小さな Web サーバーを起動します。アドレスにはランダムな鍵が含まれるので、リンクを知っている人だけが入れます。訪問者はファイルを見てダウンロードできます。許可すると、フォルダーへのアップロードもできます。既存のファイルが置き換えられることはありません。アクセスは共有フォルダー内に限られます。Enter を押すまでサーバーは動き続けます。ヒント：pkg install libqrencode を入れると QR コードも表示されます。",
+  "wifi_share.ask_folder": "共有するフォルダー（Enter = キャンセル）：",
+  "wifi_share.ask_upload": "訪問者のアップロードを許可しますか？",
+  "wifi_share.running": "{path} を共有中です。アドレス：",
+  "wifi_share.hint": "同じ Wi-Fi の端末でこのアドレスを開いてください。ゲスト Wi-Fi やモバイルデータでは使えません。",
+  "wifi_share.stop_prompt": "Enter = 共有を終了",
+  "wifi_share.stopped": "終了しました。リクエスト：{requests}、アップロード：{uploads}。"
+}

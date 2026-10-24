@@ -39,6 +39,7 @@ mein_tool/
 | `ctx.t(key, count=None, **werte)` | Text in der gewählten Sprache, mit Plural und Platzhaltern |
 | `ctx.print(text)` | Ausgabe, bei Arabisch/Hebräisch rechtsbündig |
 | `ctx.ask(prompt)` | Eine Eingabezeile; `None` bei Abbruch (Strg+D/Strg+C) |
+| `ctx.ask_secret(prompt)` | Wie `ask`, aber ohne Anzeige der Eingabe (Passwörter) |
 | `ctx.ask_file(prompt=None, allow_dir=False)` | Fragt nach einem vorhandenen Pfad; `None` = abgebrochen |
 | `ctx.confirm(prompt)` | Ja/Nein in der Sprache des Nutzers |
 | `ctx.translator.format_number(x)`, `format_date(d)` | Zahlen und Daten im Format der Sprache |

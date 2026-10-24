@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Wi-Fi dosya paylaşımı",
+  "wifi_share.desc": "Aynı Wi-Fi’deki cihazlarla uygulamasız klasör paylaşır: bağlantıyı tarayıcıda aç ve indir.",
+  "wifi_share.help": "Telefonda küçük bir web sunucusu başlatır. Adres rastgele bir anahtar içerir, yalnızca bağlantıya sahip olanlar girebilir. Ziyaretçiler dosyaları görür ve indirir. İzin verirsen klasöre dosya da yükleyebilirler; var olan dosyalar asla değiştirilmez. Erişim yalnızca paylaşılan klasörle sınırlıdır. Sunucu sen Enter’a basana kadar çalışır. İpucu: pkg install libqrencode ile ayrıca bir QR kodu gösterilir.",
+  "wifi_share.ask_folder": "Paylaşılacak klasör (Enter = iptal):",
+  "wifi_share.ask_upload": "Ziyaretçiler dosya yükleyebilsin mi?",
+  "wifi_share.running": "{path} şu adreste paylaşılıyor:",
+  "wifi_share.hint": "Adresi aynı Wi-Fi’deki bir cihazda aç. Misafir Wi-Fi’de veya mobil veride çalışmaz.",
+  "wifi_share.stop_prompt": "Enter = paylaşımı bitir",
+  "wifi_share.stopped": "Durduruldu. İstek: {requests}, yüklenen: {uploads}."
+}

@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "مشاركة الملفات عبر Wi-Fi",
+  "wifi_share.desc": "يشارك مجلدًا مع الأجهزة على شبكة Wi-Fi نفسها دون تطبيق: افتح الرابط في المتصفح ونزّل.",
+  "wifi_share.help": "يشغّل خادم ويب صغيرًا على الهاتف. يحتوي العنوان على مفتاح عشوائي، فلا يدخل إلا من لديه الرابط. يرى الزوار الملفات وينزّلونها. وإذا سمحت، يمكنهم أيضًا رفع ملفات إلى المجلد، ولا تُستبدل الملفات الموجودة أبدًا. الوصول محصور في المجلد المشترك. يعمل الخادم حتى تضغط Enter. نصيحة: مع pkg install libqrencode يظهر رمز QR أيضًا.",
+  "wifi_share.ask_folder": "المجلد المراد مشاركته (Enter = إلغاء):",
+  "wifi_share.ask_upload": "هل يُسمح للزوار برفع الملفات؟",
+  "wifi_share.running": "مشاركة {path} على العنوان:",
+  "wifi_share.hint": "افتح العنوان على جهاز متصل بشبكة Wi-Fi نفسها. لا يعمل على شبكة الضيوف أو بيانات الجوال.",
+  "wifi_share.stop_prompt": "Enter = إيقاف المشاركة",
+  "wifi_share.stopped": "توقّف. الطلبات: {requests}، المرفوعة: {uploads}."
+}

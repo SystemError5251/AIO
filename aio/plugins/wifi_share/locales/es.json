@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Compartir por wifi",
+  "wifi_share.desc": "Comparte una carpeta con dispositivos de la misma wifi, sin app: abre el enlace en el navegador y descarga.",
+  "wifi_share.help": "Inicia un pequeño servidor web en el móvil. La dirección contiene una clave aleatoria, así que solo entra quien tenga el enlace. Los visitantes ven los archivos y los descargan. Si lo permites, también pueden subir archivos a la carpeta; los existentes nunca se reemplazan. El acceso se limita a la carpeta compartida. El servidor funciona hasta que pulses Enter. Consejo: con pkg install libqrencode también aparece un código QR.",
+  "wifi_share.ask_folder": "Carpeta para compartir (Enter = cancelar):",
+  "wifi_share.ask_upload": "¿Pueden los visitantes subir archivos?",
+  "wifi_share.running": "Compartiendo {path} en:",
+  "wifi_share.hint": "Abre la dirección en un dispositivo de la misma wifi. No funciona en wifi de invitados ni con datos móviles.",
+  "wifi_share.stop_prompt": "Enter = dejar de compartir",
+  "wifi_share.stopped": "Detenido. Peticiones: {requests}, subidos: {uploads}."
+}

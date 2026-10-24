@@ -19,7 +19,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install ffmpeg (for the video plugin tests)
         run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[dev,vault]"
       - if: matrix.babel == 'with-babel'
         run: pip install babel
       - run: pytest -q

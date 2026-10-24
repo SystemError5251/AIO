@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Partage Wi-Fi",
+  "wifi_share.desc": "Partage un dossier avec les appareils du même Wi-Fi, sans appli : ouvrir le lien dans un navigateur et télécharger.",
+  "wifi_share.help": "Lance un petit serveur web sur le téléphone. L’adresse contient une clé aléatoire : seuls ceux qui ont le lien peuvent entrer. Les visiteurs voient les fichiers et les téléchargent. Si tu l’autorises, ils peuvent aussi envoyer des fichiers dans le dossier ; les fichiers existants ne sont jamais remplacés. L’accès est limité au dossier partagé. Le serveur tourne jusqu’à ce que tu appuies sur Entrée. Astuce : avec pkg install libqrencode, un QR code s’affiche aussi.",
+  "wifi_share.ask_folder": "Dossier à partager (Entrée = annuler) :",
+  "wifi_share.ask_upload": "Les visiteurs peuvent-ils envoyer des fichiers ?",
+  "wifi_share.running": "Partage de {path} à l’adresse :",
+  "wifi_share.hint": "Ouvre l’adresse sur un appareil du même Wi-Fi. Cela ne marche pas en Wi-Fi invité ni en données mobiles.",
+  "wifi_share.stop_prompt": "Entrée = arrêter le partage",
+  "wifi_share.stopped": "Arrêté. Requêtes : {requests}, envoyés : {uploads}."
+}
