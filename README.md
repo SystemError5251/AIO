@@ -41,6 +41,7 @@ git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 | `aio` | Beim ersten Start Sprachwahl, danach Hauptmenü |
 | `aio --lang` | Sprachwahl erneut anzeigen (auch: `--choose-language`) |
 | `aio --lang de` | Sprache direkt setzen |
+| `aio --plain` | einfache Textoberfläche statt Vollbild |
 | `aio --list` | Tools auflisten |
 | `aio --doctor` | Systemcheck: fehlende Programme, Pakete und Schlüssel mit Installationsbefehl |
 | `aio --review` | Übersetzungen der eingestellten Sprache prüfen |
@@ -48,6 +49,8 @@ git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 | `aio --remove-plugin ID` | Installiertes Plugin entfernen |
 
 **Systemcheck:** `aio --doctor` (oder *Einstellungen → Systemcheck*) zeigt für jedes Programm, welches Tool es braucht und wie man es in Termux installiert (✓ da, ✗ fehlt, ○ optional). Fehlt der AcoustID-Schlüssel für die Musikerkennung, kann man ihn dort eingeben; AIO prüft ihn bei acoustid.org und speichert ihn. Der Exit-Code ist 1, solange etwas Nötiges fehlt.
+
+**Oberfläche:** `aio` öffnet eine Vollbild-Oberfläche (curses, ist in Python enthalten). Ganz oben steht bei jedem Start die Sprachbox und ist schon ausgewählt: ◀ ▶ wechselt die Sprache sofort, Enter (oder Tippen in die Mitte) öffnet die Liste aller Sprachen mit Suche. Darunter die Tools nach Kategorien; Ziffern 1–9 öffnen ein Tool direkt, `s` die Einstellungen, `q` beendet. In Termux geht alles auch per Touch: einmal tippen wählt, nochmal tippen öffnet. Wer lieber die schlichte Textansicht will: *Einstellungen → Oberfläche*, `aio --plain` oder `AIO_UI=plain`.
 
 Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln. Vorgeschlagen wird die Systemsprache. Einstellungen liegen in `~/.aio/config.json`.
 
