@@ -120,7 +120,8 @@ def test_settings_install_then_remove(scaffold, term):
     assert "Achtung: Ein Plugin ist Programmcode" in t.text
     assert "Installiert: My Tool (v0.1.0)." in t.text
     assert "My Tool v0.1.0 (installiert)" in t.text
-    assert "6 Tools verfügbar:" in t.text  # main menu sees the new tool at once
+    count = len(registry.discover())  # built-ins + the new one
+    assert f"{count} Tools verfügbar:" in t.text  # main menu sees the new tool at once
     t = term(["s", "6", "r", "1", "j", "b", "b", "q"])
     main([], input_fn=t.input, print_fn=t.print, interactive=True)
     assert "Entfernt: my_tool." in t.text
