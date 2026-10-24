@@ -1,0 +1,22 @@
+{
+  "video_crop.name": "Zuschneiden",
+  "video_crop.desc": "Schneidet ein Video auf 9:16, 1:1, 4:5 oder 16:9 zu und kürzt auf Wunsch Anfang und Ende.",
+  "video_crop.help": "Wähle ein Video, ein Format und welcher Teil bleiben soll (Mitte, links/oben oder rechts/unten). Dazu kannst du Start und Ende angeben, in Sekunden oder als mm:ss. Das Bild wird so groß wie möglich ausgeschnitten, ohne schwarze Ränder; die Drehung vom Handy wird berücksichtigt. Ergebnis: <name>.crop.mp4 neben dem Original. Braucht ffmpeg.",
+  "video_crop.no_video": "Die Datei enthält kein Video.",
+  "video_crop.info": "Video: {w}x{h}, {seconds} s",
+  "video_crop.choose_ratio": "Welches Format?",
+  "video_crop.keep_ratio": "Format behalten (nur kürzen)",
+  "video_crop.choose_anchor": "Welcher Teil soll bleiben?",
+  "video_crop.anchor_center": "Mitte",
+  "video_crop.anchor_left": "Links",
+  "video_crop.anchor_right": "Rechts",
+  "video_crop.anchor_top": "Oben",
+  "video_crop.anchor_bottom": "Unten",
+  "video_crop.ask_start": "Start (Sekunden oder mm:ss, Enter = Anfang):",
+  "video_crop.ask_end": "Ende (Sekunden oder mm:ss, Enter = bis zum Schluss):",
+  "video_crop.bad_time": "Ungültige Zeit. Erlaubt sind Werte von 0 bis {limit} s, z. B. 12 oder 0:12.",
+  "video_crop.end_before_start": "Das Ende muss nach dem Start liegen.",
+  "video_crop.nothing_to_do": "Nichts zu tun: Format und Länge bleiben gleich.",
+  "video_crop.working": "Schneide zu, das kann auf dem Handy dauern …",
+  "video_crop.saved": "Gespeichert: {path}"
+}

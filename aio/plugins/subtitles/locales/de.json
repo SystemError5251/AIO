@@ -1,0 +1,29 @@
+{
+  "subtitles.name": "Untertitel",
+  "subtitles.desc": "Bettet eine Untertitel-Datei (.srt, .vtt, .ass) ins Video ein: fest eingebrannt oder als abschaltbare Spur.",
+  "subtitles.help": "Wähle ein Video. Liegt daneben eine Datei mit gleichem Namen (clip.srt oder clip.de.srt), wird sie vorgeschlagen. Die Datei wird vorher geprüft (Anzahl, kaputte Zeiten, Untertitel nach dem Videoende). Eingebrannt sind die Untertitel immer sichtbar, das brauchen Reels und TikTok; das Video wird dafür neu kodiert. Als Spur geht es schnell und ohne Qualitätsverlust, Player können sie ein- und ausschalten. Ergebnis: <name>.subtitled.mp4 bzw. <name>.subs.mp4. Braucht ffmpeg.",
+  "subtitles.no_video": "Die Datei enthält kein Video.",
+  "subtitles.found": "Gefunden: {path}",
+  "subtitles.use_found": "Diese Untertitel verwenden?",
+  "subtitles.ask_file": "Untertitel-Datei (Enter = abbrechen):",
+  "subtitles.unsupported": "{ext} wird nicht unterstützt (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} Untertitel, der letzte endet bei {last}.",
+    "other": "{count} Untertitel, der letzte endet bei {last}."
+  },
+  "subtitles.no_cues": "In der Datei wurden keine Untertitel gefunden.",
+  "subtitles.broken_times": {
+    "one": "{count} Untertitel hat eine Endzeit vor der Startzeit.",
+    "other": "{count} Untertitel haben eine Endzeit vor der Startzeit."
+  },
+  "subtitles.after_end": {
+    "one": "{count} Untertitel beginnt erst nach dem Videoende.",
+    "other": "{count} Untertitel beginnen erst nach dem Videoende."
+  },
+  "subtitles.choose_mode": "Wie einbetten?",
+  "subtitles.mode_burn": "Einbrennen (immer sichtbar, für Reels/TikTok)",
+  "subtitles.mode_track": "Als Spur (abschaltbar, schnell, ohne Neukodierung)",
+  "subtitles.working_burn": "Brenne die Untertitel ein, das kann auf dem Handy dauern …",
+  "subtitles.working_track": "Füge die Untertitel-Spur hinzu …",
+  "subtitles.saved": "Gespeichert: {path}"
+}

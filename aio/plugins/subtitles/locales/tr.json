@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Altyazı",
+  "subtitles.desc": "Videoya bir altyazı dosyası (.srt, .vtt, .ass) ekler: görüntüye gömülü ya da kapatılabilir parça olarak.",
+  "subtitles.help": "Bir video seç. Yanında aynı adlı bir dosya varsa (clip.srt veya clip.tr.srt) önerilir. Dosya önce kontrol edilir (sayı, bozuk zamanlar, video bittikten sonraki altyazılar). Gömülü altyazılar her zaman görünür, Reels ve TikTok için gereken budur; video bunun için yeniden kodlanır. Parça olarak eklemek hızlı ve kayıpsızdır, oynatıcılar açıp kapatabilir. Sonuç: <ad>.subtitled.mp4 veya <ad>.subs.mp4. ffmpeg gerekir.",
+  "subtitles.no_video": "Dosyada video yok.",
+  "subtitles.found": "Bulundu: {path}",
+  "subtitles.use_found": "Bu altyazılar kullanılsın mı?",
+  "subtitles.ask_file": "Altyazı dosyası (Enter = iptal):",
+  "subtitles.unsupported": "{ext} desteklenmiyor (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} altyazı, sonuncusu {last} anında bitiyor.",
+    "other": "{count} altyazı, sonuncusu {last} anında bitiyor."
+  },
+  "subtitles.no_cues": "Dosyada altyazı bulunamadı.",
+  "subtitles.broken_times": {
+    "one": "{count} altyazı başlamadan bitiyor.",
+    "other": "{count} altyazı başlamadan bitiyor."
+  },
+  "subtitles.after_end": {
+    "one": "{count} altyazı video bittikten sonra başlıyor.",
+    "other": "{count} altyazı video bittikten sonra başlıyor."
+  },
+  "subtitles.choose_mode": "Nasıl eklensin?",
+  "subtitles.mode_burn": "Göm (her zaman görünür, Reels/TikTok için)",
+  "subtitles.mode_track": "Parça olarak (kapatılabilir, hızlı, yeniden kodlama yok)",
+  "subtitles.working_burn": "Altyazılar gömülüyor, telefonda biraz sürebilir …",
+  "subtitles.working_track": "Altyazı parçası ekleniyor …",
+  "subtitles.saved": "Kaydedildi: {path}"
+}

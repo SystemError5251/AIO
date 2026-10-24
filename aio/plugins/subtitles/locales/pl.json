@@ -1,0 +1,55 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Napisy",
+  "subtitles.desc": "Dodaje plik napisów (.srt, .vtt, .ass) do filmu: wtopione w obraz albo jako ścieżkę, którą można wyłączyć.",
+  "subtitles.help": "Wybierz film. Jeśli obok leży plik o tej samej nazwie (clip.srt lub clip.pl.srt), zostanie zaproponowany. Najpierw plik jest sprawdzany (liczba, błędne czasy, napisy po końcu filmu). Wtopione napisy są zawsze widoczne, czego wymagają Reels i TikTok; film jest wtedy kodowany ponownie. Ścieżka to szybka metoda bez utraty jakości, odtwarzacze mogą ją włączać i wyłączać. Wynik: <nazwa>.subtitled.mp4 lub <nazwa>.subs.mp4. Wymaga ffmpeg.",
+  "subtitles.no_video": "Plik nie zawiera wideo.",
+  "subtitles.found": "Znaleziono: {path}",
+  "subtitles.use_found": "Użyć tych napisów?",
+  "subtitles.ask_file": "Plik napisów (Enter = anuluj):",
+  "subtitles.unsupported": "{ext} nie jest obsługiwany (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} napis, ostatni kończy się o {last}.",
+    "few": "{count} napisy, ostatni kończy się o {last}.",
+    "many": "{count} napisów, ostatni kończy się o {last}.",
+    "other": "{count} napisu, ostatni kończy się o {last}."
+  },
+  "subtitles.no_cues": "W pliku nie znaleziono napisów.",
+  "subtitles.broken_times": {
+    "one": "{count} napis kończy się przed początkiem.",
+    "few": "{count} napisy kończą się przed początkiem.",
+    "many": "{count} napisów kończy się przed początkiem.",
+    "other": "{count} napisu kończy się przed początkiem."
+  },
+  "subtitles.after_end": {
+    "one": "{count} napis zaczyna się po końcu filmu.",
+    "few": "{count} napisy zaczynają się po końcu filmu.",
+    "many": "{count} napisów zaczyna się po końcu filmu.",
+    "other": "{count} napisu zaczyna się po końcu filmu."
+  },
+  "subtitles.choose_mode": "Jak je dodać?",
+  "subtitles.mode_burn": "Wtopić (zawsze widoczne, dla Reels/TikTok)",
+  "subtitles.mode_track": "Jako ścieżkę (do wyłączenia, szybko, bez ponownego kodowania)",
+  "subtitles.working_burn": "Wtapiam napisy, na telefonie może to potrwać …",
+  "subtitles.working_track": "Dodaję ścieżkę napisów …",
+  "subtitles.saved": "Zapisano: {path}"
+}

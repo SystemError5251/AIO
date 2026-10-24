@@ -1,0 +1,61 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "الترجمة النصية",
+  "subtitles.desc": "يضيف ملف ترجمة (‎.srt أو ‎.vtt أو ‎.ass) إلى فيديو: مدمجة في الصورة أو كمسار يمكن إيقافه.",
+  "subtitles.help": "اختر فيديو. إذا وُجد بجانبه ملف بالاسم نفسه (clip.srt أو clip.ar.srt) فسيُقترح. يُفحص الملف أولًا (العدد، الأوقات المعطوبة، ترجمات بعد نهاية الفيديو). الترجمة المدمجة تظهر دائمًا، وهذا ما تحتاجه Reels وTikTok، ويُعاد ترميز الفيديو لذلك. أما المسار فسريع وبلا فقدان للجودة، ويمكن للمشغلات تشغيله وإيقافه. النتيجة: <الاسم>.subtitled.mp4 أو <الاسم>.subs.mp4. يحتاج ffmpeg.",
+  "subtitles.no_video": "الملف لا يحتوي على فيديو.",
+  "subtitles.found": "تم العثور على: {path}",
+  "subtitles.use_found": "هل تستخدم هذه الترجمة؟",
+  "subtitles.ask_file": "ملف الترجمة (Enter = إلغاء):",
+  "subtitles.unsupported": "{ext} غير مدعوم (‎.srt و‎.vtt و‎.ass و‎.ssa).",
+  "subtitles.summary": {
+    "zero": "لا توجد أسطر ترجمة ({count}).",
+    "one": "سطر ترجمة واحد ({count})، ينتهي عند {last}.",
+    "two": "سطرا ترجمة ({count})، آخرهما ينتهي عند {last}.",
+    "few": "{count} أسطر ترجمة، آخرها ينتهي عند {last}.",
+    "many": "{count} سطرًا للترجمة، آخرها ينتهي عند {last}.",
+    "other": "{count} سطر ترجمة، آخرها ينتهي عند {last}."
+  },
+  "subtitles.no_cues": "لم يُعثر على ترجمة في الملف.",
+  "subtitles.broken_times": {
+    "zero": "لا يوجد سطر ينتهي قبل بدايته ({count}).",
+    "one": "سطر واحد ({count}) ينتهي قبل أن يبدأ.",
+    "two": "سطران ({count}) ينتهيان قبل أن يبدآ.",
+    "few": "{count} أسطر تنتهي قبل أن تبدأ.",
+    "many": "{count} سطرًا تنتهي قبل أن تبدأ.",
+    "other": "{count} سطر تنتهي قبل أن تبدأ."
+  },
+  "subtitles.after_end": {
+    "zero": "لا يوجد سطر يبدأ بعد نهاية الفيديو ({count}).",
+    "one": "سطر واحد ({count}) يبدأ بعد نهاية الفيديو.",
+    "two": "سطران ({count}) يبدآن بعد نهاية الفيديو.",
+    "few": "{count} أسطر تبدأ بعد نهاية الفيديو.",
+    "many": "{count} سطرًا تبدأ بعد نهاية الفيديو.",
+    "other": "{count} سطر تبدأ بعد نهاية الفيديو."
+  },
+  "subtitles.choose_mode": "كيف تُضاف؟",
+  "subtitles.mode_burn": "دمج في الصورة (تظهر دائمًا، لـ Reels/TikTok)",
+  "subtitles.mode_track": "كمسار (يمكن إيقافه، سريع، بلا إعادة ترميز)",
+  "subtitles.working_burn": "جارٍ دمج الترجمة، قد يستغرق ذلك وقتًا على الهاتف …",
+  "subtitles.working_track": "جارٍ إضافة مسار الترجمة …",
+  "subtitles.saved": "تم الحفظ: {path}"
+}

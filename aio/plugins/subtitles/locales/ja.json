@@ -1,0 +1,46 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "字幕",
+  "subtitles.desc": "字幕ファイル（.srt、.vtt、.ass）を動画に追加します：映像に焼き込むか、オフにできるトラックとして。",
+  "subtitles.help": "動画を選びます。隣に同じ名前のファイル（clip.srt や clip.ja.srt）があれば候補に出ます。先にファイルをチェックします（件数、壊れた時刻、動画の終了後の字幕）。焼き込んだ字幕は常に表示され、Reels や TikTok にはこれが必要です。そのため動画は再エンコードされます。トラックは速く劣化もなく、プレーヤーでオン・オフできます。結果：<名前>.subtitled.mp4 または <名前>.subs.mp4。ffmpeg が必要です。",
+  "subtitles.no_video": "ファイルに動画が含まれていません。",
+  "subtitles.found": "見つかりました：{path}",
+  "subtitles.use_found": "この字幕を使いますか？",
+  "subtitles.ask_file": "字幕ファイル（Enter = キャンセル）：",
+  "subtitles.unsupported": "{ext} には対応していません（.srt、.vtt、.ass、.ssa）。",
+  "subtitles.summary": {
+    "other": "字幕 {count} 件、最後は {last} に終わります。"
+  },
+  "subtitles.no_cues": "ファイルに字幕が見つかりません。",
+  "subtitles.broken_times": {
+    "other": "{count} 件の字幕は終了時刻が開始時刻より前です。"
+  },
+  "subtitles.after_end": {
+    "other": "{count} 件の字幕が動画の終了後に始まります。"
+  },
+  "subtitles.choose_mode": "どう追加しますか？",
+  "subtitles.mode_burn": "焼き込む（常に表示、Reels/TikTok 向け）",
+  "subtitles.mode_track": "トラックとして（オフにできる、速い、再エンコードなし）",
+  "subtitles.working_burn": "字幕を焼き込み中です。スマホでは時間がかかることがあります…",
+  "subtitles.working_track": "字幕トラックを追加中…",
+  "subtitles.saved": "保存しました：{path}"
+}

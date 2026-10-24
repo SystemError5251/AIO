@@ -1,0 +1,39 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Ses seviyesini eşitle",
+  "loudnorm.desc": "Birçok klibi veya ses dosyasını tek seferde aynı ses yüksekliğine (LUFS) getirir.",
+  "loudnorm.help": "Bir dosya veya klasör ve bir hedef seç: Reels/Shorts/TikTok/Spotify için −14 LUFS, podcast için −16 LUFS veya yayın için −23 LUFS (EBU R128). Her dosya ölçülür ve doğrusal olarak düzeltilir, tepe seviyesi en fazla −1 dBTP olur. Görüntü değişmeden kopyalanır. Zaten uygun olan dosyalar atlanır. Sonuç: orijinalin yanında <ad>.lufs14.mp4 veya .m4a. ffmpeg gerekir.",
+  "loudnorm.ask_path": "Dosya veya klasör (Enter = iptal):",
+  "loudnorm.nothing_found": "Video veya ses dosyası bulunamadı.",
+  "loudnorm.choose_target": "Hangi hedef?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcast",
+  "loudnorm.target_broadcast": "Yayın (EBU R128)",
+  "loudnorm.no_audio": "Ses parçası yok, atlandı.",
+  "loudnorm.silent": "Sessiz, atlandı.",
+  "loudnorm.measured": "Ölçülen: {lufs} LUFS, tepe {peak} dBTP",
+  "loudnorm.already_ok": "Zaten uygun, atlandı.",
+  "loudnorm.failed": "Başarısız: {error}",
+  "loudnorm.saved": "Kaydedildi: {path}",
+  "loudnorm.summary": {
+    "one": "Bitti: {total} dosyadan {count} tanesi eşitlendi.",
+    "other": "Bitti: {total} dosyadan {count} tanesi eşitlendi."
+  }
+}

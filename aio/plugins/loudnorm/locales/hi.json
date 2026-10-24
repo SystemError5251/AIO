@@ -1,0 +1,39 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "आवाज़ बराबर करें",
+  "loudnorm.desc": "कई क्लिप या ऑडियो फ़ाइलों को एक साथ एक जैसी लाउडनेस (LUFS) पर लाता है।",
+  "loudnorm.help": "एक फ़ाइल या फ़ोल्डर और एक लक्ष्य चुनें: Reels/Shorts/TikTok/Spotify के लिए −14 LUFS, पॉडकास्ट के लिए −16 LUFS या प्रसारण के लिए −23 LUFS (EBU R128)। हर फ़ाइल पहले मापी जाती है, फिर रैखिक रूप से ठीक की जाती है, पीक अधिकतम −1 dBTP। तस्वीर बिना बदलाव कॉपी होती है। जो फ़ाइलें पहले से लक्ष्य पर हैं, उन्हें छोड़ दिया जाता है। नतीजा: मूल फ़ाइल के पास <नाम>.lufs14.mp4 या .m4a। ffmpeg चाहिए।",
+  "loudnorm.ask_path": "फ़ाइल या फ़ोल्डर (Enter = रद्द करें):",
+  "loudnorm.nothing_found": "कोई वीडियो या ऑडियो फ़ाइल नहीं मिली।",
+  "loudnorm.choose_target": "कौन-सा लक्ष्य?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "पॉडकास्ट",
+  "loudnorm.target_broadcast": "प्रसारण (EBU R128)",
+  "loudnorm.no_audio": "ऑडियो ट्रैक नहीं है, छोड़ दिया।",
+  "loudnorm.silent": "आवाज़ नहीं है, छोड़ दिया।",
+  "loudnorm.measured": "मापा गया: {lufs} LUFS, पीक {peak} dBTP",
+  "loudnorm.already_ok": "पहले से लक्ष्य पर है, छोड़ दिया।",
+  "loudnorm.failed": "विफल: {error}",
+  "loudnorm.saved": "सहेजा गया: {path}",
+  "loudnorm.summary": {
+    "one": "पूरा: {total} में से {count} फ़ाइल बराबर की गई।",
+    "other": "पूरा: {total} में से {count} फ़ाइलें बराबर की गईं।"
+  }
+}

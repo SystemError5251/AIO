@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Sous-titres",
+  "subtitles.desc": "Ajoute un fichier de sous-titres (.srt, .vtt, .ass) à une vidéo : incrustés ou en piste désactivable.",
+  "subtitles.help": "Choisis une vidéo. Un fichier du même nom à côté (clip.srt ou clip.fr.srt) est proposé. Le fichier est d’abord vérifié (nombre, horaires cassés, sous-titres après la fin de la vidéo). Incrustés, les sous-titres sont toujours visibles, ce qu’il faut pour Reels et TikTok ; la vidéo est alors réencodée. En piste, c’est rapide et sans perte, et les lecteurs peuvent l’activer ou non. Résultat : <nom>.subtitled.mp4 ou <nom>.subs.mp4. Nécessite ffmpeg.",
+  "subtitles.no_video": "Le fichier ne contient pas de vidéo.",
+  "subtitles.found": "Trouvé : {path}",
+  "subtitles.use_found": "Utiliser ces sous-titres ?",
+  "subtitles.ask_file": "Fichier de sous-titres (Entrée = annuler) :",
+  "subtitles.unsupported": "{ext} n’est pas pris en charge (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} sous-titre, le dernier se termine à {last}.",
+    "other": "{count} sous-titres, le dernier se termine à {last}."
+  },
+  "subtitles.no_cues": "Aucun sous-titre trouvé dans le fichier.",
+  "subtitles.broken_times": {
+    "one": "{count} sous-titre se termine avant de commencer.",
+    "other": "{count} sous-titres se terminent avant de commencer."
+  },
+  "subtitles.after_end": {
+    "one": "{count} sous-titre commence après la fin de la vidéo.",
+    "other": "{count} sous-titres commencent après la fin de la vidéo."
+  },
+  "subtitles.choose_mode": "Comment les ajouter ?",
+  "subtitles.mode_burn": "Incruster (toujours visibles, pour Reels/TikTok)",
+  "subtitles.mode_track": "En piste (désactivable, rapide, sans réencodage)",
+  "subtitles.working_burn": "Incrustation des sous-titres, cela peut prendre du temps sur un téléphone …",
+  "subtitles.working_track": "Ajout de la piste de sous-titres …",
+  "subtitles.saved": "Enregistré : {path}"
+}

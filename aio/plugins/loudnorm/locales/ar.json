@@ -1,0 +1,43 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "معادلة مستوى الصوت",
+  "loudnorm.desc": "يضبط عددًا كبيرًا من المقاطع أو الملفات الصوتية دفعة واحدة على مستوى الصوت نفسه (LUFS).",
+  "loudnorm.help": "اختر ملفًا أو مجلدًا وهدفًا: ‎−14 LUFS لـ Reels/Shorts/TikTok/Spotify، أو ‎−16 LUFS للبودكاست، أو ‎−23 LUFS (EBU R128) للبث. يُقاس كل ملف ثم يُصحَّح خطيًا، مع ذروة لا تتجاوز ‎−1 dBTP. تُنسخ الصورة دون تغيير. تُتخطى الملفات المطابقة للهدف. النتيجة: <الاسم>.lufs14.mp4 أو ‎.m4a بجانب الأصل. يحتاج ffmpeg.",
+  "loudnorm.ask_path": "ملف أو مجلد (Enter = إلغاء):",
+  "loudnorm.nothing_found": "لم يُعثر على ملفات فيديو أو صوت.",
+  "loudnorm.choose_target": "أي هدف؟",
+  "loudnorm.target_social": "Reels وShorts وTikTok وSpotify",
+  "loudnorm.target_podcast": "البودكاست",
+  "loudnorm.target_broadcast": "البث (EBU R128)",
+  "loudnorm.no_audio": "لا يوجد مسار صوتي، تم التخطي.",
+  "loudnorm.silent": "صامت، تم التخطي.",
+  "loudnorm.measured": "القياس: {lufs} LUFS، الذروة {peak} dBTP",
+  "loudnorm.already_ok": "مطابق بالفعل، تم التخطي.",
+  "loudnorm.failed": "فشل: {error}",
+  "loudnorm.saved": "تم الحفظ: {path}",
+  "loudnorm.summary": {
+    "zero": "تم: لم يُضبط أي ملف ({count} من {total}).",
+    "one": "تم: ضُبط ملف واحد ({count} من {total}).",
+    "two": "تم: ضُبط ملفان ({count} من {total}).",
+    "few": "تم: ضُبطت {count} ملفات من {total}.",
+    "many": "تم: ضُبط {count} ملفًا من {total}.",
+    "other": "تم: ضُبط {count} ملف من {total}."
+  }
+}

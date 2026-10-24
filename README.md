@@ -53,8 +53,11 @@ Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln.
 | Privacy-Stripper | Entfernt GPS-, Geräte- und Zeitdaten aus Fotos (verlustfrei) und Videos (ohne Neukodierung), einzeln oder ganze Ordner | ffmpeg (für Videos) |
 | Musik-Check | Misst Lautheit (LUFS) gegen die −14 LUFS der Plattformen, speichert auf Wunsch eine korrigierte Kopie; optional Songerkennung | ffmpeg; optional `pkg install chromaprint` + AcoustID-Schlüssel |
 | Upload (Reels/Shorts/TikTok) | Prüft Format, Länge und Codecs, wandelt bei Bedarf in 1080×1920 um und öffnet das Android-Teilen-Menü | ffmpeg, termux-api + App Termux:API |
+| Untertitel | Prüft eine .srt/.vtt/.ass-Datei und brennt sie ein oder fügt sie als abschaltbare Spur hinzu | ffmpeg |
+| Lautheit angleichen | Bringt ganze Ordner auf −14, −16 oder −23 LUFS (zwei Durchgänge, Bild unverändert) | ffmpeg |
+| Zuschneiden | Schneidet auf 9:16, 1:1, 4:5 oder 16:9 zu (Mitte, links/oben, rechts/unten) und kürzt Anfang/Ende | ffmpeg |
 
-Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`). Es wird nie etwas überschrieben.
+Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`, `clip.crop.mp4` …). Es wird nie etwas überschrieben.
 
 ## Sprachen
 

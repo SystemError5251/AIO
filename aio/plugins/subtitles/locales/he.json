@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "כתוביות",
+  "subtitles.desc": "מוסיף קובץ כתוביות (‎.srt, ‎.vtt, ‎.ass) לסרטון: צרובות בתמונה או כרצועה שאפשר לכבות.",
+  "subtitles.help": "בחרו סרטון. אם לידו יש קובץ באותו שם (clip.srt או clip.he.srt), הוא יוצע. הקובץ נבדק קודם (כמות, זמנים שגויים, כתוביות אחרי סוף הסרטון). כתוביות צרובות תמיד גלויות, וזה מה ש-Reels ו-TikTok צריכים; לשם כך הסרטון מקודד מחדש. רצועה מתווספת מהר וללא אובדן איכות, ונגנים יכולים להפעיל ולכבות אותה. התוצאה: <שם>.subtitled.mp4 או <שם>.subs.mp4. דורש ffmpeg.",
+  "subtitles.no_video": "בקובץ אין וידאו.",
+  "subtitles.found": "נמצא: {path}",
+  "subtitles.use_found": "להשתמש בכתוביות האלה?",
+  "subtitles.ask_file": "קובץ כתוביות (Enter = ביטול):",
+  "subtitles.unsupported": "{ext} אינו נתמך (‎.srt, ‎.vtt, ‎.ass, ‎.ssa).",
+  "subtitles.summary": {
+    "one": "כתובית {count}, האחרונה מסתיימת ב-{last}.",
+    "other": "{count} כתוביות, האחרונה מסתיימת ב-{last}."
+  },
+  "subtitles.no_cues": "לא נמצאו כתוביות בקובץ.",
+  "subtitles.broken_times": {
+    "one": "כתובית {count} מסתיימת לפני שהיא מתחילה.",
+    "other": "{count} כתוביות מסתיימות לפני שהן מתחילות."
+  },
+  "subtitles.after_end": {
+    "one": "כתובית {count} מתחילה אחרי סוף הסרטון.",
+    "other": "{count} כתוביות מתחילות אחרי סוף הסרטון."
+  },
+  "subtitles.choose_mode": "איך להוסיף?",
+  "subtitles.mode_burn": "לצרוב (תמיד גלויות, ל-Reels/TikTok)",
+  "subtitles.mode_track": "כרצועה (אפשר לכבות, מהיר, בלי קידוד מחדש)",
+  "subtitles.working_burn": "צורב את הכתוביות, בטלפון זה עלול לקחת זמן …",
+  "subtitles.working_track": "מוסיף רצועת כתוביות …",
+  "subtitles.saved": "נשמר: {path}"
+}

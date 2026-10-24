@@ -1,0 +1,39 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Égaliser le volume",
+  "loudnorm.desc": "Met d’un coup de nombreux clips ou fichiers audio au même volume (LUFS).",
+  "loudnorm.help": "Choisis un fichier ou un dossier et une cible : −14 LUFS pour Reels/Shorts/TikTok/Spotify, −16 LUFS pour les podcasts ou −23 LUFS (EBU R128) pour la diffusion. Chaque fichier est mesuré puis corrigé de façon linéaire, avec des crêtes à −1 dBTP au plus. L’image est copiée telle quelle. Les fichiers déjà conformes sont ignorés. Résultat : <nom>.lufs14.mp4 ou .m4a à côté de l’original. Nécessite ffmpeg.",
+  "loudnorm.ask_path": "Fichier ou dossier (Entrée = annuler) :",
+  "loudnorm.nothing_found": "Aucun fichier vidéo ou audio trouvé.",
+  "loudnorm.choose_target": "Quelle cible ?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcasts",
+  "loudnorm.target_broadcast": "Diffusion (EBU R128)",
+  "loudnorm.no_audio": "Pas de piste audio, ignoré.",
+  "loudnorm.silent": "Silencieux, ignoré.",
+  "loudnorm.measured": "Mesuré : {lufs} LUFS, crête {peak} dBTP",
+  "loudnorm.already_ok": "Déjà conforme, ignoré.",
+  "loudnorm.failed": "Échec : {error}",
+  "loudnorm.saved": "Enregistré : {path}",
+  "loudnorm.summary": {
+    "one": "Terminé : {count} fichier sur {total} ajusté.",
+    "other": "Terminé : {count} fichiers sur {total} ajustés."
+  }
+}

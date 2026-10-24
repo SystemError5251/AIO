@@ -1,0 +1,55 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Субтитры",
+  "subtitles.desc": "Добавляет файл субтитров (.srt, .vtt, .ass) к видео: вшитыми в изображение или отключаемой дорожкой.",
+  "subtitles.help": "Выберите видео. Если рядом лежит файл с тем же именем (clip.srt или clip.ru.srt), он будет предложен. Сначала файл проверяется (количество, ошибки во времени, субтитры после конца видео). Вшитые субтитры видны всегда, это нужно для Reels и TikTok; видео при этом перекодируется. Дорожка добавляется быстро и без потерь, плееры могут её включать и выключать. Результат: <имя>.subtitled.mp4 или <имя>.subs.mp4. Нужен ffmpeg.",
+  "subtitles.no_video": "В файле нет видео.",
+  "subtitles.found": "Найдено: {path}",
+  "subtitles.use_found": "Использовать эти субтитры?",
+  "subtitles.ask_file": "Файл субтитров (Enter = отмена):",
+  "subtitles.unsupported": "{ext} не поддерживается (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} субтитр, последний заканчивается в {last}.",
+    "few": "{count} субтитра, последний заканчивается в {last}.",
+    "many": "{count} субтитров, последний заканчивается в {last}.",
+    "other": "{count} субтитра, последний заканчивается в {last}."
+  },
+  "subtitles.no_cues": "В файле не найдено субтитров.",
+  "subtitles.broken_times": {
+    "one": "{count} субтитр заканчивается раньше, чем начинается.",
+    "few": "{count} субтитра заканчиваются раньше, чем начинаются.",
+    "many": "{count} субтитров заканчиваются раньше, чем начинаются.",
+    "other": "{count} субтитра заканчиваются раньше, чем начинаются."
+  },
+  "subtitles.after_end": {
+    "one": "{count} субтитр начинается после конца видео.",
+    "few": "{count} субтитра начинаются после конца видео.",
+    "many": "{count} субтитров начинаются после конца видео.",
+    "other": "{count} субтитра начинаются после конца видео."
+  },
+  "subtitles.choose_mode": "Как добавить?",
+  "subtitles.mode_burn": "Вшить (видны всегда, для Reels/TikTok)",
+  "subtitles.mode_track": "Дорожкой (отключаемо, быстро, без перекодирования)",
+  "subtitles.working_burn": "Вшиваю субтитры, на телефоне это может занять время …",
+  "subtitles.working_track": "Добавляю дорожку субтитров …",
+  "subtitles.saved": "Сохранено: {path}"
+}

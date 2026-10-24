@@ -1,0 +1,22 @@
+{
+  "video_crop.name": "Crop & trim",
+  "video_crop.desc": "Crops a video to 9:16, 1:1, 4:5 or 16:9 and, if you like, cuts the start and end.",
+  "video_crop.help": "Pick a video, a format and which part to keep (centre, left/top or right/bottom). You can also give a start and end, in seconds or as mm:ss. The picture is cut as large as possible without black bars; the rotation from the phone is taken into account. Result: <name>.crop.mp4 next to the original. Needs ffmpeg.",
+  "video_crop.no_video": "The file contains no video.",
+  "video_crop.info": "Video: {w}x{h}, {seconds} s",
+  "video_crop.choose_ratio": "Which format?",
+  "video_crop.keep_ratio": "Keep the format (only trim)",
+  "video_crop.choose_anchor": "Which part should stay?",
+  "video_crop.anchor_center": "Centre",
+  "video_crop.anchor_left": "Left",
+  "video_crop.anchor_right": "Right",
+  "video_crop.anchor_top": "Top",
+  "video_crop.anchor_bottom": "Bottom",
+  "video_crop.ask_start": "Start (seconds or mm:ss, Enter = beginning):",
+  "video_crop.ask_end": "End (seconds or mm:ss, Enter = to the end):",
+  "video_crop.bad_time": "Invalid time. Values from 0 to {limit} s are allowed, e.g. 12 or 0:12.",
+  "video_crop.end_before_start": "The end must come after the start.",
+  "video_crop.nothing_to_do": "Nothing to do: format and length stay the same.",
+  "video_crop.working": "Cropping, this can take a while on a phone …",
+  "video_crop.saved": "Saved: {path}"
+}

@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Legendas",
+  "subtitles.desc": "Adiciona um arquivo de legendas (.srt, .vtt, .ass) a um vídeo: gravadas na imagem ou como faixa que pode ser desligada.",
+  "subtitles.help": "Escolha um vídeo. Se houver ao lado um arquivo com o mesmo nome (clip.srt ou clip.pt.srt), ele é sugerido. Antes, o arquivo é verificado (quantidade, tempos quebrados, legendas após o fim do vídeo). Gravadas na imagem, as legendas ficam sempre visíveis, como Reels e TikTok exigem; o vídeo é recodificado para isso. Como faixa é rápido e sem perda, e os players podem ligá-la ou desligá-la. Resultado: <nome>.subtitled.mp4 ou <nome>.subs.mp4. Requer ffmpeg.",
+  "subtitles.no_video": "O arquivo não contém vídeo.",
+  "subtitles.found": "Encontrado: {path}",
+  "subtitles.use_found": "Usar estas legendas?",
+  "subtitles.ask_file": "Arquivo de legendas (Enter = cancelar):",
+  "subtitles.unsupported": "{ext} não é suportado (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} legenda, a última termina em {last}.",
+    "other": "{count} legendas, a última termina em {last}."
+  },
+  "subtitles.no_cues": "Nenhuma legenda encontrada no arquivo.",
+  "subtitles.broken_times": {
+    "one": "{count} legenda termina antes de começar.",
+    "other": "{count} legendas terminam antes de começar."
+  },
+  "subtitles.after_end": {
+    "one": "{count} legenda começa depois do fim do vídeo.",
+    "other": "{count} legendas começam depois do fim do vídeo."
+  },
+  "subtitles.choose_mode": "Como adicionar?",
+  "subtitles.mode_burn": "Gravar na imagem (sempre visíveis, para Reels/TikTok)",
+  "subtitles.mode_track": "Como faixa (pode desligar, rápido, sem recodificar)",
+  "subtitles.working_burn": "Gravando as legendas, pode demorar no celular …",
+  "subtitles.working_track": "Adicionando a faixa de legendas …",
+  "subtitles.saved": "Salvo: {path}"
+}

@@ -1,0 +1,39 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "השוואת עוצמה",
+  "loudnorm.desc": "מביא בבת אחת קליפים או קובצי שמע רבים לאותה עוצמה (LUFS).",
+  "loudnorm.help": "בחרו קובץ או תיקייה ויעד: ‎−14 LUFS ל-Reels/Shorts/TikTok/Spotify, ‎−16 LUFS לפודקאסטים או ‎−23 LUFS (EBU R128) לשידור. כל קובץ נמדד ואז מתוקן באופן ליניארי, עם שיא של ‎−1 dBTP לכל היותר. התמונה מועתקת ללא שינוי. קבצים שכבר תואמים מדולגים. התוצאה: <שם>.lufs14.mp4 או ‎.m4a ליד המקור. דורש ffmpeg.",
+  "loudnorm.ask_path": "קובץ או תיקייה (Enter = ביטול):",
+  "loudnorm.nothing_found": "לא נמצאו קובצי וידאו או שמע.",
+  "loudnorm.choose_target": "איזה יעד?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "פודקאסטים",
+  "loudnorm.target_broadcast": "שידור (EBU R128)",
+  "loudnorm.no_audio": "אין רצועת שמע, דולג.",
+  "loudnorm.silent": "שקט, דולג.",
+  "loudnorm.measured": "נמדד: {lufs} LUFS, שיא {peak} dBTP",
+  "loudnorm.already_ok": "כבר תואם, דולג.",
+  "loudnorm.failed": "נכשל: {error}",
+  "loudnorm.saved": "נשמר: {path}",
+  "loudnorm.summary": {
+    "one": "הסתיים: הותאם קובץ {count} מתוך {total}.",
+    "other": "הסתיים: הותאמו {count} קבצים מתוך {total}."
+  }
+}

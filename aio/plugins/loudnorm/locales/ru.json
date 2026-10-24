@@ -1,0 +1,41 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Выровнять громкость",
+  "loudnorm.desc": "Приводит сразу много клипов или аудиофайлов к одной громкости (LUFS).",
+  "loudnorm.help": "Выберите файл или папку и цель: −14 LUFS для Reels/Shorts/TikTok/Spotify, −16 LUFS для подкастов или −23 LUFS (EBU R128) для эфира. Каждый файл измеряется, а затем линейно корректируется, пики не выше −1 dBTP. Изображение копируется без изменений. Файлы, которые уже соответствуют цели, пропускаются. Результат: <имя>.lufs14.mp4 или .m4a рядом с оригиналом. Нужен ffmpeg.",
+  "loudnorm.ask_path": "Файл или папка (Enter = отмена):",
+  "loudnorm.nothing_found": "Видео- и аудиофайлы не найдены.",
+  "loudnorm.choose_target": "Какая цель?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Подкасты",
+  "loudnorm.target_broadcast": "Эфир (EBU R128)",
+  "loudnorm.no_audio": "Нет звуковой дорожки, пропущено.",
+  "loudnorm.silent": "Тишина, пропущено.",
+  "loudnorm.measured": "Измерено: {lufs} LUFS, пик {peak} dBTP",
+  "loudnorm.already_ok": "Уже соответствует, пропущено.",
+  "loudnorm.failed": "Ошибка: {error}",
+  "loudnorm.saved": "Сохранено: {path}",
+  "loudnorm.summary": {
+    "one": "Готово: выровнен {count} файл из {total}.",
+    "few": "Готово: выровнено {count} файла из {total}.",
+    "many": "Готово: выровнено {count} файлов из {total}.",
+    "other": "Готово: выровнено {count} файла из {total}."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "loudnorm.name": "Lautheit angleichen",
+  "loudnorm.desc": "Bringt viele Clips oder Audiodateien auf einmal auf dieselbe Lautheit (LUFS).",
+  "loudnorm.help": "Wähle eine Datei oder einen Ordner und ein Ziel: −14 LUFS für Reels/Shorts/TikTok/Spotify, −16 LUFS für Podcasts oder −23 LUFS (EBU R128) für Rundfunk. Jede Datei wird gemessen und dann linear korrigiert, mit Spitzenpegel höchstens −1 dBTP. Das Bild wird unverändert kopiert. Dateien, die schon passen, werden übersprungen. Ergebnis: <name>.lufs14.mp4 bzw. .m4a neben dem Original. Braucht ffmpeg.",
+  "loudnorm.ask_path": "Datei oder Ordner (Enter = abbrechen):",
+  "loudnorm.nothing_found": "Keine Video- oder Audiodateien gefunden.",
+  "loudnorm.choose_target": "Welches Ziel?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcasts",
+  "loudnorm.target_broadcast": "Rundfunk (EBU R128)",
+  "loudnorm.no_audio": "Keine Tonspur, übersprungen.",
+  "loudnorm.silent": "Stumm, übersprungen.",
+  "loudnorm.measured": "Gemessen: {lufs} LUFS, Spitze {peak} dBTP",
+  "loudnorm.already_ok": "Passt schon, übersprungen.",
+  "loudnorm.failed": "Fehlgeschlagen: {error}",
+  "loudnorm.saved": "Gespeichert: {path}",
+  "loudnorm.summary": {
+    "one": "Fertig: {count} von {total} Dateien angeglichen.",
+    "other": "Fertig: {count} von {total} Dateien angeglichen."
+  }
+}

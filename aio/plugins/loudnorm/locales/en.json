@@ -1,0 +1,21 @@
+{
+  "loudnorm.name": "Match loudness",
+  "loudnorm.desc": "Brings many clips or audio files to the same loudness (LUFS) in one go.",
+  "loudnorm.help": "Pick a file or a folder and a target: −14 LUFS for Reels/Shorts/TikTok/Spotify, −16 LUFS for podcasts or −23 LUFS (EBU R128) for broadcast. Each file is measured and then corrected linearly, with peaks at most −1 dBTP. The picture is copied unchanged. Files already on target are skipped. Result: <name>.lufs14.mp4 or .m4a next to the original. Needs ffmpeg.",
+  "loudnorm.ask_path": "File or folder (Enter = cancel):",
+  "loudnorm.nothing_found": "No video or audio files found.",
+  "loudnorm.choose_target": "Which target?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcasts",
+  "loudnorm.target_broadcast": "Broadcast (EBU R128)",
+  "loudnorm.no_audio": "No audio track, skipped.",
+  "loudnorm.silent": "Silent, skipped.",
+  "loudnorm.measured": "Measured: {lufs} LUFS, peak {peak} dBTP",
+  "loudnorm.already_ok": "Already on target, skipped.",
+  "loudnorm.failed": "Failed: {error}",
+  "loudnorm.saved": "Saved: {path}",
+  "loudnorm.summary": {
+    "one": "Done: {count} of {total} files adjusted.",
+    "other": "Done: {count} of {total} files adjusted."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "सबटाइटल",
+  "subtitles.desc": "वीडियो में सबटाइटल फ़ाइल (.srt, .vtt, .ass) जोड़ता है: तस्वीर में जलाकर या बंद की जा सकने वाली ट्रैक के रूप में।",
+  "subtitles.help": "एक वीडियो चुनें। अगर उसके पास उसी नाम की फ़ाइल है (clip.srt या clip.hi.srt), तो वह सुझाई जाती है। पहले फ़ाइल जाँची जाती है (संख्या, ग़लत समय, वीडियो ख़त्म होने के बाद के सबटाइटल)। जलाए गए सबटाइटल हमेशा दिखते हैं, जो Reels और TikTok के लिए ज़रूरी है; इसके लिए वीडियो फिर से एन्कोड होता है। ट्रैक के रूप में जोड़ना तेज़ और बिना गुणवत्ता खोए होता है, प्लेयर इसे चालू-बंद कर सकते हैं। नतीजा: <नाम>.subtitled.mp4 या <नाम>.subs.mp4। ffmpeg चाहिए।",
+  "subtitles.no_video": "फ़ाइल में वीडियो नहीं है।",
+  "subtitles.found": "मिला: {path}",
+  "subtitles.use_found": "क्या ये सबटाइटल इस्तेमाल करें?",
+  "subtitles.ask_file": "सबटाइटल फ़ाइल (Enter = रद्द करें):",
+  "subtitles.unsupported": "{ext} समर्थित नहीं है (.srt, .vtt, .ass, .ssa)।",
+  "subtitles.summary": {
+    "one": "{count} सबटाइटल, आख़िरी {last} पर ख़त्म होता है।",
+    "other": "{count} सबटाइटल, आख़िरी {last} पर ख़त्म होता है।"
+  },
+  "subtitles.no_cues": "फ़ाइल में कोई सबटाइटल नहीं मिला।",
+  "subtitles.broken_times": {
+    "one": "{count} सबटाइटल शुरू होने से पहले ख़त्म होता है।",
+    "other": "{count} सबटाइटल शुरू होने से पहले ख़त्म होते हैं।"
+  },
+  "subtitles.after_end": {
+    "one": "{count} सबटाइटल वीडियो ख़त्म होने के बाद शुरू होता है।",
+    "other": "{count} सबटाइटल वीडियो ख़त्म होने के बाद शुरू होते हैं।"
+  },
+  "subtitles.choose_mode": "कैसे जोड़ें?",
+  "subtitles.mode_burn": "जलाएँ (हमेशा दिखें, Reels/TikTok के लिए)",
+  "subtitles.mode_track": "ट्रैक के रूप में (बंद हो सकती है, तेज़, दोबारा एन्कोड नहीं)",
+  "subtitles.working_burn": "सबटाइटल जलाए जा रहे हैं, फ़ोन पर समय लग सकता है …",
+  "subtitles.working_track": "सबटाइटल ट्रैक जोड़ी जा रही है …",
+  "subtitles.saved": "सहेजा गया: {path}"
+}

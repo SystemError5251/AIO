@@ -1,0 +1,41 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Wyrównaj głośność",
+  "loudnorm.desc": "Ustawia od razu wiele klipów lub plików audio na tę samą głośność (LUFS).",
+  "loudnorm.help": "Wybierz plik lub folder i cel: −14 LUFS dla Reels/Shorts/TikTok/Spotify, −16 LUFS dla podcastów albo −23 LUFS (EBU R128) dla nadawania. Każdy plik jest mierzony, a potem korygowany liniowo, szczyty najwyżej −1 dBTP. Obraz jest kopiowany bez zmian. Pliki, które już pasują, są pomijane. Wynik: <nazwa>.lufs14.mp4 lub .m4a obok oryginału. Wymaga ffmpeg.",
+  "loudnorm.ask_path": "Plik lub folder (Enter = anuluj):",
+  "loudnorm.nothing_found": "Nie znaleziono plików wideo ani audio.",
+  "loudnorm.choose_target": "Jaki cel?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcasty",
+  "loudnorm.target_broadcast": "Nadawanie (EBU R128)",
+  "loudnorm.no_audio": "Brak ścieżki dźwiękowej, pominięto.",
+  "loudnorm.silent": "Cisza, pominięto.",
+  "loudnorm.measured": "Zmierzono: {lufs} LUFS, szczyt {peak} dBTP",
+  "loudnorm.already_ok": "Już pasuje, pominięto.",
+  "loudnorm.failed": "Nie udało się: {error}",
+  "loudnorm.saved": "Zapisano: {path}",
+  "loudnorm.summary": {
+    "one": "Gotowe: wyrównano {count} plik z {total}.",
+    "few": "Gotowe: wyrównano {count} pliki z {total}.",
+    "many": "Gotowe: wyrównano {count} plików z {total}.",
+    "other": "Gotowe: wyrównano {count} pliku z {total}."
+  }
+}
