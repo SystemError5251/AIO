@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Wi-Fi फ़ाइल शेयर",
+  "wifi_share.desc": "बिना ऐप के, उसी Wi-Fi के डिवाइसों के साथ फ़ोल्डर शेयर करता है: ब्राउज़र में लिंक खोलें और डाउनलोड करें।",
+  "wifi_share.help": "फ़ोन पर एक छोटा वेब सर्वर शुरू करता है। पते में एक रैंडम कुंजी होती है, इसलिए सिर्फ़ लिंक वाले ही अंदर आ सकते हैं। आने वाले फ़ाइलें देखते और डाउनलोड करते हैं। अनुमति देने पर वे फ़ोल्डर में फ़ाइलें अपलोड भी कर सकते हैं; मौजूदा फ़ाइलें कभी नहीं बदली जातीं। पहुँच सिर्फ़ शेयर किए गए फ़ोल्डर तक है। सर्वर तब तक चलता है जब तक आप Enter न दबाएँ। सुझाव: pkg install libqrencode से एक QR कोड भी दिखता है।",
+  "wifi_share.ask_folder": "शेयर करने का फ़ोल्डर (Enter = रद्द करें):",
+  "wifi_share.ask_upload": "क्या आने वाले फ़ाइलें अपलोड कर सकते हैं?",
+  "wifi_share.running": "{path} यहाँ शेयर हो रहा है:",
+  "wifi_share.hint": "यह पता उसी Wi-Fi के किसी डिवाइस पर खोलें। गेस्ट Wi-Fi या मोबाइल डेटा पर यह काम नहीं करता।",
+  "wifi_share.stop_prompt": "Enter = शेयर करना बंद करें",
+  "wifi_share.stopped": "बंद हुआ। अनुरोध: {requests}, अपलोड: {uploads}।"
+}

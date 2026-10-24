@@ -1,0 +1,10 @@
+{
+  "id": "secrets_vault",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "security",
+  "requires": [],
+  "name_key": "secrets_vault.name",
+  "desc_key": "secrets_vault.desc",
+  "help_key": "secrets_vault.help"
+}

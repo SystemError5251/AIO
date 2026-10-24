@@ -1,0 +1,11 @@
+{
+  "wifi_share.name": "Wi-Fi file share",
+  "wifi_share.desc": "Shares a folder with devices in the same Wi-Fi, no app needed: open the link in a browser and download.",
+  "wifi_share.help": "Starts a small web server on the phone. The address contains a random key, so only people with the link get in. Visitors see the files and download them. If you allow it, they can also upload files into the folder; existing files are never replaced. Access is limited to the shared folder. The server runs until you press Enter. Tip: with pkg install libqrencode a QR code is shown too.",
+  "wifi_share.ask_folder": "Folder to share (Enter = cancel):",
+  "wifi_share.ask_upload": "May visitors upload files?",
+  "wifi_share.running": "Sharing {path} at:",
+  "wifi_share.hint": "Open the address on a device in the same Wi-Fi. It does not work in guest Wi-Fi or over mobile data.",
+  "wifi_share.stop_prompt": "Enter = stop sharing",
+  "wifi_share.stopped": "Stopped. Requests: {requests}, uploaded: {uploads}."
+}

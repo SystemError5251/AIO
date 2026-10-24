@@ -1,0 +1,10 @@
+{
+  "id": "wifi_share",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "network",
+  "requires": [],
+  "name_key": "wifi_share.name",
+  "desc_key": "wifi_share.desc",
+  "help_key": "wifi_share.help"
+}

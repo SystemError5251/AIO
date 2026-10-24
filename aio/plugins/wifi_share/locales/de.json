@@ -1,0 +1,11 @@
+{
+  "wifi_share.name": "WLAN-Dateiteiler",
+  "wifi_share.desc": "Teilt einen Ordner mit Geräten im selben WLAN, ganz ohne App: Link im Browser öffnen und herunterladen.",
+  "wifi_share.help": "Startet einen kleinen Webserver auf dem Handy. Die Adresse enthält einen Zufallsschlüssel, nur wer den Link hat, kommt hinein. Besucher sehen die Dateien und laden sie herunter. Wenn du es erlaubst, können sie auch Dateien in den Ordner hochladen; vorhandene Dateien werden nie ersetzt. Zugriff gibt es nur innerhalb des geteilten Ordners. Der Server läuft, bis du Enter drückst. Tipp: Mit pkg install libqrencode erscheint zusätzlich ein QR-Code.",
+  "wifi_share.ask_folder": "Ordner zum Teilen (Enter = abbrechen):",
+  "wifi_share.ask_upload": "Dürfen Besucher Dateien hochladen?",
+  "wifi_share.running": "Teile {path} unter:",
+  "wifi_share.hint": "Öffne die Adresse auf einem Gerät im selben WLAN. Funktioniert nicht im Gast-WLAN oder bei mobilen Daten.",
+  "wifi_share.stop_prompt": "Enter = Teilen beenden",
+  "wifi_share.stopped": "Beendet. Abrufe: {requests}, hochgeladen: {uploads}."
+}

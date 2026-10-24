@@ -1,0 +1,22 @@
+{
+  "_auto": [
+    "wifi_share.ask_folder",
+    "wifi_share.ask_upload",
+    "wifi_share.desc",
+    "wifi_share.help",
+    "wifi_share.hint",
+    "wifi_share.name",
+    "wifi_share.running",
+    "wifi_share.stop_prompt",
+    "wifi_share.stopped"
+  ],
+  "wifi_share.name": "Обмін через Wi-Fi",
+  "wifi_share.desc": "Відкриває теку для пристроїв у тій самій Wi-Fi-мережі без застосунків: відкрийте посилання в браузері й завантажте.",
+  "wifi_share.help": "Запускає на телефоні невеликий вебсервер. Адреса містить випадковий ключ, тож увійти може лише той, хто має посилання. Відвідувачі бачать файли й завантажують їх. Якщо дозволити, вони зможуть і надсилати файли в теку; наявні файли ніколи не замінюються. Доступ обмежено спільною текою. Сервер працює, доки ви не натиснете Enter. Порада: після pkg install libqrencode показується ще й QR-код.",
+  "wifi_share.ask_folder": "Тека для обміну (Enter = скасувати):",
+  "wifi_share.ask_upload": "Дозволити відвідувачам надсилати файли?",
+  "wifi_share.running": "Теку {path} відкрито за адресою:",
+  "wifi_share.hint": "Відкрийте адресу на пристрої в тій самій Wi-Fi-мережі. У гостьовій мережі та через мобільний інтернет це не працює.",
+  "wifi_share.stop_prompt": "Enter = завершити обмін",
+  "wifi_share.stopped": "Завершено. Запитів: {requests}, надіслано: {uploads}."
+}
