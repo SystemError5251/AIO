@@ -22,6 +22,16 @@ def change_language(ctx: AppContext) -> None:
         ctx.print(ctx.t("settings.language_changed", language=_language_name(code)))
 
 
+def ui_mode(ctx: AppContext) -> str:
+    return "plain" if ctx.config.get("ui") == "plain" else "full"
+
+
+def toggle_ui(ctx: AppContext) -> None:
+    mode = "plain" if ui_mode(ctx) == "full" else "full"
+    ctx.config = config.set_value("ui", mode)
+    ctx.print(ctx.t("ui.changed", mode=ctx.t(f"ui.mode_{mode}")))
+
+
 def _language_name(code: str) -> str:
     return load_meta().get(code, {}).get("name", code)
 
@@ -43,6 +53,10 @@ def show_tool(ctx: AppContext, plugin: Plugin) -> None:
     answer = ctx.ask(ctx.t("tool.start_prompt") + " ")
     if answer is None or answer.lower() in ("b", "q"):
         return
+    run_tool(ctx, plugin)
+
+
+def run_tool(ctx: AppContext, plugin: Plugin) -> None:
     try:
         plugin.run(ctx)
     except MissingTool as exc:
@@ -65,6 +79,7 @@ def settings_menu(ctx: AppContext) -> None:
                   + (f" ({pending})" if pending else ""))
         ctx.print(f"   6) {ctx.t('settings.plugins')} ({len(ctx.plugins)})")
         ctx.print(f"   7) {ctx.t('settings.doctor')}")
+        ctx.print(f"   8) {ctx.t('settings.ui')} ({ctx.t('ui.mode_' + ui_mode(ctx))})")
         ctx.print(f"   b) {ctx.t('menu.back')}")
         answer = ctx.ask(ctx.t("menu.prompt") + " ")
         if answer is None or answer.lower() in ("b", "q", ""):
@@ -83,6 +98,8 @@ def settings_menu(ctx: AppContext) -> None:
             manage_plugins(ctx)
         elif answer == "7":
             system_check(ctx)
+        elif answer == "8":
+            toggle_ui(ctx)
         else:
             ctx.print(ctx.t("menu.invalid"))
 

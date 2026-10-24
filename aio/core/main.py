@@ -10,6 +10,8 @@ from aio import __version__
 from aio.core import config, plugin_manager, registry, review
 from aio.core.context import AppContext
 from aio.core.i18n import available_languages, detect_system_language, get_translator
+from aio.core.tui.app import available as tui_available
+from aio.core.tui.app import run as run_tui
 from aio.core.ui.doctor import report, system_check
 from aio.core.ui.language_picker import choose_language
 from aio.core.ui.menu import main_menu, print_tool_list
@@ -38,6 +40,8 @@ def build_parser() -> argparse.ArgumentParser:
                         help="check which programs and keys the tools need and exit")
     parser.add_argument("--update", action="store_true", help="update AIO from GitHub and exit")
     parser.add_argument("--list", action="store_true", help="list tools and exit")
+    parser.add_argument("--plain", action="store_true",
+                        help="use the simple text UI instead of the full-screen one")
     parser.add_argument("--version", action="version", version=f"aio {__version__}")
     return parser
 
@@ -87,8 +91,15 @@ def main(argv: Sequence[str] | None = None,
         ctx.config = config.set_value("language", code)
         saved = code
 
+    # The full-screen UI opens on the language box itself and shows the full
+    # language list first on the first start or with --lang / --choose-language.
+    one_shot = (args.doctor or args.update or args.install_plugin or args.remove_plugin
+                or args.review or args.list)
+    use_tui = (interactive and not one_shot and not args.plain and input_fn is input
+               and tui_available(ctx))
+
     # Language selection BEFORE the UI: first start, or --lang / --choose-language.
-    if args.lang == CHOOSE or saved is None:
+    if (args.lang == CHOOSE or saved is None) and not use_tui:
         if interactive:
             code = choose_language(ctx, current=saved)
             if code is None:
@@ -131,6 +142,9 @@ def main(argv: Sequence[str] | None = None,
     if args.list or not interactive:
         print_tool_list(ctx)
         return 0
+
+    if use_tui:
+        return run_tui(ctx, first_start=saved is None, open_picker=args.lang == CHOOSE)
 
     check_on_start(ctx)
     main_menu(ctx)

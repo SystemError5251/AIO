@@ -1,5 +1,2 @@
-"""Terminal UI. Plain stdlib (input/print) so it runs on any Termux install.
-
-The UI only talks to i18n, config and registry, so a richer front end
-(Textual or Rich) can replace it later without touching the core.
-"""
+"""Simple line-based terminal UI (input/print). Used with --plain, in scripts
+and for dialogs the full-screen UI in :mod:`aio.core.tui` hands over."""
