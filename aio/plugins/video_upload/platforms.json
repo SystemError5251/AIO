@@ -1,0 +1,18 @@
+{
+  "_comment": "Platform limits for vertical clips. Platforms change these often: update this file, no code change needed. Values as known in 2025; please verify against the platforms.",
+  "youtube_shorts": {
+    "label": "YouTube Shorts",
+    "max_seconds": 180,
+    "allow_square": true
+  },
+  "instagram_reels": {
+    "label": "Instagram Reels",
+    "max_seconds": 180,
+    "allow_square": false
+  },
+  "tiktok": {
+    "label": "TikTok",
+    "max_seconds": 600,
+    "allow_square": false
+  }
+}

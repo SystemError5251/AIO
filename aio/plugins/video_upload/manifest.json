@@ -1,0 +1,9 @@
+{
+  "id": "video_upload",
+  "version": "0.1.0",
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "video_upload.name",
+  "desc_key": "video_upload.desc",
+  "help_key": "video_upload.help"
+}

@@ -240,7 +240,7 @@ class Translator:
                 return _babel_numbers.format_decimal(value, locale=self.language)
             except Exception:
                 pass
-        return f"{value:,}" if isinstance(value, int) else f"{value:,.2f}"
+        return f"{value:,}"
 
     def format_date(self, value: _dt.date | None = None) -> str:
         value = value or _dt.date.today()

@@ -22,7 +22,7 @@ aio = "aio.core.main:main"
 include = ["aio*"]
 
 [tool.setuptools.package-data]
-"aio" = ["locales/*.json", "plugins/*/manifest.json", "plugins/*/*.py", "plugins/*/locales/*.json"]
+"aio" = ["locales/*.json", "plugins/*/*.json", "plugins/*/*.py", "plugins/*/locales/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

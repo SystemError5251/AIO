@@ -1,0 +1,9 @@
+{
+  "id": "music_check",
+  "version": "0.1.0",
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "music_check.name",
+  "desc_key": "music_check.desc",
+  "help_key": "music_check.help"
+}

@@ -1,0 +1,14 @@
+{
+  "privacy_strip.name": "Privacy-Stripper",
+  "privacy_strip.desc": "Entfernt Standort-, Geräte- und Zeitdaten aus Videos und Fotos, bevor du sie teilst.",
+  "privacy_strip.help": "Gib eine Datei oder einen ganzen Ordner an. Fotos (JPEG, PNG) werden verlustfrei bereinigt; die Drehung bleibt erhalten, damit sie nicht quer angezeigt werden. Videos (MP4, MOV, MKV, WebM, …) werden ohne Neukodierung kopiert, ohne GPS-Spuren, Gerätenamen und Zeitstempel. Das Original bleibt unverändert; das Ergebnis liegt daneben als <name>.clean.<endung>. Für Videos wird ffmpeg gebraucht (pkg install ffmpeg). Tipp: Führe in Termux einmal termux-setup-storage aus; dein Kamera-Ordner liegt dann unter ~/storage/dcim/Camera.",
+  "privacy_strip.ask_path": "Datei oder Ordner (Enter = abbrechen):",
+  "privacy_strip.nothing_found": "Keine unterstützten Fotos oder Videos gefunden.",
+  "privacy_strip.unsupported": "Übersprungen: {ext} wird nicht unterstützt.",
+  "privacy_strip.failed": "Fehlgeschlagen: {error}",
+  "privacy_strip.removed": {"one": "{count} Eintrag entfernt: {items}", "other": "{count} Einträge entfernt: {items}"},
+  "privacy_strip.already_clean": "Keine Metadaten gefunden, eine saubere Kopie wurde trotzdem gespeichert.",
+  "privacy_strip.remaining": "Noch vorhanden (bitte prüfen): {items}",
+  "privacy_strip.saved": "Gespeichert: {path}",
+  "privacy_strip.summary": {"one": "Fertig: {count} von {total} Datei bereinigt.", "other": "Fertig: {count} von {total} Dateien bereinigt."}
+}

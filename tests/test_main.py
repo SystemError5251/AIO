@@ -47,7 +47,7 @@ def test_choose_language_flag_shows_picker_again(term):
 def test_lang_code_sets_directly(term):
     t = term([])
     assert main(["--lang", "de", "--list"], input_fn=t.input, print_fn=t.print) == 0
-    assert "2 Tools verfügbar:" in t.text
+    assert "5 Tools verfügbar:" in t.text
     assert config.load()["language"] == "de"
 
 

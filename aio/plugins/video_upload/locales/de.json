@@ -1,0 +1,23 @@
+{
+  "video_upload.name": "Upload (Reels/Shorts/TikTok)",
+  "video_upload.desc": "Prüft einen Clip gegen die Regeln der Plattform, wandelt ihn bei Bedarf um und öffnet das Teilen-Menü.",
+  "video_upload.help": "Wähle ein Video und eine Plattform. Das Tool prüft Format (9:16), Länge, Codecs und Bildrate. Passt etwas nicht, erstellt es eine Kopie in 1080x1920 mit H.264/AAC (<name>.<plattform>.mp4), kürzt sie bei Bedarf auf die Höchstlänge und entfernt dabei die Metadaten. Danach öffnet es das Android-Teilen-Menü, in dem du die App auswählst. Benötigt ffmpeg; zum Teilen außerdem die App Termux:API und pkg install termux-api. Clips ohne Umwandlung werden unverändert geteilt; enthalten sie Standortdaten, lass vorher den Privacy-Stripper laufen. Die Grenzen der Plattformen stehen in plugins/video_upload/platforms.json.",
+  "video_upload.choose_platform": "Welche Plattform?",
+  "video_upload.max_length": "(max. {seconds} s)",
+  "video_upload.report": "Prüfung für {platform}:",
+  "video_upload.no_video": "Die Datei enthält kein Video.",
+  "video_upload.not_vertical": "Format {w}x{h} ist nicht hochkant 9:16.",
+  "video_upload.low_resolution": "Geringe Auflösung ({w}x{h}); 1080x1920 sieht schärfer aus.",
+  "video_upload.bad_video_codec": "Video-Codec {codec} ist nicht ideal (H.264 empfohlen).",
+  "video_upload.high_fps": "{fps} fps sind mehr, als die Plattformen annehmen (max. 60).",
+  "video_upload.no_audio": "Keine Tonspur.",
+  "video_upload.bad_audio_codec": "Audio-Codec {codec} ist nicht ideal (AAC empfohlen).",
+  "video_upload.too_long": "Zu lang: {seconds} s, erlaubt sind {limit} s.",
+  "video_upload.all_good": "Alles passt, keine Umwandlung nötig.",
+  "video_upload.will_trim": "Die Kopie wird auf {limit} s gekürzt.",
+  "video_upload.ask_convert": "Jetzt eine passende Kopie erstellen?",
+  "video_upload.converting": "Wird umgewandelt, das kann auf dem Handy etwas dauern …",
+  "video_upload.converted": "Gespeichert: {path}",
+  "video_upload.share_missing": "Für das Teilen-Menü installiere die App Termux:API und führe pkg install termux-api aus. Die Datei liegt hier: {path}",
+  "video_upload.ask_share": "Teilen-Menü öffnen, um auf {platform} zu posten?"
+}
