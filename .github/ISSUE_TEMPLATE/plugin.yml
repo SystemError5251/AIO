@@ -1,0 +1,23 @@
+name: Plugin vorstellen / Share a plugin
+description: Ein eigenes Tool für AIO vorstellen / Present your own AIO tool
+title: "Plugin: <name>"
+labels: ["plugin"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Quelle / Source (git URL)
+      placeholder: https://github.com/name/aio-mein-tool.git
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Was macht es? / What does it do?
+    validations:
+      required: true
+  - type: input
+    id: languages
+    attributes:
+      label: Sprachen / Languages
+      placeholder: de, en

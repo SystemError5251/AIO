@@ -25,6 +25,9 @@ from aio.core import config
 
 BUILTIN_PLUGINS_DIR = Path(__file__).resolve().parent.parent / "plugins"
 REQUIRED_FIELDS = ("id", "version", "name_key", "desc_key", "help_key")
+# Version of the plugin interface (run(ctx), AppContext, aio.core.media). A plugin
+# may declare "api": N in its manifest; one newer than this AIO is skipped.
+API_VERSION = 1
 
 
 @dataclass
@@ -40,6 +43,10 @@ class Plugin:
     requires: list[str] = field(default_factory=list)
     manifest: dict[str, Any] = field(default_factory=dict)
     _module: ModuleType | None = field(default=None, repr=False)
+
+    @property
+    def builtin(self) -> bool:
+        return self.path.parent == BUILTIN_PLUGINS_DIR
 
     @property
     def locales_dir(self) -> Path:
@@ -73,6 +80,9 @@ def _parse_manifest(folder: Path) -> Plugin:
     missing = [f for f in REQUIRED_FIELDS if not data.get(f)]
     if missing:
         raise ValueError(f"missing fields: {', '.join(missing)}")
+    api = data.get("api", 1)
+    if not isinstance(api, int) or api > API_VERSION:
+        raise ValueError(f"needs plugin API {api}, this AIO has {API_VERSION}; update AIO")
     entry = data.get("entry", "plugin.py")
     if not (folder / entry).is_file():
         raise ValueError(f"entry file {entry!r} not found")

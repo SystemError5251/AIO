@@ -76,5 +76,27 @@
     "one": "{count} text reviewed. Your corrections are in {path}.",
     "other": "{count} texts reviewed. Your corrections are in {path}."
   },
-  "review.share_hint": "Share this file, for example in a GitHub issue, so everyone benefits."
+  "review.share_hint": "Share this file, for example in a GitHub issue, so everyone benefits.",
+  "settings.plugins": "Manage plugins",
+  "plugins.builtin": "built in",
+  "plugins.user": "installed",
+  "plugins.install": "Install plugin",
+  "plugins.remove": "Remove plugin",
+  "plugins.install_hint": "Source: a folder, a .zip file or a git URL (e.g. https://github.com/name/aio-tool.git).",
+  "plugins.install_prompt": "Source (Enter = cancel):",
+  "plugins.warning": "Warning: a plugin is program code and runs with your permissions. Only install plugins from sources you trust.",
+  "plugins.confirm_install": "Install anyway?",
+  "plugins.installed": "Installed: {name} (v{version}).",
+  "plugins.none_installed": "No additional plugins are installed.",
+  "plugins.remove_prompt": "Which one to remove? (Enter = cancel):",
+  "plugins.confirm_remove": "Really remove {name}?",
+  "plugins.removed": "Removed: {name}.",
+  "plugins.error_source": "Source not found or not readable: {source}",
+  "plugins.error_unsafe_zip": "The .zip file contains unsafe paths and was not extracted.",
+  "plugins.error_no_manifest": "No manifest.json found (neither in the folder nor in exactly one subfolder).",
+  "plugins.error_manifest": "Invalid manifest.json: {detail}",
+  "plugins.error_id": "Invalid plugin id \"{id}\": use lower case letters, digits and _.",
+  "plugins.error_builtin": "\"{id}\" is already a built-in tool.",
+  "plugins.error_locales": "Language files missing for: {langs}. Every plugin needs at least German and English.",
+  "plugins.error_not_installed": "No installed plugin \"{id}\"."
 }
