@@ -17,7 +17,7 @@ AUDIO_EXTS = {".mp3", ".m4a", ".aac", ".wav", ".flac", ".ogg", ".opus"}
 
 # Termux package that provides a program, where the names differ.
 PACKAGES = {"ffprobe": "ffmpeg", "fpcalc": "chromaprint", "termux-share": "termux-api",
-            "termux-clipboard-set": "termux-api"}
+            "termux-clipboard-set": "termux-api", "qrencode": "libqrencode"}
 
 
 class MissingTool(RuntimeError):

@@ -34,6 +34,7 @@ def test_checks_name_install_commands(nothing_installed):
     assert checks["fpcalc"].values == {"cmd": "pkg install chromaprint"} and checks["fpcalc"].optional
     assert checks["termux-clipboard-set"].hint == "doctor.termux_api"
     assert checks["termux-clipboard-set"].values == {"cmd": "pkg install termux-api"}
+    assert checks["qrencode"].values == {"cmd": "pkg install libqrencode"}
     assert checks["cryptography"].values == {"cmd": "pkg install python-cryptography"}
     assert not checks["storage"].ok and checks["python"].ok
     assert doctor.run_checks({"acoustid_key": "k"})[4].ok
