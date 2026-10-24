@@ -1,0 +1,28 @@
+name: Übersetzung / Translation
+description: Geprüfte oder verbesserte Texte einreichen / Submit reviewed or corrected texts
+title: "Übersetzung: <Sprache / language>"
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke! In AIO: *Einstellungen → Übersetzungen prüfen* (oder `aio --review`). Danach die Datei `~/.aio/locales/<code>.json` hier anhängen.
+        Thank you! In AIO: *Settings → Review translations* (or `aio --review`), then attach the file `~/.aio/locales/<code>.json` here.
+  - type: input
+    id: language
+    attributes:
+      label: Sprachcode / Language code
+      placeholder: fr
+    validations:
+      required: true
+  - type: textarea
+    id: file
+    attributes:
+      label: Datei / File
+      description: Datei anhängen oder Inhalt einfügen / Attach the file or paste its content
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anmerkungen / Notes

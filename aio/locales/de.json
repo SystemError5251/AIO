@@ -76,5 +76,27 @@
     "one": "{count} Text geprüft. Deine Korrekturen liegen in {path}.",
     "other": "{count} Texte geprüft. Deine Korrekturen liegen in {path}."
   },
-  "review.share_hint": "Teile diese Datei, zum Beispiel in einem GitHub-Issue, damit alle davon profitieren."
+  "review.share_hint": "Teile diese Datei, zum Beispiel in einem GitHub-Issue, damit alle davon profitieren.",
+  "settings.plugins": "Plugins verwalten",
+  "plugins.builtin": "eingebaut",
+  "plugins.user": "installiert",
+  "plugins.install": "Plugin installieren",
+  "plugins.remove": "Plugin entfernen",
+  "plugins.install_hint": "Quelle: ein Ordner, eine .zip-Datei oder eine Git-URL (z. B. https://github.com/name/aio-tool.git).",
+  "plugins.install_prompt": "Quelle (Enter = abbrechen):",
+  "plugins.warning": "Achtung: Ein Plugin ist Programmcode und läuft mit deinen Rechten. Installiere nur Plugins aus Quellen, denen du vertraust.",
+  "plugins.confirm_install": "Trotzdem installieren?",
+  "plugins.installed": "Installiert: {name} (v{version}).",
+  "plugins.none_installed": "Es sind keine zusätzlichen Plugins installiert.",
+  "plugins.remove_prompt": "Welches entfernen? (Enter = abbrechen):",
+  "plugins.confirm_remove": "{name} wirklich entfernen?",
+  "plugins.removed": "Entfernt: {name}.",
+  "plugins.error_source": "Quelle nicht gefunden oder nicht lesbar: {source}",
+  "plugins.error_unsafe_zip": "Die .zip-Datei enthält unsichere Pfade und wurde nicht entpackt.",
+  "plugins.error_no_manifest": "Keine manifest.json gefunden (weder im Ordner noch in genau einem Unterordner).",
+  "plugins.error_manifest": "Ungültige manifest.json: {detail}",
+  "plugins.error_id": "Ungültige Plugin-ID „{id}“: erlaubt sind Kleinbuchstaben, Ziffern und _.",
+  "plugins.error_builtin": "„{id}“ ist bereits ein eingebautes Tool.",
+  "plugins.error_locales": "Es fehlen Sprachdateien für: {langs}. Jedes Plugin braucht mindestens Deutsch und Englisch.",
+  "plugins.error_not_installed": "Kein installiertes Plugin „{id}“."
 }
