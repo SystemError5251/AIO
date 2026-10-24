@@ -1,0 +1,52 @@
+{
+  "_auto": [
+    "git_backup.added",
+    "git_backup.all",
+    "git_backup.ask_folder",
+    "git_backup.ask_remote",
+    "git_backup.committed",
+    "git_backup.desc",
+    "git_backup.failed",
+    "git_backup.help",
+    "git_backup.list_title",
+    "git_backup.local_only",
+    "git_backup.name",
+    "git_backup.new",
+    "git_backup.no_changes",
+    "git_backup.none_yet",
+    "git_backup.not_a_repo",
+    "git_backup.push_failed",
+    "git_backup.pushed",
+    "git_backup.remote_hint",
+    "git_backup.remove",
+    "git_backup.remove_prompt",
+    "git_backup.removed",
+    "git_backup.skipped_large"
+  ],
+  "git_backup.name": "Git 备份",
+  "git_backup.desc": "用 git 为文件夹做带版本历史的备份，也可以推送到 GitHub、GitLab 或自己的服务器。",
+  "git_backup.help": "把一个文件夹添加为备份（笔记、脚本、配置）。它会变成 git 仓库；也可以填写远程地址，例如一个私有 GitHub 仓库。每次备份都会带日期保存所有改动并推送，旧版本随时可以找回。超过 95 MB 的文件会被排除（GitHub 不接受超过 100 MB 的文件）。上传需要事先配置好 git 凭据或 SSH 密钥。需要 git（pkg install git）。",
+  "git_backup.not_a_repo": "{path} 已不再是 git 仓库。请重新添加该备份。",
+  "git_backup.skipped_large": {
+    "other": "已排除 {count} 个超过 95 MB 的文件：{files}"
+  },
+  "git_backup.committed": {
+    "other": "已保存 {count} 处改动。"
+  },
+  "git_backup.no_changes": "自上次备份以来没有改动。",
+  "git_backup.pushed": "已上传。",
+  "git_backup.push_failed": "上传失败：{error}",
+  "git_backup.ask_folder": "要备份的文件夹（Enter = 取消）：",
+  "git_backup.remote_hint": "远程地址，例如 https://github.com/name/notes.git 或 git@github.com:name/notes.git。留空表示只做本地备份。",
+  "git_backup.ask_remote": "远程地址（Enter = 仅本地）：",
+  "git_backup.failed": "失败：{error}",
+  "git_backup.added": "已添加备份：{path}",
+  "git_backup.list_title": "你的备份：",
+  "git_backup.local_only": "仅本地",
+  "git_backup.all": "全部备份",
+  "git_backup.none_yet": "还没有备份。",
+  "git_backup.new": "添加新备份",
+  "git_backup.remove": "从列表中移除备份",
+  "git_backup.remove_prompt": "哪一个？（Enter = 取消）：",
+  "git_backup.removed": "已从列表移除（文件和历史保留）：{path}"
+}

@@ -1,0 +1,52 @@
+{
+  "_auto": [
+    "git_backup.added",
+    "git_backup.all",
+    "git_backup.ask_folder",
+    "git_backup.ask_remote",
+    "git_backup.committed",
+    "git_backup.desc",
+    "git_backup.failed",
+    "git_backup.help",
+    "git_backup.list_title",
+    "git_backup.local_only",
+    "git_backup.name",
+    "git_backup.new",
+    "git_backup.no_changes",
+    "git_backup.none_yet",
+    "git_backup.not_a_repo",
+    "git_backup.push_failed",
+    "git_backup.pushed",
+    "git_backup.remote_hint",
+    "git_backup.remove",
+    "git_backup.remove_prompt",
+    "git_backup.removed",
+    "git_backup.skipped_large"
+  ],
+  "git_backup.name": "Git バックアップ",
+  "git_backup.desc": "git でフォルダーを履歴つきでバックアップします。GitHub、GitLab、自分のサーバーにも送れます。",
+  "git_backup.help": "フォルダーをバックアップとして追加します（メモ、スクリプト、設定）。フォルダーは git リポジトリになり、必要ならリモート URL（例：非公開の GitHub リポジトリ）を指定します。バックアップのたびに変更をすべて日付つきで保存して送信し、古い版もあとから取り出せます。95 MB を超えるファイルは除外します（GitHub は 100 MB を超えるファイルを受け付けません）。送信には git の認証情報か SSH キーの設定が必要です。git が必要です（pkg install git）。",
+  "git_backup.not_a_repo": "{path} はもう git リポジトリではありません。バックアップを追加し直してください。",
+  "git_backup.skipped_large": {
+    "other": "95 MB を超えるファイル {count} 件を除外しました：{files}"
+  },
+  "git_backup.committed": {
+    "other": "{count} 件の変更を保存しました。"
+  },
+  "git_backup.no_changes": "前回のバックアップから変更はありません。",
+  "git_backup.pushed": "送信しました。",
+  "git_backup.push_failed": "送信に失敗しました：{error}",
+  "git_backup.ask_folder": "バックアップするフォルダー（Enter = キャンセル）：",
+  "git_backup.remote_hint": "リモート URL（例：https://github.com/name/notes.git または git@github.com:name/notes.git）。ローカルだけのバックアップなら空のままにします。",
+  "git_backup.ask_remote": "リモート URL（Enter = ローカルのみ）：",
+  "git_backup.failed": "失敗しました：{error}",
+  "git_backup.added": "バックアップを追加しました：{path}",
+  "git_backup.list_title": "バックアップ一覧：",
+  "git_backup.local_only": "ローカルのみ",
+  "git_backup.all": "すべてバックアップ",
+  "git_backup.none_yet": "バックアップはまだありません。",
+  "git_backup.new": "新しいバックアップを追加",
+  "git_backup.remove": "バックアップを一覧から外す",
+  "git_backup.remove_prompt": "どれですか？（Enter = キャンセル）：",
+  "git_backup.removed": "一覧から外しました（ファイルと履歴は残ります）：{path}"
+}

@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Limpador de armazenamento",
+  "storage_clean.desc": "Mostra o que ocupa o armazenamento: arquivos grandes, duplicados e lixo de cache.",
+  "storage_clean.help": "Analisa uma pasta e as subpastas (sugerida: o armazenamento compartilhado ~/storage/shared; rode termux-setup-storage uma vez). Lista os maiores arquivos a partir de 50 MB, duplicados exatos (comparados por checksum, não só pelo nome) e pastas de cache como .thumbnails ou .cache, além de downloads interrompidos. Nada é apagado sem perguntar, com a lista e o tamanho total. De cada grupo de duplicados fica o arquivo com o caminho mais curto. Links nunca são seguidos.",
+  "storage_clean.ask_path": "Pasta (Enter = {default}):",
+  "storage_clean.scanning": "Analisando a pasta, pode levar um momento …",
+  "storage_clean.summary": {
+    "one": "{count} arquivo, {size} no total.",
+    "other": "{count} arquivos, {size} no total."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} arquivo não pôde ser lido.",
+    "other": "{count} arquivos não puderam ser lidos."
+  },
+  "storage_clean.large_title": "Maiores arquivos (a partir de {size}):",
+  "storage_clean.none": "nenhum",
+  "storage_clean.dup_title": "Arquivos duplicados:",
+  "storage_clean.dup_summary": {
+    "one": "{count} cópia desnecessária, {size} no total.",
+    "other": "{count} cópias desnecessárias, {size} no total."
+  },
+  "storage_clean.ask_delete_dups": "Apagar as cópias (o primeiro original de cada grupo fica)?",
+  "storage_clean.junk_title": "Cache e arquivos temporários:",
+  "storage_clean.junk_summary": {
+    "one": "{count} item, {size} no total.",
+    "other": "{count} itens, {size} no total."
+  },
+  "storage_clean.ask_delete_junk": "Apagar estas pastas de cache e arquivos temporários?",
+  "storage_clean.deleted": {
+    "one": "{count} apagado.",
+    "other": "{count} apagados."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} não pôde ser apagado.",
+    "other": "{count} não puderam ser apagados."
+  }
+}

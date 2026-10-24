@@ -1,0 +1,37 @@
+{
+  "storage_clean.name": "Speicher-Aufräumer",
+  "storage_clean.desc": "Zeigt, was den Speicher füllt: große Dateien, doppelte Dateien und Cache-Müll.",
+  "storage_clean.help": "Durchsucht einen Ordner samt Unterordnern (vorgeschlagen: der gemeinsame Speicher ~/storage/shared, dafür einmal termux-setup-storage ausführen). Angezeigt werden die größten Dateien ab 50 MB, exakt gleiche Dateien (per Prüfsumme verglichen, nicht nur nach Name) und Cache-Ordner wie .thumbnails oder .cache sowie abgebrochene Downloads. Gelöscht wird nur nach Rückfrage, mit Liste und Gesamtgröße. Von Duplikaten bleibt jeweils die Datei mit dem kürzesten Pfad erhalten. Verknüpfungen werden nie verfolgt.",
+  "storage_clean.ask_path": "Ordner (Enter = {default}):",
+  "storage_clean.scanning": "Durchsuche den Ordner, das kann einen Moment dauern …",
+  "storage_clean.summary": {
+    "one": "{count} Datei, zusammen {size}.",
+    "other": "{count} Dateien, zusammen {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} Datei konnte nicht gelesen werden.",
+    "other": "{count} Dateien konnten nicht gelesen werden."
+  },
+  "storage_clean.large_title": "Größte Dateien (ab {size}):",
+  "storage_clean.none": "keine",
+  "storage_clean.dup_title": "Doppelte Dateien:",
+  "storage_clean.dup_summary": {
+    "one": "{count} überflüssige Kopie, zusammen {size}.",
+    "other": "{count} überflüssige Kopien, zusammen {size}."
+  },
+  "storage_clean.ask_delete_dups": "Die Kopien löschen (das jeweils erste Original bleibt)?",
+  "storage_clean.junk_title": "Cache und temporäre Dateien:",
+  "storage_clean.junk_summary": {
+    "one": "{count} Eintrag, zusammen {size}.",
+    "other": "{count} Einträge, zusammen {size}."
+  },
+  "storage_clean.ask_delete_junk": "Diese Cache-Ordner und temporären Dateien löschen?",
+  "storage_clean.deleted": {
+    "one": "{count} gelöscht.",
+    "other": "{count} gelöscht."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} konnte nicht gelöscht werden.",
+    "other": "{count} konnten nicht gelöscht werden."
+  }
+}

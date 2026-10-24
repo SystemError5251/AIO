@@ -1,0 +1,80 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "منظف التخزين",
+  "storage_clean.desc": "يعرض ما يملأ التخزين: الملفات الكبيرة والملفات المكررة ومخلفات الذاكرة المؤقتة.",
+  "storage_clean.help": "يفحص مجلدًا ومجلداته الفرعية (المقترح: التخزين المشترك ~/storage/shared، ولذلك شغّل termux-setup-storage مرة واحدة). يعرض أكبر الملفات بدءًا من 50 ميغابايت، والملفات المكررة تمامًا (بمقارنة المجموع الاختباري لا الاسم فقط)، ومجلدات الذاكرة المؤقتة مثل ‎.thumbnails أو ‎.cache، والتنزيلات غير المكتملة. لا يُحذف شيء دون سؤال، مع قائمة والحجم الإجمالي. من كل مجموعة مكررات يبقى الملف ذو المسار الأقصر. لا تُتبع الروابط أبدًا.",
+  "storage_clean.ask_path": "المجلد (Enter = {default}):",
+  "storage_clean.scanning": "جارٍ فحص المجلد، قد يستغرق ذلك لحظة …",
+  "storage_clean.summary": {
+    "zero": "لا ملفات ({count})، الإجمالي {size}.",
+    "one": "ملف واحد ({count})، الإجمالي {size}.",
+    "two": "ملفان ({count})، الإجمالي {size}.",
+    "few": "{count} ملفات، الإجمالي {size}.",
+    "many": "{count} ملفًا، الإجمالي {size}.",
+    "other": "{count} ملف، الإجمالي {size}."
+  },
+  "storage_clean.unreadable": {
+    "zero": "لا توجد ملفات غير مقروءة ({count}).",
+    "one": "تعذّرت قراءة ملف واحد ({count}).",
+    "two": "تعذّرت قراءة ملفين ({count}).",
+    "few": "تعذّرت قراءة {count} ملفات.",
+    "many": "تعذّرت قراءة {count} ملفًا.",
+    "other": "تعذّرت قراءة {count} ملف."
+  },
+  "storage_clean.large_title": "أكبر الملفات (بدءًا من {size}):",
+  "storage_clean.none": "لا شيء",
+  "storage_clean.dup_title": "الملفات المكررة:",
+  "storage_clean.dup_summary": {
+    "zero": "لا نسخ زائدة ({count})، {size}.",
+    "one": "نسخة زائدة واحدة ({count})، الإجمالي {size}.",
+    "two": "نسختان زائدتان ({count})، الإجمالي {size}.",
+    "few": "{count} نسخ زائدة، الإجمالي {size}.",
+    "many": "{count} نسخة زائدة، الإجمالي {size}.",
+    "other": "{count} نسخة زائدة، الإجمالي {size}."
+  },
+  "storage_clean.ask_delete_dups": "حذف النسخ (يبقى الأصل الأول من كل مجموعة)؟",
+  "storage_clean.junk_title": "الذاكرة المؤقتة والملفات المؤقتة:",
+  "storage_clean.junk_summary": {
+    "zero": "لا عناصر ({count})، {size}.",
+    "one": "عنصر واحد ({count})، الإجمالي {size}.",
+    "two": "عنصران ({count})، الإجمالي {size}.",
+    "few": "{count} عناصر، الإجمالي {size}.",
+    "many": "{count} عنصرًا، الإجمالي {size}.",
+    "other": "{count} عنصر، الإجمالي {size}."
+  },
+  "storage_clean.ask_delete_junk": "حذف مجلدات الذاكرة المؤقتة والملفات المؤقتة هذه؟",
+  "storage_clean.deleted": {
+    "zero": "لم يُحذف شيء ({count}).",
+    "one": "تم حذف عنصر واحد ({count}).",
+    "two": "تم حذف عنصرين ({count}).",
+    "few": "تم حذف {count} عناصر.",
+    "many": "تم حذف {count} عنصرًا.",
+    "other": "تم حذف {count} عنصر."
+  },
+  "storage_clean.delete_failed": {
+    "zero": "لا إخفاقات ({count}).",
+    "one": "تعذّر حذف عنصر واحد ({count}).",
+    "two": "تعذّر حذف عنصرين ({count}).",
+    "few": "تعذّر حذف {count} عناصر.",
+    "many": "تعذّر حذف {count} عنصرًا.",
+    "other": "تعذّر حذف {count} عنصر."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Limpiador de almacenamiento",
+  "storage_clean.desc": "Muestra qué llena el almacenamiento: archivos grandes, duplicados y basura de caché.",
+  "storage_clean.help": "Revisa una carpeta y sus subcarpetas (sugerida: el almacenamiento compartido ~/storage/shared; ejecuta una vez termux-setup-storage). Muestra los archivos más grandes desde 50 MB, duplicados exactos (comparados por suma de verificación, no solo por nombre) y carpetas de caché como .thumbnails o .cache, además de descargas interrumpidas. No se borra nada sin preguntar, con la lista y el tamaño total. De cada grupo de duplicados se conserva el archivo con la ruta más corta. Los enlaces nunca se siguen.",
+  "storage_clean.ask_path": "Carpeta (Enter = {default}):",
+  "storage_clean.scanning": "Revisando la carpeta, puede tardar un momento …",
+  "storage_clean.summary": {
+    "one": "{count} archivo, {size} en total.",
+    "other": "{count} archivos, {size} en total."
+  },
+  "storage_clean.unreadable": {
+    "one": "No se pudo leer {count} archivo.",
+    "other": "No se pudieron leer {count} archivos."
+  },
+  "storage_clean.large_title": "Archivos más grandes (desde {size}):",
+  "storage_clean.none": "ninguno",
+  "storage_clean.dup_title": "Archivos duplicados:",
+  "storage_clean.dup_summary": {
+    "one": "{count} copia innecesaria, {size} en total.",
+    "other": "{count} copias innecesarias, {size} en total."
+  },
+  "storage_clean.ask_delete_dups": "¿Borrar las copias (se queda el primer original de cada grupo)?",
+  "storage_clean.junk_title": "Caché y archivos temporales:",
+  "storage_clean.junk_summary": {
+    "one": "{count} elemento, {size} en total.",
+    "other": "{count} elementos, {size} en total."
+  },
+  "storage_clean.ask_delete_junk": "¿Borrar estas carpetas de caché y archivos temporales?",
+  "storage_clean.deleted": {
+    "one": "{count} borrado.",
+    "other": "{count} borrados."
+  },
+  "storage_clean.delete_failed": {
+    "one": "No se pudo borrar {count}.",
+    "other": "No se pudieron borrar {count}."
+  }
+}

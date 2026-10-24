@@ -1,0 +1,10 @@
+{
+  "id": "git_backup",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "daily",
+  "requires": ["git"],
+  "name_key": "git_backup.name",
+  "desc_key": "git_backup.desc",
+  "help_key": "git_backup.help"
+}

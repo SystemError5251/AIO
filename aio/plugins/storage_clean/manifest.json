@@ -1,0 +1,10 @@
+{
+  "id": "storage_clean",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "daily",
+  "requires": [],
+  "name_key": "storage_clean.name",
+  "desc_key": "storage_clean.desc",
+  "help_key": "storage_clean.help"
+}

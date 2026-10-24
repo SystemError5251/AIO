@@ -1,0 +1,50 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "存储清理",
+  "storage_clean.desc": "显示是什么占满了存储空间：大文件、重复文件和缓存垃圾。",
+  "storage_clean.help": "扫描一个文件夹及其子文件夹（建议：共享存储 ~/storage/shared，为此需先运行一次 termux-setup-storage）。列出 50 MB 以上的最大文件、完全相同的重复文件（按校验和比较，而不只是按名称），以及 .thumbnails、.cache 等缓存文件夹和未完成的下载。不经询问不会删除任何东西，并会显示列表和总大小。每组重复文件保留路径最短的那个。从不跟随链接。",
+  "storage_clean.ask_path": "文件夹（Enter = {default}）：",
+  "storage_clean.scanning": "正在扫描文件夹，可能需要一点时间……",
+  "storage_clean.summary": {
+    "other": "共 {count} 个文件，总计 {size}。"
+  },
+  "storage_clean.unreadable": {
+    "other": "{count} 个文件无法读取。"
+  },
+  "storage_clean.large_title": "最大的文件（{size} 以上）：",
+  "storage_clean.none": "无",
+  "storage_clean.dup_title": "重复文件：",
+  "storage_clean.dup_summary": {
+    "other": "{count} 个多余副本，总计 {size}。"
+  },
+  "storage_clean.ask_delete_dups": "删除这些副本吗（每组的第一个原件会保留）？",
+  "storage_clean.junk_title": "缓存和临时文件：",
+  "storage_clean.junk_summary": {
+    "other": "{count} 项，总计 {size}。"
+  },
+  "storage_clean.ask_delete_junk": "删除这些缓存文件夹和临时文件吗？",
+  "storage_clean.deleted": {
+    "other": "已删除 {count} 项。"
+  },
+  "storage_clean.delete_failed": {
+    "other": "{count} 项无法删除。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "storage_clean.name": "Storage cleaner",
+  "storage_clean.desc": "Shows what fills your storage: large files, duplicate files and cache clutter.",
+  "storage_clean.help": "Scans a folder and its subfolders (suggested: the shared storage ~/storage/shared; run termux-setup-storage once for it). It lists the largest files from 50 MB, exact duplicates (compared by checksum, not just by name) and cache folders such as .thumbnails or .cache, plus broken downloads. Nothing is deleted without asking, with a list and the total size. Of each set of duplicates, the file with the shortest path is kept. Links are never followed.",
+  "storage_clean.ask_path": "Folder (Enter = {default}):",
+  "storage_clean.scanning": "Scanning the folder, this can take a moment …",
+  "storage_clean.summary": {
+    "one": "{count} file, {size} in total.",
+    "other": "{count} files, {size} in total."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} file could not be read.",
+    "other": "{count} files could not be read."
+  },
+  "storage_clean.large_title": "Largest files (from {size}):",
+  "storage_clean.none": "none",
+  "storage_clean.dup_title": "Duplicate files:",
+  "storage_clean.dup_summary": {
+    "one": "{count} unneeded copy, {size} in total.",
+    "other": "{count} unneeded copies, {size} in total."
+  },
+  "storage_clean.ask_delete_dups": "Delete the copies (the first original of each stays)?",
+  "storage_clean.junk_title": "Cache and temporary files:",
+  "storage_clean.junk_summary": {
+    "one": "{count} entry, {size} in total.",
+    "other": "{count} entries, {size} in total."
+  },
+  "storage_clean.ask_delete_junk": "Delete these cache folders and temporary files?",
+  "storage_clean.deleted": {
+    "one": "{count} deleted.",
+    "other": "{count} deleted."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} could not be deleted.",
+    "other": "{count} could not be deleted."
+  }
+}

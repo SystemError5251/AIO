@@ -1,0 +1,68 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Очистка памяти",
+  "storage_clean.desc": "Показывает, чем занята память: большие файлы, дубликаты и мусор кэша.",
+  "storage_clean.help": "Проверяет папку и вложенные папки (предлагается общее хранилище ~/storage/shared; для этого один раз выполните termux-setup-storage). Показывает самые большие файлы от 50 МБ, точные дубликаты (по контрольной сумме, а не только по имени) и папки кэша вроде .thumbnails или .cache, а также прерванные загрузки. Ничего не удаляется без вопроса, со списком и общим размером. Из каждой группы дубликатов остаётся файл с самым коротким путём. Ссылки никогда не обрабатываются.",
+  "storage_clean.ask_path": "Папка (Enter = {default}):",
+  "storage_clean.scanning": "Проверяю папку, это может занять время …",
+  "storage_clean.summary": {
+    "one": "{count} файл, всего {size}.",
+    "few": "{count} файла, всего {size}.",
+    "many": "{count} файлов, всего {size}.",
+    "other": "{count} файла, всего {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} файл не удалось прочитать.",
+    "few": "{count} файла не удалось прочитать.",
+    "many": "{count} файлов не удалось прочитать.",
+    "other": "{count} файла не удалось прочитать."
+  },
+  "storage_clean.large_title": "Самые большие файлы (от {size}):",
+  "storage_clean.none": "нет",
+  "storage_clean.dup_title": "Дубликаты:",
+  "storage_clean.dup_summary": {
+    "one": "{count} лишняя копия, всего {size}.",
+    "few": "{count} лишние копии, всего {size}.",
+    "many": "{count} лишних копий, всего {size}.",
+    "other": "{count} лишней копии, всего {size}."
+  },
+  "storage_clean.ask_delete_dups": "Удалить копии (первый оригинал в каждой группе останется)?",
+  "storage_clean.junk_title": "Кэш и временные файлы:",
+  "storage_clean.junk_summary": {
+    "one": "{count} элемент, всего {size}.",
+    "few": "{count} элемента, всего {size}.",
+    "many": "{count} элементов, всего {size}.",
+    "other": "{count} элемента, всего {size}."
+  },
+  "storage_clean.ask_delete_junk": "Удалить эти папки кэша и временные файлы?",
+  "storage_clean.deleted": {
+    "one": "Удалён {count}.",
+    "few": "Удалено {count}.",
+    "many": "Удалено {count}.",
+    "other": "Удалено {count}."
+  },
+  "storage_clean.delete_failed": {
+    "one": "Не удалось удалить {count}.",
+    "few": "Не удалось удалить {count}.",
+    "many": "Не удалось удалить {count}.",
+    "other": "Не удалось удалить {count}."
+  }
+}
