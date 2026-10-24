@@ -52,5 +52,29 @@
   "update.error_no_source": "Kein Update-Ordner gefunden (~/.aio/src). AIO wurde nicht mit aio-installer.sh installiert. Führe den Installationsbefehl aus der README einmal aus, danach klappen Updates hier.",
   "update.error_no_git": "git fehlt. In Termux: pkg install git",
   "update.error_network": "GitHub nicht erreichbar. Prüfe die Internetverbindung und versuch es später noch einmal.",
-  "update.error_install": "Das Update konnte nicht installiert werden. Führe den Installationsbefehl aus der README erneut aus."
+  "update.error_install": "Das Update konnte nicht installiert werden. Führe den Installationsbefehl aus der README erneut aus.",
+  "settings.review": "Übersetzungen prüfen",
+  "review.title": "Übersetzungen prüfen: {language}",
+  "review.source_language": "{language} ist eine Ausgangssprache und von Hand geschrieben. Wähle eine andere Sprache, um deren Texte zu prüfen.",
+  "review.nothing": "Alle Texte auf {language} sind geprüft. Danke!",
+  "review.intro": {
+    "one": "{count} Text ist noch ungeprüft. Du siehst jeweils das Englische und die jetzige Übersetzung.",
+    "other": "{count} Texte sind noch ungeprüft. Du siehst jeweils das Englische und die jetzige Übersetzung."
+  },
+  "review.progress": "[{n}/{total}] {id}",
+  "review.status_auto": "maschinell übersetzt",
+  "review.status_missing": "fehlt, bisher erscheint Englisch",
+  "review.source": "Englisch: {text}",
+  "review.current": "Jetzt:    {text}",
+  "review.actions": "Enter = passt · e = ändern · s = überspringen · q = beenden:",
+  "review.actions_missing": "e = übersetzen · Enter = überspringen · q = beenden:",
+  "review.new_text": "Neuer Text (Enter = abbrechen):",
+  "review.new_form": "Form „{form}“ (Enter = unverändert):",
+  "review.invalid": "Nicht gespeichert: Platzhalter müssen genau wie im englischen Text bleiben ({placeholders}).",
+  "review.saved": "Gespeichert.",
+  "review.summary": {
+    "one": "{count} Text geprüft. Deine Korrekturen liegen in {path}.",
+    "other": "{count} Texte geprüft. Deine Korrekturen liegen in {path}."
+  },
+  "review.share_hint": "Teile diese Datei, zum Beispiel in einem GitHub-Issue, damit alle davon profitieren."
 }

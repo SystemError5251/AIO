@@ -170,6 +170,7 @@ class Translator:
                  locales_dir: Path = CORE_LOCALES_DIR) -> None:
         self.locales_dirs: list[Path] = [locales_dir]
         self.meta = load_meta(locales_dir)
+        self.override_dir: Path | None = None
         self._cache: dict[str, dict[str, Any]] = {}
         self.language = language
 
@@ -181,10 +182,19 @@ class Translator:
             self.locales_dirs.append(path)
             self._cache.clear()
 
+    def set_override_dir(self, path: Path | None) -> None:
+        """Folder with the user's own corrections (~/.aio/locales); it wins over everything."""
+        self.override_dir = path
+        self.reload()
+
+    def reload(self) -> None:
+        self._cache.clear()
+
     def _catalog(self, lang: str) -> dict[str, Any]:
         if lang not in self._cache:
             merged: dict[str, Any] = {}
-            for directory in self.locales_dirs:
+            dirs = self.locales_dirs + ([self.override_dir] if self.override_dir else [])
+            for directory in dirs:
                 merged.update(_read_catalog(directory / f"{lang}.json"))
             self._cache[lang] = merged
         return self._cache[lang]
