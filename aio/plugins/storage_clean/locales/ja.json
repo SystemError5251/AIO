@@ -1,0 +1,50 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "ストレージ整理",
+  "storage_clean.desc": "ストレージを占めているものを表示します：大きなファイル、重複ファイル、キャッシュのごみ。",
+  "storage_clean.help": "フォルダーとそのサブフォルダーを調べます（おすすめ：共有ストレージ ~/storage/shared。そのために一度 termux-setup-storage を実行してください）。50 MB 以上の大きなファイル、完全に同じ重複ファイル（名前だけでなくチェックサムで比較）、.thumbnails や .cache などのキャッシュフォルダー、中断したダウンロードを一覧にします。一覧と合計サイズを示して確認するまで何も削除しません。重複ファイルは各グループでパスが最も短いものを残します。リンクはたどりません。",
+  "storage_clean.ask_path": "フォルダー（Enter = {default}）：",
+  "storage_clean.scanning": "フォルダーを調べています。少し時間がかかることがあります…",
+  "storage_clean.summary": {
+    "other": "{count} 個のファイル、合計 {size}。"
+  },
+  "storage_clean.unreadable": {
+    "other": "{count} 個のファイルを読み込めませんでした。"
+  },
+  "storage_clean.large_title": "大きなファイル（{size} 以上）：",
+  "storage_clean.none": "なし",
+  "storage_clean.dup_title": "重複ファイル：",
+  "storage_clean.dup_summary": {
+    "other": "不要なコピーが {count} 個、合計 {size}。"
+  },
+  "storage_clean.ask_delete_dups": "コピーを削除しますか（各グループの最初の元ファイルは残ります）？",
+  "storage_clean.junk_title": "キャッシュと一時ファイル：",
+  "storage_clean.junk_summary": {
+    "other": "{count} 件、合計 {size}。"
+  },
+  "storage_clean.ask_delete_junk": "これらのキャッシュフォルダーと一時ファイルを削除しますか？",
+  "storage_clean.deleted": {
+    "other": "{count} 件削除しました。"
+  },
+  "storage_clean.delete_failed": {
+    "other": "{count} 件は削除できませんでした。"
+  }
+}

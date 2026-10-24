@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Nettoyeur de stockage",
+  "storage_clean.desc": "Montre ce qui remplit le stockage : gros fichiers, doublons et caches inutiles.",
+  "storage_clean.help": "Analyse un dossier et ses sous-dossiers (proposé : le stockage partagé ~/storage/shared ; lance une fois termux-setup-storage). Il liste les plus gros fichiers à partir de 50 Mo, les doublons exacts (comparés par somme de contrôle, pas seulement par nom) et les dossiers de cache comme .thumbnails ou .cache, ainsi que les téléchargements interrompus. Rien n’est supprimé sans demander, avec la liste et la taille totale. Pour chaque groupe de doublons, le fichier au chemin le plus court est gardé. Les liens ne sont jamais suivis.",
+  "storage_clean.ask_path": "Dossier (Entrée = {default}) :",
+  "storage_clean.scanning": "Analyse du dossier, cela peut prendre un moment …",
+  "storage_clean.summary": {
+    "one": "{count} fichier, {size} au total.",
+    "other": "{count} fichiers, {size} au total."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} fichier n’a pas pu être lu.",
+    "other": "{count} fichiers n’ont pas pu être lus."
+  },
+  "storage_clean.large_title": "Plus gros fichiers (à partir de {size}) :",
+  "storage_clean.none": "aucun",
+  "storage_clean.dup_title": "Doublons :",
+  "storage_clean.dup_summary": {
+    "one": "{count} copie inutile, {size} au total.",
+    "other": "{count} copies inutiles, {size} au total."
+  },
+  "storage_clean.ask_delete_dups": "Supprimer les copies (le premier original de chaque groupe reste) ?",
+  "storage_clean.junk_title": "Cache et fichiers temporaires :",
+  "storage_clean.junk_summary": {
+    "one": "{count} élément, {size} au total.",
+    "other": "{count} éléments, {size} au total."
+  },
+  "storage_clean.ask_delete_junk": "Supprimer ces dossiers de cache et fichiers temporaires ?",
+  "storage_clean.deleted": {
+    "one": "{count} supprimé.",
+    "other": "{count} supprimés."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} n’a pas pu être supprimé.",
+    "other": "{count} n’ont pas pu être supprimés."
+  }
+}

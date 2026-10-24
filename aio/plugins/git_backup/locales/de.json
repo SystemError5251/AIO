@@ -1,0 +1,30 @@
+{
+  "git_backup.name": "Git-Backup",
+  "git_backup.desc": "Sichert Ordner versioniert mit git, auf Wunsch auch auf GitHub, GitLab oder einen eigenen Server.",
+  "git_backup.help": "Lege einen Ordner als Backup an (Notizen, Skripte, Konfiguration). Er wird ein git-Repository; optional gibst du eine Remote-URL an, zum Beispiel ein privates GitHub-Repository. Jede Sicherung speichert alle Änderungen mit Datum und schiebt sie hoch, ältere Stände bleiben abrufbar. Dateien über 95 MB werden ausgelassen (GitHub nimmt nichts über 100 MB). Zum Hochladen müssen git-Zugangsdaten oder ein SSH-Schlüssel eingerichtet sein. Braucht git (pkg install git).",
+  "git_backup.not_a_repo": "{path} ist kein git-Repository mehr. Lege das Backup neu an.",
+  "git_backup.skipped_large": {
+    "one": "{count} Datei über 95 MB ausgelassen: {files}",
+    "other": "{count} Dateien über 95 MB ausgelassen: {files}"
+  },
+  "git_backup.committed": {
+    "one": "{count} Änderung gesichert.",
+    "other": "{count} Änderungen gesichert."
+  },
+  "git_backup.no_changes": "Keine Änderungen seit der letzten Sicherung.",
+  "git_backup.pushed": "Hochgeladen.",
+  "git_backup.push_failed": "Hochladen fehlgeschlagen: {error}",
+  "git_backup.ask_folder": "Ordner für das Backup (Enter = abbrechen):",
+  "git_backup.remote_hint": "Remote-URL, zum Beispiel https://github.com/name/notizen.git oder git@github.com:name/notizen.git. Leer lassen für ein rein lokales Backup.",
+  "git_backup.ask_remote": "Remote-URL (Enter = nur lokal):",
+  "git_backup.failed": "Fehlgeschlagen: {error}",
+  "git_backup.added": "Backup angelegt: {path}",
+  "git_backup.list_title": "Deine Backups:",
+  "git_backup.local_only": "nur lokal",
+  "git_backup.all": "Alle sichern",
+  "git_backup.none_yet": "Noch keine Backups angelegt.",
+  "git_backup.new": "Neues Backup anlegen",
+  "git_backup.remove": "Backup aus der Liste nehmen",
+  "git_backup.remove_prompt": "Welches? (Enter = abbrechen):",
+  "git_backup.removed": "Aus der Liste genommen (Dateien und Verlauf bleiben): {path}"
+}

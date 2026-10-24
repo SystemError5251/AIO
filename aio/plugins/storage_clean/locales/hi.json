@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "स्टोरेज क्लीनर",
+  "storage_clean.desc": "दिखाता है कि स्टोरेज किससे भरा है: बड़ी फ़ाइलें, डुप्लिकेट फ़ाइलें और कैश कचरा।",
+  "storage_clean.help": "एक फ़ोल्डर और उसके उप-फ़ोल्डर स्कैन करता है (सुझाव: साझा स्टोरेज ~/storage/shared; इसके लिए एक बार termux-setup-storage चलाएँ)। 50 MB से बड़ी सबसे बड़ी फ़ाइलें, बिल्कुल एक जैसी फ़ाइलें (सिर्फ़ नाम से नहीं, चेकसम से तुलना) और .thumbnails या .cache जैसे कैश फ़ोल्डर तथा अधूरे डाउनलोड दिखाता है। बिना पूछे कुछ नहीं हटता, सूची और कुल आकार के साथ। हर डुप्लिकेट समूह में सबसे छोटे पथ वाली फ़ाइल रहती है। लिंक कभी फ़ॉलो नहीं किए जाते।",
+  "storage_clean.ask_path": "फ़ोल्डर (Enter = {default}):",
+  "storage_clean.scanning": "फ़ोल्डर स्कैन हो रहा है, थोड़ा समय लग सकता है …",
+  "storage_clean.summary": {
+    "one": "{count} फ़ाइल, कुल {size}।",
+    "other": "{count} फ़ाइलें, कुल {size}।"
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} फ़ाइल पढ़ी नहीं जा सकी।",
+    "other": "{count} फ़ाइलें पढ़ी नहीं जा सकीं।"
+  },
+  "storage_clean.large_title": "सबसे बड़ी फ़ाइलें ({size} से):",
+  "storage_clean.none": "कोई नहीं",
+  "storage_clean.dup_title": "डुप्लिकेट फ़ाइलें:",
+  "storage_clean.dup_summary": {
+    "one": "{count} बेकार कॉपी, कुल {size}।",
+    "other": "{count} बेकार कॉपियाँ, कुल {size}।"
+  },
+  "storage_clean.ask_delete_dups": "कॉपियाँ हटाएँ (हर समूह का पहला मूल रहेगा)?",
+  "storage_clean.junk_title": "कैश और अस्थायी फ़ाइलें:",
+  "storage_clean.junk_summary": {
+    "one": "{count} आइटम, कुल {size}।",
+    "other": "{count} आइटम, कुल {size}।"
+  },
+  "storage_clean.ask_delete_junk": "ये कैश फ़ोल्डर और अस्थायी फ़ाइलें हटाएँ?",
+  "storage_clean.deleted": {
+    "one": "{count} हटाया गया।",
+    "other": "{count} हटाए गए।"
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} हटाया नहीं जा सका।",
+    "other": "{count} हटाए नहीं जा सके।"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Porządki w pamięci",
+  "storage_clean.desc": "Pokazuje, co zajmuje pamięć: duże pliki, duplikaty i śmieci z pamięci podręcznej.",
+  "storage_clean.help": "Przeszukuje folder i jego podfoldery (proponowany: pamięć współdzielona ~/storage/shared; uruchom raz termux-setup-storage). Pokazuje największe pliki od 50 MB, dokładne duplikaty (porównywane sumą kontrolną, nie tylko nazwą) i foldery pamięci podręcznej, np. .thumbnails lub .cache, oraz przerwane pobierania. Nic nie jest usuwane bez pytania, z listą i łącznym rozmiarem. Z każdej grupy duplikatów zostaje plik z najkrótszą ścieżką. Dowiązania nigdy nie są śledzone.",
+  "storage_clean.ask_path": "Folder (Enter = {default}):",
+  "storage_clean.scanning": "Przeszukuję folder, może to chwilę potrwać …",
+  "storage_clean.summary": {
+    "one": "{count} plik, łącznie {size}.",
+    "few": "{count} pliki, łącznie {size}.",
+    "many": "{count} plików, łącznie {size}.",
+    "other": "{count} pliku, łącznie {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "Nie udało się odczytać {count} pliku.",
+    "few": "Nie udało się odczytać {count} plików.",
+    "many": "Nie udało się odczytać {count} plików.",
+    "other": "Nie udało się odczytać {count} pliku."
+  },
+  "storage_clean.large_title": "Największe pliki (od {size}):",
+  "storage_clean.none": "brak",
+  "storage_clean.dup_title": "Duplikaty:",
+  "storage_clean.dup_summary": {
+    "one": "{count} zbędna kopia, łącznie {size}.",
+    "few": "{count} zbędne kopie, łącznie {size}.",
+    "many": "{count} zbędnych kopii, łącznie {size}.",
+    "other": "{count} zbędnej kopii, łącznie {size}."
+  },
+  "storage_clean.ask_delete_dups": "Usunąć kopie (pierwszy oryginał z każdej grupy zostaje)?",
+  "storage_clean.junk_title": "Pamięć podręczna i pliki tymczasowe:",
+  "storage_clean.junk_summary": {
+    "one": "{count} pozycja, łącznie {size}.",
+    "few": "{count} pozycje, łącznie {size}.",
+    "many": "{count} pozycji, łącznie {size}.",
+    "other": "{count} pozycji, łącznie {size}."
+  },
+  "storage_clean.ask_delete_junk": "Usunąć te foldery pamięci podręcznej i pliki tymczasowe?",
+  "storage_clean.deleted": {
+    "one": "Usunięto {count}.",
+    "few": "Usunięto {count}.",
+    "many": "Usunięto {count}.",
+    "other": "Usunięto {count}."
+  },
+  "storage_clean.delete_failed": {
+    "one": "Nie udało się usunąć {count}.",
+    "few": "Nie udało się usunąć {count}.",
+    "many": "Nie udało się usunąć {count}.",
+    "other": "Nie udało się usunąć {count}."
+  }
+}

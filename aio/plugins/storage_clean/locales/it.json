@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Pulizia memoria",
+  "storage_clean.desc": "Mostra cosa riempie la memoria: file grandi, file doppi e cache inutile.",
+  "storage_clean.help": "Analizza una cartella e le sue sottocartelle (proposta: la memoria condivisa ~/storage/shared; esegui una volta termux-setup-storage). Elenca i file più grandi da 50 MB, i duplicati esatti (confrontati con un checksum, non solo per nome) e le cartelle di cache come .thumbnails o .cache, oltre ai download interrotti. Non viene eliminato nulla senza chiedere, con elenco e dimensione totale. Di ogni gruppo di duplicati resta il file con il percorso più corto. I collegamenti non vengono mai seguiti.",
+  "storage_clean.ask_path": "Cartella (Invio = {default}):",
+  "storage_clean.scanning": "Analizzo la cartella, può volerci un momento …",
+  "storage_clean.summary": {
+    "one": "{count} file, {size} in tutto.",
+    "other": "{count} file, {size} in tutto."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} file non è stato letto.",
+    "other": "{count} file non sono stati letti."
+  },
+  "storage_clean.large_title": "File più grandi (da {size}):",
+  "storage_clean.none": "nessuno",
+  "storage_clean.dup_title": "File doppi:",
+  "storage_clean.dup_summary": {
+    "one": "{count} copia superflua, {size} in tutto.",
+    "other": "{count} copie superflue, {size} in tutto."
+  },
+  "storage_clean.ask_delete_dups": "Eliminare le copie (resta il primo originale di ogni gruppo)?",
+  "storage_clean.junk_title": "Cache e file temporanei:",
+  "storage_clean.junk_summary": {
+    "one": "{count} elemento, {size} in tutto.",
+    "other": "{count} elementi, {size} in tutto."
+  },
+  "storage_clean.ask_delete_junk": "Eliminare queste cartelle di cache e i file temporanei?",
+  "storage_clean.deleted": {
+    "one": "{count} eliminato.",
+    "other": "{count} eliminati."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} non è stato eliminato.",
+    "other": "{count} non sono stati eliminati."
+  }
+}

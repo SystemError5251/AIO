@@ -1,0 +1,68 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Очищення пам’яті",
+  "storage_clean.desc": "Показує, чим заповнена пам’ять: великі файли, дублікати та сміття кешу.",
+  "storage_clean.help": "Перевіряє теку та вкладені теки (пропонується спільне сховище ~/storage/shared; для цього один раз виконайте termux-setup-storage). Показує найбільші файли від 50 МБ, точні дублікати (за контрольною сумою, а не лише за назвою) і теки кешу на кшталт .thumbnails чи .cache, а також перервані завантаження. Нічого не видаляється без запитання, зі списком і загальним розміром. З кожної групи дублікатів лишається файл із найкоротшим шляхом. Посилання ніколи не обробляються.",
+  "storage_clean.ask_path": "Тека (Enter = {default}):",
+  "storage_clean.scanning": "Перевіряю теку, це може зайняти час …",
+  "storage_clean.summary": {
+    "one": "{count} файл, разом {size}.",
+    "few": "{count} файли, разом {size}.",
+    "many": "{count} файлів, разом {size}.",
+    "other": "{count} файлу, разом {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} файл не вдалося прочитати.",
+    "few": "{count} файли не вдалося прочитати.",
+    "many": "{count} файлів не вдалося прочитати.",
+    "other": "{count} файлу не вдалося прочитати."
+  },
+  "storage_clean.large_title": "Найбільші файли (від {size}):",
+  "storage_clean.none": "немає",
+  "storage_clean.dup_title": "Дублікати:",
+  "storage_clean.dup_summary": {
+    "one": "{count} зайва копія, разом {size}.",
+    "few": "{count} зайві копії, разом {size}.",
+    "many": "{count} зайвих копій, разом {size}.",
+    "other": "{count} зайвої копії, разом {size}."
+  },
+  "storage_clean.ask_delete_dups": "Видалити копії (перший оригінал у кожній групі лишиться)?",
+  "storage_clean.junk_title": "Кеш і тимчасові файли:",
+  "storage_clean.junk_summary": {
+    "one": "{count} елемент, разом {size}.",
+    "few": "{count} елементи, разом {size}.",
+    "many": "{count} елементів, разом {size}.",
+    "other": "{count} елемента, разом {size}."
+  },
+  "storage_clean.ask_delete_junk": "Видалити ці теки кешу та тимчасові файли?",
+  "storage_clean.deleted": {
+    "one": "Видалено {count}.",
+    "few": "Видалено {count}.",
+    "many": "Видалено {count}.",
+    "other": "Видалено {count}."
+  },
+  "storage_clean.delete_failed": {
+    "one": "Не вдалося видалити {count}.",
+    "few": "Не вдалося видалити {count}.",
+    "many": "Не вдалося видалити {count}.",
+    "other": "Не вдалося видалити {count}."
+  }
+}

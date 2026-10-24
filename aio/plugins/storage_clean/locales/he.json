@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "מנקה אחסון",
+  "storage_clean.desc": "מראה מה ממלא את האחסון: קבצים גדולים, קבצים כפולים ושאריות מטמון.",
+  "storage_clean.help": "סורק תיקייה ותתי-תיקיות (מוצע: האחסון המשותף ~/storage/shared; לשם כך הריצו פעם אחת termux-setup-storage). מוצגים הקבצים הגדולים ביותר מ-50 MB, כפילויות מדויקות (בהשוואת סכום ביקורת, לא רק לפי שם) ותיקיות מטמון כמו ‎.thumbnails או ‎.cache, וגם הורדות שנקטעו. שום דבר לא נמחק בלי לשאול, עם רשימה וגודל כולל. מכל קבוצת כפילויות נשאר הקובץ עם הנתיב הקצר ביותר. קישורים לעולם לא נעקבים.",
+  "storage_clean.ask_path": "תיקייה (Enter = {default}):",
+  "storage_clean.scanning": "סורק את התיקייה, זה עשוי לקחת רגע …",
+  "storage_clean.summary": {
+    "one": "קובץ {count}, בסך הכול {size}.",
+    "other": "{count} קבצים, בסך הכול {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "לא ניתן היה לקרוא קובץ {count}.",
+    "other": "לא ניתן היה לקרוא {count} קבצים."
+  },
+  "storage_clean.large_title": "הקבצים הגדולים ביותר (מ-{size}):",
+  "storage_clean.none": "אין",
+  "storage_clean.dup_title": "קבצים כפולים:",
+  "storage_clean.dup_summary": {
+    "one": "עותק מיותר {count}, בסך הכול {size}.",
+    "other": "{count} עותקים מיותרים, בסך הכול {size}."
+  },
+  "storage_clean.ask_delete_dups": "למחוק את העותקים (המקור הראשון בכל קבוצה נשאר)?",
+  "storage_clean.junk_title": "מטמון וקבצים זמניים:",
+  "storage_clean.junk_summary": {
+    "one": "פריט {count}, בסך הכול {size}.",
+    "other": "{count} פריטים, בסך הכול {size}."
+  },
+  "storage_clean.ask_delete_junk": "למחוק את תיקיות המטמון והקבצים הזמניים האלה?",
+  "storage_clean.deleted": {
+    "one": "נמחק {count}.",
+    "other": "נמחקו {count}."
+  },
+  "storage_clean.delete_failed": {
+    "one": "לא ניתן היה למחוק {count}.",
+    "other": "לא ניתן היה למחוק {count}."
+  }
+}

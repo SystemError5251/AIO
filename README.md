@@ -58,6 +58,8 @@ Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln.
 | Untertitel | Prüft eine .srt/.vtt/.ass-Datei und brennt sie ein oder fügt sie als abschaltbare Spur hinzu | ffmpeg |
 | Lautheit angleichen | Bringt ganze Ordner auf −14, −16 oder −23 LUFS (zwei Durchgänge, Bild unverändert) | ffmpeg |
 | Zuschneiden | Schneidet auf 9:16, 1:1, 4:5 oder 16:9 zu (Mitte, links/oben, rechts/unten) und kürzt Anfang/Ende | ffmpeg |
+| Speicher-Aufräumer | Findet große Dateien, exakte Duplikate (Prüfsumme) und Cache-Müll; löscht nur nach Rückfrage | – |
+| Git-Backup | Sichert Ordner versioniert mit git, optional auf GitHub/GitLab; lässt Dateien über 95 MB aus | git |
 
 Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `clip.tiktok.mp4`, `clip.crop.mp4` …). Es wird nie etwas überschrieben.
 

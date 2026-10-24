@@ -1,0 +1,56 @@
+{
+  "_auto": [
+    "storage_clean.ask_delete_dups",
+    "storage_clean.ask_delete_junk",
+    "storage_clean.ask_path",
+    "storage_clean.delete_failed",
+    "storage_clean.deleted",
+    "storage_clean.desc",
+    "storage_clean.dup_summary",
+    "storage_clean.dup_title",
+    "storage_clean.help",
+    "storage_clean.junk_summary",
+    "storage_clean.junk_title",
+    "storage_clean.large_title",
+    "storage_clean.name",
+    "storage_clean.none",
+    "storage_clean.scanning",
+    "storage_clean.summary",
+    "storage_clean.unreadable"
+  ],
+  "storage_clean.name": "Depolama temizleyici",
+  "storage_clean.desc": "Depolamayı neyin doldurduğunu gösterir: büyük dosyalar, aynı dosyalar ve önbellek çöpü.",
+  "storage_clean.help": "Bir klasörü alt klasörleriyle tarar (önerilen: ortak depolama ~/storage/shared; bunun için bir kez termux-setup-storage çalıştır). 50 MB’tan büyük en büyük dosyaları, birebir aynı dosyaları (sadece ada göre değil, sağlama toplamıyla karşılaştırılır) ve .thumbnails veya .cache gibi önbellek klasörlerini, ayrıca yarım kalmış indirmeleri listeler. Liste ve toplam boyut gösterilmeden hiçbir şey silinmez. Her kopya grubundan en kısa yola sahip dosya kalır. Bağlantılar asla takip edilmez.",
+  "storage_clean.ask_path": "Klasör (Enter = {default}):",
+  "storage_clean.scanning": "Klasör taranıyor, biraz sürebilir …",
+  "storage_clean.summary": {
+    "one": "{count} dosya, toplam {size}.",
+    "other": "{count} dosya, toplam {size}."
+  },
+  "storage_clean.unreadable": {
+    "one": "{count} dosya okunamadı.",
+    "other": "{count} dosya okunamadı."
+  },
+  "storage_clean.large_title": "En büyük dosyalar ({size} ve üstü):",
+  "storage_clean.none": "yok",
+  "storage_clean.dup_title": "Aynı dosyalar:",
+  "storage_clean.dup_summary": {
+    "one": "{count} gereksiz kopya, toplam {size}.",
+    "other": "{count} gereksiz kopya, toplam {size}."
+  },
+  "storage_clean.ask_delete_dups": "Kopyalar silinsin mi (her grubun ilk orijinali kalır)?",
+  "storage_clean.junk_title": "Önbellek ve geçici dosyalar:",
+  "storage_clean.junk_summary": {
+    "one": "{count} öğe, toplam {size}.",
+    "other": "{count} öğe, toplam {size}."
+  },
+  "storage_clean.ask_delete_junk": "Bu önbellek klasörleri ve geçici dosyalar silinsin mi?",
+  "storage_clean.deleted": {
+    "one": "{count} silindi.",
+    "other": "{count} silindi."
+  },
+  "storage_clean.delete_failed": {
+    "one": "{count} silinemedi.",
+    "other": "{count} silinemedi."
+  }
+}

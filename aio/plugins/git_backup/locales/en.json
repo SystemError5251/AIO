@@ -1,0 +1,30 @@
+{
+  "git_backup.name": "Git backup",
+  "git_backup.desc": "Backs up folders with version history using git, optionally to GitHub, GitLab or your own server.",
+  "git_backup.help": "Add a folder as a backup (notes, scripts, configuration). It becomes a git repository; optionally you give a remote URL, for example a private GitHub repository. Every backup saves all changes with a date and pushes them, and older versions stay available. Files over 95 MB are left out (GitHub refuses anything over 100 MB). To upload, git credentials or an SSH key must be set up. Needs git (pkg install git).",
+  "git_backup.not_a_repo": "{path} is no longer a git repository. Add the backup again.",
+  "git_backup.skipped_large": {
+    "one": "{count} file over 95 MB left out: {files}",
+    "other": "{count} files over 95 MB left out: {files}"
+  },
+  "git_backup.committed": {
+    "one": "{count} change saved.",
+    "other": "{count} changes saved."
+  },
+  "git_backup.no_changes": "No changes since the last backup.",
+  "git_backup.pushed": "Uploaded.",
+  "git_backup.push_failed": "Upload failed: {error}",
+  "git_backup.ask_folder": "Folder to back up (Enter = cancel):",
+  "git_backup.remote_hint": "Remote URL, for example https://github.com/name/notes.git or git@github.com:name/notes.git. Leave empty for a local-only backup.",
+  "git_backup.ask_remote": "Remote URL (Enter = local only):",
+  "git_backup.failed": "Failed: {error}",
+  "git_backup.added": "Backup added: {path}",
+  "git_backup.list_title": "Your backups:",
+  "git_backup.local_only": "local only",
+  "git_backup.all": "Back up all",
+  "git_backup.none_yet": "No backups yet.",
+  "git_backup.new": "Add a new backup",
+  "git_backup.remove": "Remove a backup from the list",
+  "git_backup.remove_prompt": "Which one? (Enter = cancel):",
+  "git_backup.removed": "Removed from the list (files and history stay): {path}"
+}
