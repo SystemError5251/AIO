@@ -7,7 +7,7 @@ import sys
 from collections.abc import Callable, Sequence
 
 from aio import __version__
-from aio.core import config, registry, review
+from aio.core import config, plugin_manager, registry, review
 from aio.core.context import AppContext
 from aio.core.i18n import available_languages, detect_system_language, get_translator
 from aio.core.ui.language_picker import choose_language
@@ -30,6 +30,9 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--review", action="store_true",
                         help="review machine-translated texts of the current language and exit")
+    parser.add_argument("--install-plugin", metavar="SOURCE",
+                        help="install a plugin from a folder, .zip or git URL and exit")
+    parser.add_argument("--remove-plugin", metavar="ID", help="remove an installed plugin and exit")
     parser.add_argument("--update", action="store_true", help="update AIO from GitHub and exit")
     parser.add_argument("--list", action="store_true", help="list tools and exit")
     parser.add_argument("--version", action="version", version=f"aio {__version__}")
@@ -95,6 +98,21 @@ def main(argv: Sequence[str] | None = None,
 
     if args.update:
         update_now(ctx)
+        return 0
+
+    if args.install_plugin or args.remove_plugin:
+        try:
+            if args.install_plugin:
+                plugin = plugin_manager.install(args.install_plugin)
+                translator.add_locales_dir(plugin.locales_dir)
+                print_fn(ctx.t("plugins.installed", name=ctx.t(plugin.name_key),
+                               version=plugin.version))
+            else:
+                plugin_manager.remove(args.remove_plugin)
+                print_fn(ctx.t("plugins.removed", name=args.remove_plugin))
+        except plugin_manager.PluginError as exc:
+            print_fn(ctx.t(exc.key, **exc.kwargs), file=sys.stderr)
+            return 1
         return 0
 
     if args.review:

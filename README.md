@@ -43,6 +43,8 @@ git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 | `aio --lang de` | Sprache direkt setzen |
 | `aio --list` | Tools auflisten |
 | `aio --review` | Übersetzungen der eingestellten Sprache prüfen |
+| `aio --install-plugin QUELLE` | Plugin aus Ordner, .zip oder Git-URL installieren |
+| `aio --remove-plugin ID` | Installiertes Plugin entfernen |
 
 Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln. Vorgeschlagen wird die Systemsprache. Einstellungen liegen in `~/.aio/config.json`.
 
@@ -80,7 +82,7 @@ python -m aio.tools.translate --dry-run   # zeigt nur, was fehlt
 
 `translate.py` schickt nur fehlende Schlüssel an die Claude-API, merkt sich Ergebnisse in `~/.aio/translate_cache.json` und markiert alles Neue als `"_auto"`. Fehlende Texte fallen zur Laufzeit auf Englisch und danach auf den Schlüsselnamen zurück.
 
-**Neues Tool:** Ordner in `aio/plugins/` oder `~/.aio/plugins/` mit `manifest.json`, `plugin.py` (Funktion `run(ctx)`) und `locales/de.json` + `en.json`. Vorlage: `aio/plugins/demo_hello`.
+**Neues Tool:** `python -m aio.tools.new_plugin mein_tool` legt ein lauffähiges Gerüst in `~/.aio/plugins/` an (`manifest.json`, `plugin.py` mit `run(ctx)`, `locales/de.json` + `en.json`). Fremde Plugins installiert `aio --install-plugin <ordner|.zip|git-url>` oder *Einstellungen → Plugins verwalten*. Die Schnittstelle ist in [CONTRIBUTING.md](CONTRIBUTING.md) beschrieben.
 
 **Entwicklung:**
 
