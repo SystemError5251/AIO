@@ -42,6 +42,7 @@ git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 | `aio --lang` | Sprachwahl erneut anzeigen (auch: `--choose-language`) |
 | `aio --lang de` | Sprache direkt setzen |
 | `aio --list` | Tools auflisten |
+| `aio --review` | Übersetzungen der eingestellten Sprache prüfen |
 
 Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln. Vorgeschlagen wird die Systemsprache. Einstellungen liegen in `~/.aio/config.json`.
 
@@ -57,7 +58,9 @@ Ergebnisse landen neben dem Original (`clip.clean.mp4`, `clip.loudnorm.mp4`, `cl
 
 ## Sprachen
 
-15 Sprachen sind enthalten: Deutsch und Englisch von Hand, dazu Arabisch, Chinesisch, Französisch, Hebräisch, Hindi, Italienisch, Japanisch, Polnisch, Portugiesisch, Russisch, Spanisch, Türkisch und Ukrainisch als maschinelle Übersetzung. Maschinell übersetzte Texte stehen in jeder Datei unter `"_auto"`. Wer einen Text geprüft hat, nimmt ihn dort heraus. `python -m aio.tools.check_locales` zählt, wie viele noch offen sind.
+15 Sprachen sind enthalten: Deutsch und Englisch von Hand, dazu Arabisch, Chinesisch, Französisch, Hebräisch, Hindi, Italienisch, Japanisch, Polnisch, Portugiesisch, Russisch, Spanisch, Türkisch und Ukrainisch als maschinelle Übersetzung. Maschinell übersetzte Texte stehen in jeder Datei unter `"_auto"`. `python -m aio.tools.check_locales` zählt, wie viele noch offen sind.
+
+**Übersetzungen prüfen:** Unter *Einstellungen → Übersetzungen prüfen* (oder `aio --review`) zeigt AIO jeden ungeprüften Text der eingestellten Sprache neben dem Englischen. Enter bestätigt, `e` ändert, `s` überspringt. Auch fehlende Texte lassen sich so übersetzen. Platzhalter wie `{count}` müssen erhalten bleiben. Korrekturen landen in `~/.aio/locales/<code>.json`, gelten sofort und überstehen Updates. Wer die Datei teilt (z. B. in einem Issue), hilft allen: `python -m aio.tools.merge_review fr.json` übernimmt sie ins Repository und nimmt die geprüften Texte aus `"_auto"`.
 
 Arabisch und Hebräisch werden rechtsbündig ausgegeben (Flag `dir` in `_meta.json`).
 

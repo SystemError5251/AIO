@@ -52,5 +52,29 @@
   "update.error_no_source": "No update folder found (~/.aio/src). AIO was not installed with aio-installer.sh. Run the install command from the README once; after that, updates work here.",
   "update.error_no_git": "git is missing. In Termux: pkg install git",
   "update.error_network": "Cannot reach GitHub. Check your internet connection and try again later.",
-  "update.error_install": "The update could not be installed. Run the install command from the README again."
+  "update.error_install": "The update could not be installed. Run the install command from the README again.",
+  "settings.review": "Review translations",
+  "review.title": "Review translations: {language}",
+  "review.source_language": "{language} is a source language and written by hand. Choose another language to review its texts.",
+  "review.nothing": "All texts in {language} have been reviewed. Thank you!",
+  "review.intro": {
+    "one": "{count} text has not been reviewed yet. For each one you see the English text and the current translation.",
+    "other": "{count} texts have not been reviewed yet. For each one you see the English text and the current translation."
+  },
+  "review.progress": "[{n}/{total}] {id}",
+  "review.status_auto": "machine-translated",
+  "review.status_missing": "missing, English is shown for now",
+  "review.source": "English: {text}",
+  "review.current": "Now:     {text}",
+  "review.actions": "Enter = fine · e = edit · s = skip · q = quit:",
+  "review.actions_missing": "e = translate · Enter = skip · q = quit:",
+  "review.new_text": "New text (Enter = cancel):",
+  "review.new_form": "Form \"{form}\" (Enter = keep):",
+  "review.invalid": "Not saved: placeholders must stay exactly as in the English text ({placeholders}).",
+  "review.saved": "Saved.",
+  "review.summary": {
+    "one": "{count} text reviewed. Your corrections are in {path}.",
+    "other": "{count} texts reviewed. Your corrections are in {path}."
+  },
+  "review.share_hint": "Share this file, for example in a GitHub issue, so everyone benefits."
 }

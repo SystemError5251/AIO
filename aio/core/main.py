@@ -7,11 +7,12 @@ import sys
 from collections.abc import Callable, Sequence
 
 from aio import __version__
-from aio.core import config, registry
+from aio.core import config, registry, review
 from aio.core.context import AppContext
 from aio.core.i18n import available_languages, detect_system_language, get_translator
 from aio.core.ui.language_picker import choose_language
 from aio.core.ui.menu import main_menu, print_tool_list
+from aio.core.ui.review import review_translations
 from aio.core.ui.update import check_on_start, update_now
 
 CHOOSE = "__choose__"
@@ -27,6 +28,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--choose-language", dest="lang", action="store_const", const=CHOOSE,
         help="show the language selection again",
     )
+    parser.add_argument("--review", action="store_true",
+                        help="review machine-translated texts of the current language and exit")
     parser.add_argument("--update", action="store_true", help="update AIO from GitHub and exit")
     parser.add_argument("--list", action="store_true", help="list tools and exit")
     parser.add_argument("--version", action="version", version=f"aio {__version__}")
@@ -60,6 +63,7 @@ def main(argv: Sequence[str] | None = None,
     plugins = registry.discover(warnings=warnings)
     for plugin in plugins:
         translator.add_locales_dir(plugin.locales_dir)
+    translator.set_override_dir(review.user_locales_dir())
 
     ctx = AppContext(translator=translator, config=cfg, plugins=plugins,
                      input_fn=input_fn, print_fn=print_fn)
@@ -91,6 +95,12 @@ def main(argv: Sequence[str] | None = None,
 
     if args.update:
         update_now(ctx)
+        return 0
+
+    if args.review:
+        if not interactive:
+            return 2
+        review_translations(ctx)
         return 0
 
     if args.list or not interactive:
