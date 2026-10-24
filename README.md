@@ -42,9 +42,12 @@ git clone https://github.com/SystemError5251/AIO.git && pip install ./AIO
 | `aio --lang` | Sprachwahl erneut anzeigen (auch: `--choose-language`) |
 | `aio --lang de` | Sprache direkt setzen |
 | `aio --list` | Tools auflisten |
+| `aio --doctor` | Systemcheck: fehlende Programme, Pakete und Schlüssel mit Installationsbefehl |
 | `aio --review` | Übersetzungen der eingestellten Sprache prüfen |
 | `aio --install-plugin QUELLE` | Plugin aus Ordner, .zip oder Git-URL installieren |
 | `aio --remove-plugin ID` | Installiertes Plugin entfernen |
+
+**Systemcheck:** `aio --doctor` (oder *Einstellungen → Systemcheck*) zeigt für jedes Programm, welches Tool es braucht und wie man es in Termux installiert (✓ da, ✗ fehlt, ○ optional). Fehlt der AcoustID-Schlüssel für die Musikerkennung, kann man ihn dort eingeben; AIO prüft ihn bei acoustid.org und speichert ihn. Der Exit-Code ist 1, solange etwas Nötiges fehlt.
 
 Die Sprache lässt sich auch unter *Einstellungen → Sprache ändern* wechseln. Vorgeschlagen wird die Systemsprache. Einstellungen liegen in `~/.aio/config.json`.
 
