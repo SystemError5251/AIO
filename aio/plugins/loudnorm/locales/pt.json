@@ -1,0 +1,39 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Igualar volume",
+  "loudnorm.desc": "Deixa de uma vez muitos clipes ou arquivos de áudio com o mesmo volume (LUFS).",
+  "loudnorm.help": "Escolha um arquivo ou uma pasta e um alvo: −14 LUFS para Reels/Shorts/TikTok/Spotify, −16 LUFS para podcasts ou −23 LUFS (EBU R128) para transmissão. Cada arquivo é medido e depois corrigido de forma linear, com picos de no máximo −1 dBTP. A imagem é copiada sem mudanças. Arquivos que já estão no alvo são pulados. Resultado: <nome>.lufs14.mp4 ou .m4a ao lado do original. Requer ffmpeg.",
+  "loudnorm.ask_path": "Arquivo ou pasta (Enter = cancelar):",
+  "loudnorm.nothing_found": "Nenhum arquivo de vídeo ou áudio encontrado.",
+  "loudnorm.choose_target": "Qual alvo?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Podcasts",
+  "loudnorm.target_broadcast": "Transmissão (EBU R128)",
+  "loudnorm.no_audio": "Sem faixa de áudio, pulado.",
+  "loudnorm.silent": "Em silêncio, pulado.",
+  "loudnorm.measured": "Medido: {lufs} LUFS, pico {peak} dBTP",
+  "loudnorm.already_ok": "Já está no alvo, pulado.",
+  "loudnorm.failed": "Falhou: {error}",
+  "loudnorm.saved": "Salvo: {path}",
+  "loudnorm.summary": {
+    "one": "Pronto: {count} de {total} arquivos ajustado.",
+    "other": "Pronto: {count} de {total} arquivos ajustados."
+  }
+}

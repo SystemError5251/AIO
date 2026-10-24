@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Subtítulos",
+  "subtitles.desc": "Añade un archivo de subtítulos (.srt, .vtt, .ass) a un vídeo: incrustados o como pista que se puede desactivar.",
+  "subtitles.help": "Elige un vídeo. Si al lado hay un archivo con el mismo nombre (clip.srt o clip.es.srt), se sugiere. Antes se revisa el archivo (cantidad, tiempos rotos, subtítulos tras el final del vídeo). Incrustados, los subtítulos siempre se ven, como necesitan Reels y TikTok; para ello el vídeo se recodifica. Como pista es rápido y sin pérdida, y los reproductores pueden activarla o no. Resultado: <nombre>.subtitled.mp4 o <nombre>.subs.mp4. Requiere ffmpeg.",
+  "subtitles.no_video": "El archivo no contiene vídeo.",
+  "subtitles.found": "Encontrado: {path}",
+  "subtitles.use_found": "¿Usar estos subtítulos?",
+  "subtitles.ask_file": "Archivo de subtítulos (Enter = cancelar):",
+  "subtitles.unsupported": "{ext} no es compatible (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} subtítulo, el último termina en {last}.",
+    "other": "{count} subtítulos, el último termina en {last}."
+  },
+  "subtitles.no_cues": "No se encontraron subtítulos en el archivo.",
+  "subtitles.broken_times": {
+    "one": "{count} subtítulo termina antes de empezar.",
+    "other": "{count} subtítulos terminan antes de empezar."
+  },
+  "subtitles.after_end": {
+    "one": "{count} subtítulo empieza después del final del vídeo.",
+    "other": "{count} subtítulos empiezan después del final del vídeo."
+  },
+  "subtitles.choose_mode": "¿Cómo añadirlos?",
+  "subtitles.mode_burn": "Incrustar (siempre visibles, para Reels/TikTok)",
+  "subtitles.mode_track": "Como pista (desactivable, rápido, sin recodificar)",
+  "subtitles.working_burn": "Incrustando los subtítulos, puede tardar en un móvil …",
+  "subtitles.working_track": "Añadiendo la pista de subtítulos …",
+  "subtitles.saved": "Guardado: {path}"
+}

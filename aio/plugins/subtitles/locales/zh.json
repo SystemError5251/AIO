@@ -1,0 +1,46 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "字幕",
+  "subtitles.desc": "把字幕文件（.srt、.vtt、.ass）加到视频里：烧录进画面，或作为可关闭的字幕轨。",
+  "subtitles.help": "选择一个视频。如果旁边有同名文件（clip.srt 或 clip.zh.srt），会被自动推荐。先检查字幕文件（数量、错误的时间、视频结束后的字幕）。烧录的字幕始终可见，Reels 和 TikTok 需要这种方式；为此视频会重新编码。字幕轨速度快且无损，播放器可以开关。结果：<名称>.subtitled.mp4 或 <名称>.subs.mp4。需要 ffmpeg。",
+  "subtitles.no_video": "文件中没有视频。",
+  "subtitles.found": "找到：{path}",
+  "subtitles.use_found": "使用这些字幕吗？",
+  "subtitles.ask_file": "字幕文件（Enter = 取消）：",
+  "subtitles.unsupported": "不支持 {ext}（支持 .srt、.vtt、.ass、.ssa）。",
+  "subtitles.summary": {
+    "other": "共 {count} 条字幕，最后一条在 {last} 结束。"
+  },
+  "subtitles.no_cues": "文件中没有找到字幕。",
+  "subtitles.broken_times": {
+    "other": "{count} 条字幕的结束时间早于开始时间。"
+  },
+  "subtitles.after_end": {
+    "other": "{count} 条字幕在视频结束后才开始。"
+  },
+  "subtitles.choose_mode": "如何添加？",
+  "subtitles.mode_burn": "烧录（始终可见，适合 Reels/TikTok）",
+  "subtitles.mode_track": "作为字幕轨（可关闭，快速，不重新编码）",
+  "subtitles.working_burn": "正在烧录字幕，在手机上可能需要一些时间……",
+  "subtitles.working_track": "正在添加字幕轨……",
+  "subtitles.saved": "已保存：{path}"
+}

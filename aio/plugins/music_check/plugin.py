@@ -10,15 +10,14 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import subprocess
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from aio.core import media
+from aio.core import audio, media
+from aio.core.audio import Loudness, parse_loudnorm  # noqa: F401 (part of this module's API)
 
 TARGET_LUFS = -14.0
 TOLERANCE_LU = 2.0
@@ -26,36 +25,8 @@ MAX_TRUE_PEAK = -1.0
 ACOUSTID_URL = "https://api.acoustid.org/v2/lookup"
 
 
-@dataclass
-class Loudness:
-    integrated: float  # LUFS, -inf for silence
-    true_peak: float   # dBTP
-    lra: float         # LU
-    threshold: float
-
-
-def _num(value: Any) -> float:
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return float("-inf")
-
-
-def parse_loudnorm(stderr: str) -> Loudness:
-    """Extract the JSON block that loudnorm prints at the end of ffmpeg's log."""
-    match = re.search(r"\{[^{}]*\"input_i\"[^{}]*\}", stderr, re.S)
-    if not match:
-        raise RuntimeError("loudnorm returned no measurement")
-    data = json.loads(match.group(0))
-    return Loudness(_num(data["input_i"]), _num(data["input_tp"]),
-                    _num(data["input_lra"]), _num(data["input_thresh"]))
-
-
 def measure(path: Path) -> Loudness:
-    result = media.ffmpeg(["-i", str(path), "-vn", "-af",
-                           f"loudnorm=I={TARGET_LUFS}:TP={MAX_TRUE_PEAK}:LRA=11:print_format=json",
-                           "-f", "null", "-"])
-    return parse_loudnorm(result.stderr)
+    return audio.measure(path, TARGET_LUFS, MAX_TRUE_PEAK)
 
 
 def verdict(loud: Loudness) -> list[str]:
@@ -75,17 +46,7 @@ def verdict(loud: Loudness) -> list[str]:
 
 
 def normalize(path: Path, loud: Loudness, has_video: bool) -> Path:
-    """Second loudnorm pass with the measured values (accurate, linear)."""
-    out = media.output_path(path, "loudnorm", ".mp4" if has_video else ".m4a")
-    filt = (f"loudnorm=I={TARGET_LUFS}:TP={MAX_TRUE_PEAK}:LRA=11:"
-            f"measured_I={loud.integrated}:measured_TP={loud.true_peak}:"
-            f"measured_LRA={loud.lra}:measured_thresh={loud.threshold}:linear=true")
-    args = ["-y", "-i", str(path), "-map", "0:v?", "-map", "0:a:0", "-af", filt,
-            "-ar", "48000", "-c:a", "aac", "-b:a", "192k"]
-    if has_video:
-        args += ["-c:v", "copy", "-movflags", "+faststart"]
-    media.ffmpeg([*args, str(out)])
-    return out
+    return audio.normalize(path, loud, has_video, TARGET_LUFS, MAX_TRUE_PEAK)
 
 
 # --------------------------------------------------------------------------- #
@@ -169,7 +130,7 @@ def run(ctx):
     fixable = any(k in notes for k in ("music_check.too_quiet", "music_check.too_loud",
                                         "music_check.peak_high"))
     if fixable and ctx.confirm(ctx.t("music_check.ask_normalize")):
-        out = normalize(path, loud, bool(media.streams(info, "video")))
+        out = normalize(path, loud, audio.has_real_video(info))
         ctx.print(ctx.t("music_check.normalized", path=str(out)))
 
     key = acoustid_key(ctx)

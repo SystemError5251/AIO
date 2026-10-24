@@ -1,0 +1,10 @@
+{
+  "id": "video_crop",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "video_crop.name",
+  "desc_key": "video_crop.desc",
+  "help_key": "video_crop.help"
+}

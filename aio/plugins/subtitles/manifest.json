@@ -1,0 +1,10 @@
+{
+  "id": "subtitles",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "subtitles.name",
+  "desc_key": "subtitles.desc",
+  "help_key": "subtitles.help"
+}

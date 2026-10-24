@@ -1,0 +1,41 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "Вирівняти гучність",
+  "loudnorm.desc": "Приводить одразу багато кліпів або аудіофайлів до однакової гучності (LUFS).",
+  "loudnorm.help": "Виберіть файл або теку та ціль: −14 LUFS для Reels/Shorts/TikTok/Spotify, −16 LUFS для подкастів або −23 LUFS (EBU R128) для ефіру. Кожен файл вимірюється, а потім лінійно коригується, піки не вище −1 dBTP. Зображення копіюється без змін. Файли, що вже відповідають цілі, пропускаються. Результат: <назва>.lufs14.mp4 або .m4a поруч з оригіналом. Потрібен ffmpeg.",
+  "loudnorm.ask_path": "Файл або тека (Enter = скасувати):",
+  "loudnorm.nothing_found": "Відео- та аудіофайлів не знайдено.",
+  "loudnorm.choose_target": "Яка ціль?",
+  "loudnorm.target_social": "Reels, Shorts, TikTok, Spotify",
+  "loudnorm.target_podcast": "Подкасти",
+  "loudnorm.target_broadcast": "Ефір (EBU R128)",
+  "loudnorm.no_audio": "Немає звукової доріжки, пропущено.",
+  "loudnorm.silent": "Тиша, пропущено.",
+  "loudnorm.measured": "Виміряно: {lufs} LUFS, пік {peak} dBTP",
+  "loudnorm.already_ok": "Уже відповідає, пропущено.",
+  "loudnorm.failed": "Помилка: {error}",
+  "loudnorm.saved": "Збережено: {path}",
+  "loudnorm.summary": {
+    "one": "Готово: вирівняно {count} файл із {total}.",
+    "few": "Готово: вирівняно {count} файли з {total}.",
+    "many": "Готово: вирівняно {count} файлів із {total}.",
+    "other": "Готово: вирівняно {count} файлу з {total}."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_auto": [
+    "subtitles.after_end",
+    "subtitles.ask_file",
+    "subtitles.broken_times",
+    "subtitles.choose_mode",
+    "subtitles.desc",
+    "subtitles.found",
+    "subtitles.help",
+    "subtitles.mode_burn",
+    "subtitles.mode_track",
+    "subtitles.name",
+    "subtitles.no_cues",
+    "subtitles.no_video",
+    "subtitles.saved",
+    "subtitles.summary",
+    "subtitles.unsupported",
+    "subtitles.use_found",
+    "subtitles.working_burn",
+    "subtitles.working_track"
+  ],
+  "subtitles.name": "Sottotitoli",
+  "subtitles.desc": "Aggiunge un file di sottotitoli (.srt, .vtt, .ass) a un video: impressi o come traccia disattivabile.",
+  "subtitles.help": "Scegli un video. Se accanto c’è un file con lo stesso nome (clip.srt o clip.it.srt), viene proposto. Prima il file viene controllato (numero, tempi errati, sottotitoli dopo la fine del video). Impressi, i sottotitoli sono sempre visibili, come serve per Reels e TikTok; il video viene ricodificato. Come traccia è veloce e senza perdita, e i player possono attivarla o no. Risultato: <nome>.subtitled.mp4 o <nome>.subs.mp4. Richiede ffmpeg.",
+  "subtitles.no_video": "Il file non contiene video.",
+  "subtitles.found": "Trovato: {path}",
+  "subtitles.use_found": "Usare questi sottotitoli?",
+  "subtitles.ask_file": "File di sottotitoli (Invio = annulla):",
+  "subtitles.unsupported": "{ext} non è supportato (.srt, .vtt, .ass, .ssa).",
+  "subtitles.summary": {
+    "one": "{count} sottotitolo, l’ultimo finisce a {last}.",
+    "other": "{count} sottotitoli, l’ultimo finisce a {last}."
+  },
+  "subtitles.no_cues": "Nel file non ci sono sottotitoli.",
+  "subtitles.broken_times": {
+    "one": "{count} sottotitolo finisce prima di iniziare.",
+    "other": "{count} sottotitoli finiscono prima di iniziare."
+  },
+  "subtitles.after_end": {
+    "one": "{count} sottotitolo inizia dopo la fine del video.",
+    "other": "{count} sottotitoli iniziano dopo la fine del video."
+  },
+  "subtitles.choose_mode": "Come aggiungerli?",
+  "subtitles.mode_burn": "Imprimi (sempre visibili, per Reels/TikTok)",
+  "subtitles.mode_track": "Come traccia (disattivabile, veloce, senza ricodifica)",
+  "subtitles.working_burn": "Imprimo i sottotitoli, sul telefono può volerci un po’ …",
+  "subtitles.working_track": "Aggiungo la traccia dei sottotitoli …",
+  "subtitles.saved": "Salvato: {path}"
+}

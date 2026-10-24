@@ -1,0 +1,10 @@
+{
+  "id": "loudnorm",
+  "version": "0.1.0",
+  "api": 1,
+  "category": "video",
+  "requires": ["ffmpeg"],
+  "name_key": "loudnorm.name",
+  "desc_key": "loudnorm.desc",
+  "help_key": "loudnorm.help"
+}

@@ -1,0 +1,38 @@
+{
+  "_auto": [
+    "loudnorm.already_ok",
+    "loudnorm.ask_path",
+    "loudnorm.choose_target",
+    "loudnorm.desc",
+    "loudnorm.failed",
+    "loudnorm.help",
+    "loudnorm.measured",
+    "loudnorm.name",
+    "loudnorm.no_audio",
+    "loudnorm.nothing_found",
+    "loudnorm.saved",
+    "loudnorm.silent",
+    "loudnorm.summary",
+    "loudnorm.target_broadcast",
+    "loudnorm.target_podcast",
+    "loudnorm.target_social"
+  ],
+  "loudnorm.name": "统一响度",
+  "loudnorm.desc": "一次把许多片段或音频文件调整到相同的响度（LUFS）。",
+  "loudnorm.help": "选择一个文件或文件夹以及目标：Reels/Shorts/TikTok/Spotify 用 −14 LUFS，播客用 −16 LUFS，广播用 −23 LUFS（EBU R128）。每个文件先测量，再线性修正，峰值最高 −1 dBTP。画面原样复制。已经达标的文件会跳过。结果：原文件旁的 <名称>.lufs14.mp4 或 .m4a。需要 ffmpeg。",
+  "loudnorm.ask_path": "文件或文件夹（Enter = 取消）：",
+  "loudnorm.nothing_found": "未找到视频或音频文件。",
+  "loudnorm.choose_target": "选择哪个目标？",
+  "loudnorm.target_social": "Reels、Shorts、TikTok、Spotify",
+  "loudnorm.target_podcast": "播客",
+  "loudnorm.target_broadcast": "广播（EBU R128）",
+  "loudnorm.no_audio": "没有音轨，已跳过。",
+  "loudnorm.silent": "静音，已跳过。",
+  "loudnorm.measured": "测量结果：{lufs} LUFS，峰值 {peak} dBTP",
+  "loudnorm.already_ok": "已经达标，已跳过。",
+  "loudnorm.failed": "失败：{error}",
+  "loudnorm.saved": "已保存：{path}",
+  "loudnorm.summary": {
+    "other": "完成：已调整 {count}/{total} 个文件。"
+  }
+}
