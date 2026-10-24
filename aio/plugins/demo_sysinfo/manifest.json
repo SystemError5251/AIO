@@ -1,0 +1,8 @@
+{
+  "id": "demo_sysinfo",
+  "version": "0.1.0",
+  "category": "demo",
+  "name_key": "demo_sysinfo.name",
+  "desc_key": "demo_sysinfo.desc",
+  "help_key": "demo_sysinfo.help"
+}

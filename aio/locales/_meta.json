@@ -1,0 +1,18 @@
+{
+  "_comment": "Native name, English name and text direction for every language. A language appears in the picker once locales/<code>.json exists.",
+  "de": {"name": "Deutsch", "english_name": "German", "dir": "ltr"},
+  "en": {"name": "English", "english_name": "English", "dir": "ltr"},
+  "fr": {"name": "Français", "english_name": "French", "dir": "ltr"},
+  "es": {"name": "Español", "english_name": "Spanish", "dir": "ltr"},
+  "it": {"name": "Italiano", "english_name": "Italian", "dir": "ltr"},
+  "pt": {"name": "Português", "english_name": "Portuguese", "dir": "ltr"},
+  "tr": {"name": "Türkçe", "english_name": "Turkish", "dir": "ltr"},
+  "ru": {"name": "Русский", "english_name": "Russian", "dir": "ltr"},
+  "uk": {"name": "Українська", "english_name": "Ukrainian", "dir": "ltr"},
+  "pl": {"name": "Polski", "english_name": "Polish", "dir": "ltr"},
+  "ar": {"name": "العربية", "english_name": "Arabic", "dir": "rtl"},
+  "he": {"name": "עברית", "english_name": "Hebrew", "dir": "rtl"},
+  "zh": {"name": "中文", "english_name": "Chinese", "dir": "ltr"},
+  "ja": {"name": "日本語", "english_name": "Japanese", "dir": "ltr"},
+  "hi": {"name": "हिन्दी", "english_name": "Hindi", "dir": "ltr"}
+}
