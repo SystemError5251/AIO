@@ -15,7 +15,7 @@ pkg install -y curl
 curl -fsSL https://raw.githubusercontent.com/SystemError5251/AIO/main/aio-installer.sh | bash
 ```
 
-Das Skript installiert Python, git, ffmpeg und termux-api, lädt AIO nach `~/.aio/src` und richtet den Befehl `aio` ein. **Update:** denselben Befehl erneut ausführen. Funktioniert genauso unter Linux (dort Python 3.11+, git und ffmpeg vorher selbst installieren).
+Das Skript installiert Python, git, ffmpeg und termux-api, lädt AIO nach `~/.aio/src` und richtet den Befehl `aio` ein. **Update:** in AIO unter Einstellungen → „Jetzt nach Updates suchen“ oder mit `aio --update`. Unter „Automatische Updates“ stellst du ein, ob AIO beim Start prüft (aus, nur Bescheid geben oder automatisch installieren) und wie oft (jeder Start, täglich, wöchentlich). Ohne Internet startet AIO ganz normal. Alternativ denselben Installationsbefehl erneut ausführen. Funktioniert genauso unter Linux (dort Python 3.11+, git und ffmpeg vorher selbst installieren).
 
 Einmalig empfohlen:
 

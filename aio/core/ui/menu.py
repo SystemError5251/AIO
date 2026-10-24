@@ -8,6 +8,7 @@ from aio.core.i18n import load_meta
 from aio.core.media import MissingTool
 from aio.core.registry import Plugin
 from aio.core.ui.language_picker import choose_language
+from aio.core.ui.update import auto_update_settings, describe, update_now
 
 
 def change_language(ctx: AppContext) -> None:
@@ -54,6 +55,8 @@ def settings_menu(ctx: AppContext) -> None:
         ctx.print(f"   1) {ctx.t('settings.language')} "
                   f"({_language_name(ctx.translator.language)})")
         ctx.print(f"   2) {ctx.t('settings.display_help')}")
+        ctx.print(f"   3) {ctx.t('settings.update_now')}")
+        ctx.print(f"   4) {ctx.t('settings.auto_update')} ({describe(ctx)})")
         ctx.print(f"   b) {ctx.t('menu.back')}")
         answer = ctx.ask(ctx.t("menu.prompt") + " ")
         if answer is None or answer.lower() in ("b", "q", ""):
@@ -62,6 +65,10 @@ def settings_menu(ctx: AppContext) -> None:
             change_language(ctx)
         elif answer == "2":
             ctx.print(ctx.t("help.display"))
+        elif answer == "3":
+            update_now(ctx)
+        elif answer == "4":
+            auto_update_settings(ctx)
         else:
             ctx.print(ctx.t("menu.invalid"))
 
