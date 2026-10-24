@@ -6,7 +6,7 @@ def aio_home(tmp_path, monkeypatch):
     """Every test gets its own empty ~/.aio."""
     home = tmp_path / "aio_home"
     monkeypatch.setenv("AIO_HOME", str(home))
-    for var in ("LC_ALL", "LC_MESSAGES", "LANG", "LANGUAGE"):
+    for var in ("LC_ALL", "LC_MESSAGES", "LANG", "LANGUAGE", "AIO_SRC"):
         monkeypatch.delenv(var, raising=False)
     from aio.core.i18n import get_translator
     get_translator().language = "en"

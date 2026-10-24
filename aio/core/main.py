@@ -12,6 +12,7 @@ from aio.core.context import AppContext
 from aio.core.i18n import available_languages, detect_system_language, get_translator
 from aio.core.ui.language_picker import choose_language
 from aio.core.ui.menu import main_menu, print_tool_list
+from aio.core.ui.update import check_on_start, update_now
 
 CHOOSE = "__choose__"
 
@@ -26,6 +27,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--choose-language", dest="lang", action="store_const", const=CHOOSE,
         help="show the language selection again",
     )
+    parser.add_argument("--update", action="store_true", help="update AIO from GitHub and exit")
     parser.add_argument("--list", action="store_true", help="list tools and exit")
     parser.add_argument("--version", action="version", version=f"aio {__version__}")
     return parser
@@ -87,10 +89,15 @@ def main(argv: Sequence[str] | None = None,
                 ctx.config = config.set_value("language", code)
         # Non-interactive (pipes, scripts): use the suggestion without saving it.
 
+    if args.update:
+        update_now(ctx)
+        return 0
+
     if args.list or not interactive:
         print_tool_list(ctx)
         return 0
 
+    check_on_start(ctx)
     main_menu(ctx)
     return 0
 
